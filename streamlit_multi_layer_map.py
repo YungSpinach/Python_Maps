@@ -249,8 +249,12 @@ if show_outdoor:
     if latcol and loncol:
         for _, row in outdoor_df.iterrows():
             try:
-                lat = float(row[latcol])
-                lon = float(row[loncol])
+                lat_raw = row[latcol]
+                lon_raw = row[loncol]
+                if pd.isna(lat_raw) or pd.isna(lon_raw):
+                    continue
+                lat = float(lat_raw)
+                lon = float(lon_raw)
             except Exception:
                 continue
             fmt = str(row.iloc[1]) if len(row.index) > 1 else ''
@@ -277,8 +281,12 @@ if show_stores:
         for idx, row in stores_df.iterrows():
             try:
                 geo = stores_geo.iloc[idx]
-                lat = float(geo.latitude)
-                lon = float(geo.longitude)
+                lat_raw = geo.latitude
+                lon_raw = geo.longitude
+                if pd.isna(lat_raw) or pd.isna(lon_raw):
+                    continue
+                lat = float(lat_raw)
+                lon = float(lon_raw)
             except Exception:
                 continue
             store_name = row.iloc[1] if row.shape[0] > 1 else ''
