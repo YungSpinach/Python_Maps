@@ -62,7 +62,17 @@ stores_file = st.sidebar.text_input('StoreLocations CSV', 'StoreLocations.csv')
 
 # Load CSVs
 try:
+    pop_df = load_csv(pop_file)
+    av_df = load_csv(av_file)
+    outdoor_df = load_csv(outdoor_file)
+    stores_df = load_csv(stores_file)
+except Exception as e:
+    st.error(f"Error loading CSVs: {e}")
+    st.stop()
+
+# GeoJSON: allow upload or URL
 uploaded_geo = st.sidebar.file_uploader('Upload regions GeoJSON (optional)', type=['geojson','json'])
+geo_url = st.sidebar.text_input('Regions GeoJSON URL (optional)', '')
 regions_geo = fetch_regions_geojson(None if not geo_url.strip() else [geo_url.strip()], uploaded_file=uploaded_geo)
 if regions_geo is None:
     st.stop()
@@ -90,17 +100,6 @@ for feat in features:
     props['region_name'] = rname
     props['region_norm'] = rname.strip().lower()
     feat['properties'] = props
-regions_gdf = fetch_regions_geojson(geo_url if geo_url.strip() else None)
-if regions_gdf is None:
-    st.stop()
-
-# Normalize region name column in regions_gdf
-regions_gdf['region_name'] = regions_gdf.columns[0]  # fallback
-# try common properties
-for col in ['name','region','NAME','lad19nm','rgn19nm','rgn19nm']:
-    if col in regions_gdf.columns:
-        regions_gdf['region_name'] = regions_gdf[col]
-        break
 
 # Prepare Population layers
 # Try to find reasonable column names or positions
