@@ -146,6 +146,23 @@ av_spend = av_df.groupby('Region')['Spend (CTC)'].sum().reset_index()
 # Prepare outdoor sites data
 outdoor_df['Location'] = outdoor_df['Location'].astype(str).str.strip()
 
+# Combine Inner London and Outer London into London for population and acquisition layers
+population_for_maps = population_df.copy()
+london_pop = population_for_maps[population_for_maps['Region'].isin(['Inner London', 'Outer London'])]['Total Population'].astype(str).str.replace(',', '').astype(float).sum()
+london_acq = population_for_maps[population_for_maps['Region'].isin(['Inner London', 'Outer London'])]['Acquisition Audience'].astype(str).str.replace(',', '').astype(float).sum()
+
+# Remove Inner and Outer London, add combined London
+population_for_maps = population_for_maps[~population_for_maps['Region'].isin(['Inner London', 'Outer London'])].copy()
+london_row = pd.DataFrame({
+    'Region': ['London'],
+    'Total Population': [f'{int(london_pop):,}'],
+    'Acquisition Audience': [f'{int(london_acq):,}']
+})
+population_for_maps = pd.concat([population_for_maps, london_row], ignore_index=True)
+
+# Update region coordinates to include London
+uk_regions_coords['London'] = (51.5074, -0.1278)
+
 # ==================== SIDEBAR CONTROLS ====================
 st.sidebar.header("Layer Controls")
 
@@ -168,88 +185,71 @@ m = folium.Map(
 
 # ==================== LAYER 1: POPULATION CHOROPLETH (GREEN) ====================
 if show_population:
-    # Prepare population data for choropleth
-    pop_for_choropleth = population_df[['Region', 'Total Population']].copy()
-    pop_for_choropleth['Total Population'] = pop_for_choropleth['Total Population'].astype(str).str.replace(',', '').astype(float)
+    # Use the combined London data
+    pop_data = population_for_maps[['Region', 'Total Population']].copy()
+    pop_data['Total Population'] = pop_data['Total Population'].astype(str).str.replace(',', '').astype(float)
     
-    # Create a feature collection GeoJSON for UK regions
-    uk_geojson = {
-        "type": "FeatureCollection",
-        "features": [
-            {"type": "Feature", "properties": {"name": "Inner London"}, "geometry": {"type": "Point", "coordinates": [-0.1278, 51.5074]}},
-            {"type": "Feature", "properties": {"name": "East of England"}, "geometry": {"type": "Point", "coordinates": [0.5629, 52.2314]}},
-            {"type": "Feature", "properties": {"name": "Outer London"}, "geometry": {"type": "Point", "coordinates": [-0.0931, 51.6309]}},
-            {"type": "Feature", "properties": {"name": "North West"}, "geometry": {"type": "Point", "coordinates": [-2.2426, 53.4808]}},
-            {"type": "Feature", "properties": {"name": "South East"}, "geometry": {"type": "Point", "coordinates": [0.5034, 51.3198]}},
-            {"type": "Feature", "properties": {"name": "Scotland"}, "geometry": {"type": "Point", "coordinates": [-4.2026, 56.4907]}},
-            {"type": "Feature", "properties": {"name": "Yorkshire and the Humber"}, "geometry": {"type": "Point", "coordinates": [-1.5582, 53.9583]}},
-            {"type": "Feature", "properties": {"name": "East Midlands"}, "geometry": {"type": "Point", "coordinates": [-0.9822, 52.6368]}},
-            {"type": "Feature", "properties": {"name": "West Midlands"}, "geometry": {"type": "Point", "coordinates": [-1.8149, 52.6089]}},
-            {"type": "Feature", "properties": {"name": "South West"}, "geometry": {"type": "Point", "coordinates": [-3.5339, 50.7184]}},
-            {"type": "Feature", "properties": {"name": "Northern Ireland"}, "geometry": {"type": "Point", "coordinates": [-6.2592, 54.3781]}},
-            {"type": "Feature", "properties": {"name": "Wales"}, "geometry": {"type": "Point", "coordinates": [-3.7837, 52.1307]}}
-        ]
-    }
-    
-    # Add population circles with green color scale
-    for idx, row in pop_for_choropleth.iterrows():
+    # Add population regions with green color scale
+    for idx, row in pop_data.iterrows():
         region = row['Region']
         pop = row['Total Population']
         
         if region in uk_regions_coords:
             lat, lng = uk_regions_coords[region]
-            # Normalize for color intensity
-            intensity = pop / pop_for_choropleth['Total Population'].max()
-            # Green color scale: lighter to darker
-            green_value = int(50 + (intensity * 150))
-            color = f'#{0:02x}{green_value:02x}{0:02x}'
+            # Normalize for color intensity (0-1)
+            intensity = pop / pop_data['Total Population'].max()
+            # Green color scale: light to dark
+            green = int(100 + (intensity * 155))
+            color = f'#{0:02x}{green:02x}{0:02x}'
             
-            folium.CircleMarker(
+            # Create a circle for region shading effect
+            folium.Circle(
                 location=[lat, lng],
-                radius=35,
+                radius=50000,  # 50km radius for region coverage
                 popup=f"<b>{region}</b><br>Population: {pop:,.0f}",
                 color=color,
                 fill=True,
                 fillColor=color,
-                fillOpacity=0.7 + (intensity * 0.3),
-                weight=2,
+                fillOpacity=0.5 + (intensity * 0.4),
+                weight=1,
             ).add_to(m)
 
 # ==================== LAYER 2: ACQUISITION AUDIENCE CHOROPLETH (BLUE) ====================
 if show_acquisition:
-    # Prepare acquisition audience data for choropleth
-    acq_for_choropleth = population_df[['Region', 'Acquisition Audience']].copy()
-    acq_for_choropleth['Acquisition Audience'] = acq_for_choropleth['Acquisition Audience'].astype(str).str.replace(',', '').astype(float)
+    # Use the combined London data
+    acq_data = population_for_maps[['Region', 'Acquisition Audience']].copy()
+    acq_data['Acquisition Audience'] = acq_data['Acquisition Audience'].astype(str).str.replace(',', '').astype(float)
     
-    # Add acquisition circles with blue color scale
-    for idx, row in acq_for_choropleth.iterrows():
+    # Add acquisition regions with blue color scale
+    for idx, row in acq_data.iterrows():
         region = row['Region']
         acq = row['Acquisition Audience']
         
         if region in uk_regions_coords:
             lat, lng = uk_regions_coords[region]
-            # Normalize for color intensity
-            intensity = acq / acq_for_choropleth['Acquisition Audience'].max()
-            # Blue color scale: lighter to darker
-            blue_value = int(50 + (intensity * 150))
-            color = f'#{0:02x}{0:02x}{blue_value:02x}'
+            # Normalize for color intensity (0-1)
+            intensity = acq / acq_data['Acquisition Audience'].max()
+            # Blue color scale: light to dark
+            blue = int(100 + (intensity * 155))
+            color = f'#{0:02x}{0:02x}{blue:02x}'
             
-            folium.CircleMarker(
+            # Create a circle for region shading effect
+            folium.Circle(
                 location=[lat, lng],
-                radius=32,
+                radius=50000,  # 50km radius for region coverage
                 popup=f"<b>{region}</b><br>Acquisition Audience: {acq:,.0f}",
                 color=color,
                 fill=True,
                 fillColor=color,
-                fillOpacity=0.7 + (intensity * 0.3),
-                weight=2,
+                fillOpacity=0.5 + (intensity * 0.4),
+                weight=1,
             ).add_to(m)
 
 # ==================== LAYER 3: AV SPEND CHOROPLETH (RED) ====================
 if show_av_spend:
-    # Map AV regions to population regions
+    # Map AV regions to population regions (now includes 'London')
     region_mapping = {
-        'London': 'Inner London',
+        'London': 'London',
         'Anglia ': 'East of England',  # Note: "Anglia " has trailing space in CSV
         'Anglia': 'East of England',
         'North West': 'North West',
@@ -257,33 +257,34 @@ if show_av_spend:
     }
     
     # Prepare spend data with mapped regions
-    spend_for_choropleth = av_spend.copy()
-    spend_for_choropleth['MappedRegion'] = spend_for_choropleth['Region'].map(region_mapping)
+    spend_data = av_spend.copy()
+    spend_data['MappedRegion'] = spend_data['Region'].map(region_mapping)
     # Fill unmapped regions with themselves
-    spend_for_choropleth['MappedRegion'] = spend_for_choropleth['MappedRegion'].fillna(spend_for_choropleth['Region'])
+    spend_data['MappedRegion'] = spend_data['MappedRegion'].fillna(spend_data['Region'])
     
-    # Add spend circles with red color scale
-    for idx, row in spend_for_choropleth.iterrows():
+    # Add spend regions with red color scale
+    for idx, row in spend_data.iterrows():
         region = row['MappedRegion']
         spend = row['Spend (CTC)']
         
         if region in uk_regions_coords:
             lat, lng = uk_regions_coords[region]
-            # Normalize for color intensity
-            intensity = spend / spend_for_choropleth['Spend (CTC)'].max()
-            # Red color scale: lighter to darker
-            red_value = int(100 + (intensity * 150))
-            color = f'#{red_value:02x}{0:02x}{0:02x}'
+            # Normalize for color intensity (0-1)
+            intensity = spend / spend_data['Spend (CTC)'].max()
+            # Red color scale: light to dark
+            red = int(100 + (intensity * 155))
+            color = f'#{red:02x}{0:02x}{0:02x}'
             
-            folium.CircleMarker(
+            # Create a circle for region shading effect
+            folium.Circle(
                 location=[lat, lng],
-                radius=30,
+                radius=50000,  # 50km radius for region coverage
                 popup=f"<b>{region}</b><br>AV Spend: £{spend:,.2f}",
                 color=color,
                 fill=True,
                 fillColor=color,
-                fillOpacity=0.7 + (intensity * 0.3),
-                weight=2,
+                fillOpacity=0.5 + (intensity * 0.4),
+                weight=1,
             ).add_to(m)
 
 # ==================== LAYER 4: OUTDOOR SITES ====================
