@@ -70,36 +70,34 @@ m = folium.Map(location=[54.5, -2.5], zoom_start=6, tiles="cartodbpositron")
 # ==========================================
 # LAYER 1: Total Population (Green Choropleth)
 # ==========================================
-layer_pop = folium.FeatureGroup(name='1. Total Population', show=False)
 folium.Choropleth(
     geo_data=geojson_data,
-    name='Total Population',
+    name='1. Total Population',
     data=df_pop,
     columns=['Region', 'Total Population'],
     key_on='feature.properties.rgn19nm', # Standard property for NUTS1 region names
     fill_color='Greens',
     fill_opacity=0.7,
     line_opacity=0.2,
-    legend_name='Total Population'
-).add_to(layer_pop)
-layer_pop.add_to(m)
+    legend_name='Total Population',
+    show=False
+).add_to(m)
 
 # ==========================================
 # LAYER 2: Acquisition Audience (Blue Choropleth)
 # ==========================================
-layer_acq = folium.FeatureGroup(name='2. Acquisition Audience', show=False)
 folium.Choropleth(
     geo_data=geojson_data,
-    name='Acquisition Audience',
+    name='2. Acquisition Audience',
     data=df_pop,
     columns=['Region', 'Acquisition Audience'],
     key_on='feature.properties.rgn19nm',
     fill_color='Blues',
     fill_opacity=0.7,
     line_opacity=0.2,
-    legend_name='Acquisition Audience'
-).add_to(layer_acq)
-layer_acq.add_to(m)
+    legend_name='Acquisition Audience',
+    show=False
+).add_to(m)
 
 # ==========================================
 # LAYER 3: Outdoor Sites (Symbols)
@@ -135,19 +133,18 @@ layer_outdoor.add_to(m)
 # ==========================================
 # LAYER 4: AV Spend Heatmap/Choropleth (Red)
 # ==========================================
-layer_av = folium.FeatureGroup(name='4. AV Spend (TV & VOD)', show=False)
 folium.Choropleth(
     geo_data=geojson_data,
-    name='AV Spend',
+    name='4. AV Spend (TV & VOD)',
     data=df_av_grouped,
     columns=['Region', 'Spend (CTC)'],
     key_on='feature.properties.rgn19nm',
     fill_color='Reds',
     fill_opacity=0.7,
     line_opacity=0.2,
-    legend_name='Spend (CTC)'
-).add_to(layer_av)
-layer_av.add_to(m)
+    legend_name='Spend (CTC)',
+    show=False
+).add_to(m)
 
 # ==========================================
 # LAYER 5: Store Locations (Icons)
