@@ -19,6 +19,15 @@ def load_data():
     df_av = pd.read_csv('AV.csv')
     df_stores = pd.read_csv('StoreLocations.csv')
     
+    # Clean Population Data
+    for col in ['Total Population', 'Acquisition Audience']:
+        if df_pop[col].dtype == 'object':
+             df_pop[col] = df_pop[col].astype(str).str.replace(',', '').astype(float)
+
+    # Clean AV Spend Data
+    if df_av['Spend (CTC)'].dtype == 'object':
+        df_av['Spend (CTC)'] = df_av['Spend (CTC)'].astype(str).str.replace('£', '').str.replace(',', '').astype(float)
+
     # Process AV Spend: Combine TV and VOD by Region
     df_av_grouped = df_av.groupby('Region')['Spend (CTC)'].sum().reset_index()
     
@@ -46,10 +55,10 @@ def get_coordinates(query):
 @st.cache_data
 def get_uk_geojson():
     try:
-        with open('Regions_December_2024_Boundaries_EN_BFE_-8330052564508536532.geojson', 'r', encoding='utf-8') as f:
+        with open('uk_regions.geojson', 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
-        st.error(f"Could not load 'Regions_December_2024_Boundaries_EN_BFE_-8330052564508536532.geojson' from working folder: {e}")
+        st.error(f"Could not load 'uk_regions.geojson' from working folder: {e}")
         return {}
 
 geojson_data = get_uk_geojson()
@@ -67,7 +76,7 @@ folium.Choropleth(
     name='Total Population',
     data=df_pop,
     columns=['Region', 'Total Population'],
-    key_on='feature.properties.NUTS112NM', # Standard property for NUTS1 region names
+    key_on='feature.properties.rgn19nm', # Standard property for NUTS1 region names
     fill_color='Greens',
     fill_opacity=0.7,
     line_opacity=0.2,
@@ -84,7 +93,7 @@ folium.Choropleth(
     name='Acquisition Audience',
     data=df_pop,
     columns=['Region', 'Acquisition Audience'],
-    key_on='feature.properties.NUTS112NM',
+    key_on='feature.properties.rgn19nm',
     fill_color='Blues',
     fill_opacity=0.7,
     line_opacity=0.2,
@@ -132,7 +141,7 @@ folium.Choropleth(
     name='AV Spend',
     data=df_av_grouped,
     columns=['Region', 'Spend (CTC)'],
-    key_on='feature.properties.NUTS112NM',
+    key_on='feature.properties.rgn19nm',
     fill_color='Reds',
     fill_opacity=0.7,
     line_opacity=0.2,
