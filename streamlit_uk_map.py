@@ -140,11 +140,11 @@ postcode_coords = {
 # ==================== DATA PROCESSING ====================
 
 # Clean and prepare AV spend data
-av_df['Spend (CTC)'] = av_df['Spend (CTC)'].str.replace('£', '').str.replace(',', '').astype(float)
+av_df['Spend (CTC)'] = av_df['Spend (CTC)'].astype(str).str.replace('£', '').str.replace(',', '').astype(float)
 av_spend = av_df.groupby('Region')['Spend (CTC)'].sum().reset_index()
 
 # Prepare outdoor sites data
-outdoor_df['Location'] = outdoor_df['Location'].str.strip()
+outdoor_df['Location'] = outdoor_df['Location'].astype(str).str.strip()
 
 # ==================== SIDEBAR CONTROLS ====================
 st.sidebar.header("Layer Controls")
