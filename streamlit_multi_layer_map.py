@@ -5,6 +5,7 @@ import json
 import folium
 from folium.plugins import HeatMap
 from streamlit_folium import st_folium
+from branca.colormap import LinearColormap
 import pgeocode
 import io
 
@@ -175,38 +176,77 @@ m = folium.Map(location=[54.0, -2.0], zoom_start=5, tiles='cartodbpositron')
 folium.TileLayer('Stamen Terrain', attr='Map tiles by Stamen Design, CC BY 3.0 — Map data © OpenStreetMap contributors').add_to(m)
 folium.TileLayer('OpenStreetMap', attr='© OpenStreetMap contributors').add_to(m)
 
-# Population Total choropleth (Greens)
+# Population Total choropleth (Greens) using GeoJson + LinearColormap
 if show_pop_total:
-    # We will add choropleth directly to the Map (folium requires this)
     try:
-        folium.Choropleth(
-            geo_data=regions_geo_clean,
-            data=pop_merge,
-            columns=['Region', 'TotalPopulation'],
-            key_on='feature.properties.region_name',
-            fill_color='Greens',
-            fill_opacity=0.7,
-            line_opacity=0.3,
-            legend_name='Total Population'
-        ).add_to(m)
-    except Exception as e:
-        st.warning(f'Failed to add Total Population choropleth: {e}')
+        vals = [v for v in pop_merge['TotalPopulation'].dropna().astype(float).tolist()]
+        if vals:
+            vmin, vmax = min(vals), max(vals)
+            cmap = LinearColormap(['#e5f5e0', '#a1d99b', '#31a354'], vmin=vmin, vmax=vmax)
+        else:
+            cmap = LinearColormap(['#e5f5e0', '#a1d99b', '#31a354'], vmin=0, vmax=1)
 
-# Population Acquisition Audience choropleth (Blues)
+        def style_total(feature):
+            val = feature['properties'].get('TotalPopulation')
+            try:
+                if val is None:
+                    color = 'transparent'
+                else:
+                    color = cmap(float(val))
+            except Exception:
+                color = 'transparent'
+            return {
+                'fillColor': color,
+                'color': '#444444',
+                'weight': 0.5,
+                'fillOpacity': 0.7,
+            }
+
+        folium.GeoJson(
+            regions_geo_clean,
+            style_function=style_total,
+            tooltip=folium.GeoJsonTooltip(fields=['region_name','TotalPopulation'], aliases=['Region','Total Population'])
+        ).add_to(m)
+        cmap.caption = 'Total Population'
+        cmap.add_to(m)
+    except Exception as e:
+        st.warning(f'Failed to add Total Population layer: {e}')
+
+# Population Acquisition Audience choropleth (Blues) using GeoJson + LinearColormap
 if show_pop_acq:
     try:
-        folium.Choropleth(
-            geo_data=regions_geo_clean,
-            data=pop_merge,
-            columns=['Region', 'AcquisitionAudience'],
-            key_on='feature.properties.region_name',
-            fill_color='Blues',
-            fill_opacity=0.7,
-            line_opacity=0.3,
-            legend_name='Acquisition Audience'
+        vals = [v for v in pop_merge['AcquisitionAudience'].dropna().astype(float).tolist()]
+        if vals:
+            vmin, vmax = min(vals), max(vals)
+            cmap2 = LinearColormap(['#deebf7', '#9ecae1', '#3182bd'], vmin=vmin, vmax=vmax)
+        else:
+            cmap2 = LinearColormap(['#deebf7', '#9ecae1', '#3182bd'], vmin=0, vmax=1)
+
+        def style_acq(feature):
+            val = feature['properties'].get('AcquisitionAudience')
+            try:
+                if val is None:
+                    color = 'transparent'
+                else:
+                    color = cmap2(float(val))
+            except Exception:
+                color = 'transparent'
+            return {
+                'fillColor': color,
+                'color': '#444444',
+                'weight': 0.5,
+                'fillOpacity': 0.7,
+            }
+
+        folium.GeoJson(
+            regions_geo_clean,
+            style_function=style_acq,
+            tooltip=folium.GeoJsonTooltip(fields=['region_name','AcquisitionAudience'], aliases=['Region','Acquisition Audience'])
         ).add_to(m)
+        cmap2.caption = 'Acquisition Audience'
+        cmap2.add_to(m)
     except Exception as e:
-        st.warning(f'Failed to add Acquisition Audience choropleth: {e}')
+        st.warning(f'Failed to add Acquisition Audience layer: {e}')
 
 # AV spend heatmap: place centroid points weighted by spend
 if show_av_heat:
