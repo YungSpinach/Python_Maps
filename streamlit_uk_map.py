@@ -6,7 +6,6 @@ import requests
 import json
 from streamlit_folium import st_folium
 import numpy as np
-from branca.colormap import LinearColormap
 
 # Page configuration
 st.set_page_config(page_title="UK Multi-Layer Map", layout="wide")
@@ -15,10 +14,10 @@ st.title("Interactive UK Map - Multi-Layer Dashboard")
 # ==================== DATA LOADING ====================
 @st.cache_data
 def load_data():
-    population_df = pd.read_csv('PopulationSizing.csv')
-    outdoor_df = pd.read_csv('OutdoorSites.csv')
-    av_df = pd.read_csv('AV.csv')
-    stores_df = pd.read_csv('StoreLocations.csv')
+    population_df = pd.read_csv('PopulationSizing.csv', encoding='latin-1')
+    outdoor_df = pd.read_csv('OutdoorSites.csv', encoding='latin-1')
+    av_df = pd.read_csv('AV.csv', encoding='latin-1')
+    stores_df = pd.read_csv('StoreLocations.csv', encoding='latin-1')
     return population_df, outdoor_df, av_df, stores_df
 
 population_df, outdoor_df, av_df, stores_df = load_data()
