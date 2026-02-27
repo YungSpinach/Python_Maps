@@ -10,7 +10,8 @@ import json
 
 st.set_page_config(page_title="UK Interactive Map", layout="wide")
 st.image("https://images.squarespace-cdn.com/content/5c9e3048523958515c382443/2129c340-d177-48e6-8b14-3c8b01a94ec7/CreamLogo-EMAILSIGNATURE.png?content-type=image%2Fpng", width=100)
-st.text("")st.title("Frasers Interactive Map: Audiences, Sites, and Stores")
+st.text("")
+st.title("Frasers Interactive Map: Audiences, Sites, and Stores")
 
 # --- 1. Load Data ---
 @st.cache_data
