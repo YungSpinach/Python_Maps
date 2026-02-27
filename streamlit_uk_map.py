@@ -6,7 +6,6 @@ import requests
 import json
 from streamlit_folium import st_folium
 import numpy as np
-from branca.colormap import LinearColormap
 
 # Page configuration
 st.set_page_config(page_title="UK Multi-Layer Map", layout="wide")
