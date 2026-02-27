@@ -171,9 +171,9 @@ show_stores = st.sidebar.checkbox('Store locations (shop icons)', True)
 # Create folium map
 m = folium.Map(location=[54.0, -2.0], zoom_start=5, tiles='cartodbpositron')
 
-# Add base tile layers
-folium.TileLayer('Stamen Terrain').add_to(m)
-folium.TileLayer('OpenStreetMap').add_to(m)
+# Add base tile layers (include attribution to satisfy folium)
+folium.TileLayer('Stamen Terrain', attr='Map tiles by Stamen Design, CC BY 3.0 — Map data © OpenStreetMap contributors').add_to(m)
+folium.TileLayer('OpenStreetMap', attr='© OpenStreetMap contributors').add_to(m)
 
 # Population Total choropleth (Greens)
 if show_pop_total:
