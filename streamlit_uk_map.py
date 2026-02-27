@@ -169,6 +169,10 @@ m = folium.Map(
 # ==================== LAYER 1: POPULATION HEATMAP (GREEN) ====================
 if show_population:
     population_data = []
+    # Convert to numeric values safely
+    pop_values = population_df['Total Population'].astype(str).str.replace(',', '').astype(float)
+    max_pop = pop_values.max()
+    
     for idx, row in population_df.iterrows():
         region = row['Region']
         pop = float(str(row['Total Population']).replace(',', ''))
@@ -176,7 +180,7 @@ if show_population:
         if region in uk_regions_coords:
             lat, lng = uk_regions_coords[region]
             # Create heatmap intensity (normalized)
-            intensity = pop / population_df['Total Population'].str.replace(',', '').astype(float).max()
+            intensity = pop / max_pop
             population_data.append([lat, lng, intensity])
     
     if population_data:
@@ -197,13 +201,17 @@ if show_population:
 # ==================== LAYER 2: ACQUISITION AUDIENCE HEATMAP (BLUE) ====================
 if show_acquisition:
     acquisition_data = []
+    # Convert to numeric values safely
+    acq_values = population_df['Acquisition Audience'].astype(str).str.replace(',', '').astype(float)
+    max_acq = acq_values.max()
+    
     for idx, row in population_df.iterrows():
         region = row['Region']
         acq = float(str(row['Acquisition Audience']).replace(',', ''))
         
         if region in uk_regions_coords:
             lat, lng = uk_regions_coords[region]
-            intensity = acq / population_df['Acquisition Audience'].str.replace(',', '').astype(float).max()
+            intensity = acq / max_acq
             acquisition_data.append([lat, lng, intensity])
     
     if acquisition_data:
@@ -300,14 +308,16 @@ if show_outdoor:
                     weight=2,
                 ).add_to(m)
             elif fmt == 'Transvision Screen':
-                # Blue square for Transvision Screen
-                folium.RegularPolygonMarker(
+                # Blue circle for Transvision Screen
+                folium.CircleMarker(
                     location=[lat, lng],
-                    fill_color='#0080FF',
-                    number_of_sides=4,
                     radius=8,
                     popup=popup_text,
                     color='#0080FF',
+                    fill=True,
+                    fillColor='#0080FF',
+                    fillOpacity=0.8,
+                    weight=2,
                 ).add_to(m)
             elif 'Rail Digital' in fmt:
                 # Green dot for Rail Digital
