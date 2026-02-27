@@ -46,10 +46,10 @@ def get_coordinates(query):
 @st.cache_data
 def get_uk_geojson():
     try:
-        with open('Regions_December_2024_Boundaries_EN_BFE_-8330052564508536532..geojson', 'r', encoding='utf-8') as f:
+        with open('Regions_December_2024_Boundaries_EN_BFE_-8330052564508536532.geojson', 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
-        st.error(f"Could not load 'Regions_December_2024_Boundaries_EN_BFE_-8330052564508536532..geojson' from working folder: {e}")
+        st.error(f"Could not load 'Regions_December_2024_Boundaries_EN_BFE_-8330052564508536532.geojson' from working folder: {e}")
         return {}
 
 geojson_data = get_uk_geojson()
