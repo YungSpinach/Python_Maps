@@ -177,8 +177,7 @@ folium.TileLayer('OpenStreetMap', attr='© OpenStreetMap contributors').add_to(m
 
 # Population Total choropleth (Greens)
 if show_pop_total:
-    fg_pop_total = folium.FeatureGroup(name='Total Population (Greens)')
-    # We will add choropleth
+    # We will add choropleth directly to the Map (folium requires this)
     try:
         folium.Choropleth(
             geo_data=regions_geo_clean,
@@ -189,14 +188,12 @@ if show_pop_total:
             fill_opacity=0.7,
             line_opacity=0.3,
             legend_name='Total Population'
-        ).add_to(fg_pop_total)
-        fg_pop_total.add_to(m)
+        ).add_to(m)
     except Exception as e:
         st.warning(f'Failed to add Total Population choropleth: {e}')
 
 # Population Acquisition Audience choropleth (Blues)
 if show_pop_acq:
-    fg_pop_acq = folium.FeatureGroup(name='Acquisition Audience (Blues)')
     try:
         folium.Choropleth(
             geo_data=regions_geo_clean,
@@ -207,8 +204,7 @@ if show_pop_acq:
             fill_opacity=0.7,
             line_opacity=0.3,
             legend_name='Acquisition Audience'
-        ).add_to(fg_pop_acq)
-        fg_pop_acq.add_to(m)
+        ).add_to(m)
     except Exception as e:
         st.warning(f'Failed to add Acquisition Audience choropleth: {e}')
 
