@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import geopandas as gpd
+import requests
+import json
 import folium
 from folium.plugins import HeatMap
 from streamlit_folium import st_folium
@@ -14,16 +15,30 @@ def load_csv(name):
     return pd.read_csv(name)
 
 @st.cache_data
-def fetch_regions_geojson(url=None):
+def fetch_regions_geojson(urls=None, uploaded_file=None):
     # Try a known GitHub raw URL; user can override with their own URL if needed
-    if url is None:
-        url = "https://raw.githubusercontent.com/martinjc/UK-GeoJSON/master/json/administrative/gb/regions.json"
-    try:
-        gdf = gpd.read_file(url)
-        return gdf
-    except Exception as e:
-        st.error(f"Failed to fetch regions GeoJSON: {e}")
-        return None
+    candidates = urls or [
+        "https://raw.githubusercontent.com/martinjc/UK-GeoJSON/master/json/administrative/gb/regions.json",
+        "https://raw.githubusercontent.com/glynnbird/uk-geojson/master/json/regions.json",
+        "https://raw.githubusercontent.com/missinglink/uk_regions_geojson/master/regions.geojson",
+    ]
+    # Try uploaded file first
+    if uploaded_file is not None:
+        try:
+            return json.load(uploaded_file)
+        except Exception as e:
+            st.error(f"Uploaded GeoJSON could not be read: {e}")
+            return None
+
+    for u in candidates:
+        try:
+            resp = requests.get(u, timeout=10)
+            if resp.status_code == 200:
+                return resp.json()
+        except Exception:
+            continue
+    st.error("Failed to fetch regions GeoJSON from default URLs. Please upload a GeoJSON file via the sidebar.")
+    return None
 
 @st.cache_data
 def geocode_postcodes(postcodes):
@@ -47,17 +62,34 @@ stores_file = st.sidebar.text_input('StoreLocations CSV', 'StoreLocations.csv')
 
 # Load CSVs
 try:
-    pop_df = load_csv(pop_file)
-    av_df = load_csv(av_file)
-    outdoor_df = load_csv(outdoor_file)
-    stores_df = load_csv(stores_file)
-except Exception as e:
-    st.error(f"Error loading CSVs: {e}")
+uploaded_geo = st.sidebar.file_uploader('Upload regions GeoJSON (optional)', type=['geojson','json'])
+regions_geo = fetch_regions_geojson(None if not geo_url.strip() else [geo_url.strip()], uploaded_file=uploaded_geo)
+if regions_geo is None:
     st.stop()
 
-# Fetch UK regions geojson
-st.sidebar.header('GeoJSON')
-geo_url = st.sidebar.text_input('Regions GeoJSON URL (optional)', '')
+# Ensure features list
+if 'features' in regions_geo:
+    features = regions_geo['features']
+else:
+    st.error('Provided GeoJSON has no "features" key.')
+    st.stop()
+
+# extract a region name property for each feature and normalize
+def get_region_name(props):
+    for k in ['region','name','NAME','rgn19nm','lad19nm','region_name']:
+        if k in props:
+            return str(props[k])
+    # fallback: try first property
+    if props:
+        return str(next(iter(props.values())))
+    return ''
+
+for feat in features:
+    props = feat.get('properties', {})
+    rname = get_region_name(props)
+    props['region_name'] = rname
+    props['region_norm'] = rname.strip().lower()
+    feat['properties'] = props
 regions_gdf = fetch_regions_geojson(geo_url if geo_url.strip() else None)
 if regions_gdf is None:
     st.stop()
@@ -91,9 +123,15 @@ if pop_region_col is None or pop_total_col is None or pop_acq_col is None:
 pop_merge = pop_df[[pop_region_col, pop_total_col, pop_acq_col]].copy()
 pop_merge.columns = ['Region', 'TotalPopulation', 'AcquisitionAudience']
 # Normalize region names for merge
-pop_merge['Region_norm'] = pop_merge['Region'].str.strip().str.lower()
-regions_gdf['region_norm'] = regions_gdf['region_name'].astype(str).str.strip().str.lower()
-regions_pop = regions_gdf.merge(pop_merge, left_on='region_norm', right_on='Region_norm', how='left')
+pop_merge['Region_norm'] = pop_merge['Region'].astype(str).str.strip().str.lower()
+
+# attach population values to GeoJSON features by matching normalized names
+pop_map = dict(zip(pop_merge['Region_norm'], pop_merge['TotalPopulation']))
+acq_map = dict(zip(pop_merge['Region_norm'], pop_merge['AcquisitionAudience']))
+for feat in features:
+    rn = feat['properties'].get('region_norm', '')
+    feat['properties']['TotalPopulation'] = pop_map.get(rn)
+    feat['properties']['AcquisitionAudience'] = acq_map.get(rn)
 
 # Prepare AV spends by region (sum across channels)
 av_region_col = get_col_by_candidates(av_df, ['Region','region','REGION'], 0)
@@ -105,7 +143,13 @@ if av_region_col is None or av_spend_col is None:
 av_sum = av_df.groupby(av_region_col)[av_spend_col].sum().reset_index()
 av_sum.columns = ['Region', 'SpendCTC']
 av_sum['Region_norm'] = av_sum['Region'].astype(str).str.strip().str.lower()
-regions_av = regions_gdf.merge(av_sum, left_on='region_norm', right_on='Region_norm', how='left')
+av_map = dict(zip(av_sum['Region_norm'], av_sum['SpendCTC']))
+for feat in features:
+    rn = feat['properties'].get('region_norm', '')
+    feat['properties']['SpendCTC'] = av_map.get(rn)
+
+# Build a FeatureCollection dict we can pass into folium
+regions_geo_clean = {'type': 'FeatureCollection', 'features': features}
 
 # Outdoor sites: expect lat/lon present
 latcol, loncol = find_latlon_cols(outdoor_df)
@@ -138,9 +182,9 @@ if show_pop_total:
     # We will add choropleth
     try:
         folium.Choropleth(
-            geo_data=regions_pop.to_json(),
-            data=regions_pop,
-            columns=['region_name', 'TotalPopulation'],
+            geo_data=regions_geo_clean,
+            data=pop_merge,
+            columns=['Region', 'TotalPopulation'],
             key_on='feature.properties.region_name',
             fill_color='Greens',
             fill_opacity=0.7,
@@ -156,9 +200,9 @@ if show_pop_acq:
     fg_pop_acq = folium.FeatureGroup(name='Acquisition Audience (Blues)')
     try:
         folium.Choropleth(
-            geo_data=regions_pop.to_json(),
-            data=regions_pop,
-            columns=['region_name', 'AcquisitionAudience'],
+            geo_data=regions_geo_clean,
+            data=pop_merge,
+            columns=['Region', 'AcquisitionAudience'],
             key_on='feature.properties.region_name',
             fill_color='Blues',
             fill_opacity=0.7,
@@ -173,16 +217,30 @@ if show_pop_acq:
 if show_av_heat:
     fg_av = folium.FeatureGroup(name='AV Spend Heatmap (Reds)')
     try:
-        # compute centroids
-        centroids = regions_av.copy()
-        centroids['centroid'] = centroids.geometry.centroid
-        centroids['lon'] = centroids.centroid.x
-        centroids['lat'] = centroids.centroid.y
-        heat_data = centroids[['lat','lon','SpendCTC']].dropna().values.tolist()
-        # Normalize weights a bit
-        weights = [[r[0], r[1], float(r[2])] for r in heat_data]
-        HeatMap(weights, min_opacity=0.4, radius=40, blur=25, max_zoom=6).add_to(fg_av)
-        fg_av.add_to(m)
+        # compute simple centroids from GeoJSON polygon coordinates (approximate)
+        heat_points = []
+        for feat in features:
+            props = feat.get('properties', {})
+            spend = props.get('SpendCTC')
+            geom = feat.get('geometry')
+            if spend is None or geom is None:
+                continue
+            coords = []
+            if geom['type'] == 'Polygon':
+                for ring in geom.get('coordinates', []):
+                    coords.extend(ring)
+            elif geom['type'] == 'MultiPolygon':
+                for part in geom.get('coordinates', []):
+                    for ring in part:
+                        coords.extend(ring)
+            if not coords:
+                continue
+            lon = sum([c[0] for c in coords]) / len(coords)
+            lat = sum([c[1] for c in coords]) / len(coords)
+            heat_points.append([lat, lon, float(spend)])
+        if heat_points:
+            HeatMap(heat_points, min_opacity=0.4, radius=40, blur=25, max_zoom=6).add_to(fg_av)
+            fg_av.add_to(m)
     except Exception as e:
         st.warning(f'Failed to add AV heatmap: {e}')
 
