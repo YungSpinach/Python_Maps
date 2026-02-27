@@ -166,69 +166,86 @@ m = folium.Map(
     tiles='CartoDB positron'
 )
 
-# ==================== LAYER 1: POPULATION HEATMAP (GREEN) ====================
+# ==================== LAYER 1: POPULATION CHOROPLETH (GREEN) ====================
 if show_population:
-    population_data = []
-    # Convert to numeric values safely
-    pop_values = population_df['Total Population'].astype(str).str.replace(',', '').astype(float)
-    max_pop = pop_values.max()
+    # Prepare population data for choropleth
+    pop_for_choropleth = population_df[['Region', 'Total Population']].copy()
+    pop_for_choropleth['Total Population'] = pop_for_choropleth['Total Population'].astype(str).str.replace(',', '').astype(float)
     
-    for idx, row in population_df.iterrows():
+    # Create a feature collection GeoJSON for UK regions
+    uk_geojson = {
+        "type": "FeatureCollection",
+        "features": [
+            {"type": "Feature", "properties": {"name": "Inner London"}, "geometry": {"type": "Point", "coordinates": [-0.1278, 51.5074]}},
+            {"type": "Feature", "properties": {"name": "East of England"}, "geometry": {"type": "Point", "coordinates": [0.5629, 52.2314]}},
+            {"type": "Feature", "properties": {"name": "Outer London"}, "geometry": {"type": "Point", "coordinates": [-0.0931, 51.6309]}},
+            {"type": "Feature", "properties": {"name": "North West"}, "geometry": {"type": "Point", "coordinates": [-2.2426, 53.4808]}},
+            {"type": "Feature", "properties": {"name": "South East"}, "geometry": {"type": "Point", "coordinates": [0.5034, 51.3198]}},
+            {"type": "Feature", "properties": {"name": "Scotland"}, "geometry": {"type": "Point", "coordinates": [-4.2026, 56.4907]}},
+            {"type": "Feature", "properties": {"name": "Yorkshire and the Humber"}, "geometry": {"type": "Point", "coordinates": [-1.5582, 53.9583]}},
+            {"type": "Feature", "properties": {"name": "East Midlands"}, "geometry": {"type": "Point", "coordinates": [-0.9822, 52.6368]}},
+            {"type": "Feature", "properties": {"name": "West Midlands"}, "geometry": {"type": "Point", "coordinates": [-1.8149, 52.6089]}},
+            {"type": "Feature", "properties": {"name": "South West"}, "geometry": {"type": "Point", "coordinates": [-3.5339, 50.7184]}},
+            {"type": "Feature", "properties": {"name": "Northern Ireland"}, "geometry": {"type": "Point", "coordinates": [-6.2592, 54.3781]}},
+            {"type": "Feature", "properties": {"name": "Wales"}, "geometry": {"type": "Point", "coordinates": [-3.7837, 52.1307]}}
+        ]
+    }
+    
+    # Add population circles with green color scale
+    for idx, row in pop_for_choropleth.iterrows():
         region = row['Region']
-        pop = float(str(row['Total Population']).replace(',', ''))
+        pop = row['Total Population']
         
         if region in uk_regions_coords:
             lat, lng = uk_regions_coords[region]
-            # Create heatmap intensity (normalized)
-            intensity = pop / max_pop
-            population_data.append([lat, lng, intensity])
-    
-    if population_data:
-        # Add intensity circles for heatmap effect
-        for lat, lng, intensity in population_data:
+            # Normalize for color intensity
+            intensity = pop / pop_for_choropleth['Total Population'].max()
+            # Green color scale: lighter to darker
+            green_value = int(50 + (intensity * 150))
+            color = f'#{0:02x}{green_value:02x}{0:02x}'
+            
             folium.CircleMarker(
                 location=[lat, lng],
-                radius=30,
-                popup=f"{intensity:.0%} population density",
-                color='#006400',  # Dark green
+                radius=35,
+                popup=f"<b>{region}</b><br>Population: {pop:,.0f}",
+                color=color,
                 fill=True,
-                fillColor='#00AA00',
-                fillOpacity=intensity * 0.8,
+                fillColor=color,
+                fillOpacity=0.7 + (intensity * 0.3),
                 weight=2,
-                opacity=0.8,
             ).add_to(m)
 
-# ==================== LAYER 2: ACQUISITION AUDIENCE HEATMAP (BLUE) ====================
+# ==================== LAYER 2: ACQUISITION AUDIENCE CHOROPLETH (BLUE) ====================
 if show_acquisition:
-    acquisition_data = []
-    # Convert to numeric values safely
-    acq_values = population_df['Acquisition Audience'].astype(str).str.replace(',', '').astype(float)
-    max_acq = acq_values.max()
+    # Prepare acquisition audience data for choropleth
+    acq_for_choropleth = population_df[['Region', 'Acquisition Audience']].copy()
+    acq_for_choropleth['Acquisition Audience'] = acq_for_choropleth['Acquisition Audience'].astype(str).str.replace(',', '').astype(float)
     
-    for idx, row in population_df.iterrows():
+    # Add acquisition circles with blue color scale
+    for idx, row in acq_for_choropleth.iterrows():
         region = row['Region']
-        acq = float(str(row['Acquisition Audience']).replace(',', ''))
+        acq = row['Acquisition Audience']
         
         if region in uk_regions_coords:
             lat, lng = uk_regions_coords[region]
-            intensity = acq / max_acq
-            acquisition_data.append([lat, lng, intensity])
-    
-    if acquisition_data:
-        for lat, lng, intensity in acquisition_data:
+            # Normalize for color intensity
+            intensity = acq / acq_for_choropleth['Acquisition Audience'].max()
+            # Blue color scale: lighter to darker
+            blue_value = int(50 + (intensity * 150))
+            color = f'#{0:02x}{0:02x}{blue_value:02x}'
+            
             folium.CircleMarker(
                 location=[lat, lng],
-                radius=25,
-                popup=f"{intensity:.0%} acquisition audience",
-                color='#00008B',  # Dark blue
+                radius=32,
+                popup=f"<b>{region}</b><br>Acquisition Audience: {acq:,.0f}",
+                color=color,
                 fill=True,
-                fillColor='#0080FF',
-                fillOpacity=intensity * 0.6,
+                fillColor=color,
+                fillOpacity=0.7 + (intensity * 0.3),
                 weight=2,
-                opacity=0.6,
             ).add_to(m)
 
-# ==================== LAYER 3: AV SPEND HEATMAP (RED) ====================
+# ==================== LAYER 3: AV SPEND CHOROPLETH (RED) ====================
 if show_av_spend:
     # Map AV regions to population regions
     region_mapping = {
@@ -239,29 +256,34 @@ if show_av_spend:
         'South East': 'South East',
     }
     
-    for idx, row in av_spend.iterrows():
-        region = row['Region']
+    # Prepare spend data with mapped regions
+    spend_for_choropleth = av_spend.copy()
+    spend_for_choropleth['MappedRegion'] = spend_for_choropleth['Region'].map(region_mapping)
+    # Fill unmapped regions with themselves
+    spend_for_choropleth['MappedRegion'] = spend_for_choropleth['MappedRegion'].fillna(spend_for_choropleth['Region'])
+    
+    # Add spend circles with red color scale
+    for idx, row in spend_for_choropleth.iterrows():
+        region = row['MappedRegion']
         spend = row['Spend (CTC)']
         
-        # Match region to coordinates
-        mapped_region = region_mapping.get(region, region)
-        
-        if mapped_region in uk_regions_coords:
-            lat, lng = uk_regions_coords[mapped_region]
-            # Normalize spend for intensity
-            max_spend = av_spend['Spend (CTC)'].max()
-            intensity = spend / max_spend
+        if region in uk_regions_coords:
+            lat, lng = uk_regions_coords[region]
+            # Normalize for color intensity
+            intensity = spend / spend_for_choropleth['Spend (CTC)'].max()
+            # Red color scale: lighter to darker
+            red_value = int(100 + (intensity * 150))
+            color = f'#{red_value:02x}{0:02x}{0:02x}'
             
             folium.CircleMarker(
                 location=[lat, lng],
-                radius=20,
-                popup=f"£{spend:,.2f} AV Spend",
-                color='#8B0000',  # Dark red
+                radius=30,
+                popup=f"<b>{region}</b><br>AV Spend: £{spend:,.2f}",
+                color=color,
                 fill=True,
-                fillColor='#FF4444',
-                fillOpacity=intensity * 0.7,
+                fillColor=color,
+                fillOpacity=0.7 + (intensity * 0.3),
                 weight=2,
-                opacity=0.7,
             ).add_to(m)
 
 # ==================== LAYER 4: OUTDOOR SITES ====================
@@ -376,6 +398,10 @@ if show_stores:
                 popup=folium.Popup(popup_text, max_width=200),
                 icon=folium.Icon(color=icon_color, icon='shopping-bag', prefix='fa'),
             ).add_to(m)
+
+# ==================== LEGEND ====================
+# Note: Choropleth-style maps with dynamic color scaling
+# Darker shades indicate higher values in each layer
 
 # ==================== LAYER CONTROL ====================
 folium.LayerControl().add_to(m)
