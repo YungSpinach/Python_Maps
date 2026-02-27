@@ -9,7 +9,8 @@ import time
 import json
 
 st.set_page_config(page_title="UK Interactive Map", layout="wide")
-st.title("UK Interactive Map: Audiences, Sites, and Stores")
+st.image("https://images.squarespace-cdn.com/content/5c9e3048523958515c382443/2129c340-d177-48e6-8b14-3c8b01a94ec7/CreamLogo-EMAILSIGNATURE.png?content-type=image%2Fpng", width=100)
+st.text("")st.title("Frasers Interactive Map: Audiences, Sites, and Stores")
 
 # --- 1. Load Data ---
 @st.cache_data
@@ -70,7 +71,7 @@ m = folium.Map(location=[54.5, -2.5], zoom_start=6, tiles="cartodbpositron")
 # ==========================================
 # LAYER 1: Total Population (Green Choropleth)
 # ==========================================
-folium.Choropleth(
+cp1 = folium.Choropleth(
     geo_data=geojson_data,
     name='1. Total Population',
     data=df_pop,
@@ -81,12 +82,14 @@ folium.Choropleth(
     line_opacity=0.2,
     legend_name='Total Population',
     show=False
-).add_to(m)
+)
+cp1.add_to(m)
+m._children.pop(cp1.color_scale._name, None)
 
 # ==========================================
 # LAYER 2: Acquisition Audience (Blue Choropleth)
 # ==========================================
-folium.Choropleth(
+cp2 = folium.Choropleth(
     geo_data=geojson_data,
     name='2. Acquisition Audience',
     data=df_pop,
@@ -97,7 +100,9 @@ folium.Choropleth(
     line_opacity=0.2,
     legend_name='Acquisition Audience',
     show=False
-).add_to(m)
+)
+cp2.add_to(m)
+m._children.pop(cp2.color_scale._name, None)
 
 # ==========================================
 # LAYER 3: Outdoor Sites (Symbols)
@@ -133,7 +138,7 @@ layer_outdoor.add_to(m)
 # ==========================================
 # LAYER 4: AV Spend Heatmap/Choropleth (Red)
 # ==========================================
-folium.Choropleth(
+cp4 = folium.Choropleth(
     geo_data=geojson_data,
     name='4. AV Spend (TV & VOD)',
     data=df_av_grouped,
@@ -144,7 +149,9 @@ folium.Choropleth(
     line_opacity=0.2,
     legend_name='Spend (CTC)',
     show=False
-).add_to(m)
+)
+cp4.add_to(m)
+m._children.pop(cp4.color_scale._name, None)
 
 # ==========================================
 # LAYER 5: Store Locations (Icons)
@@ -176,6 +183,32 @@ for _, row in df_stores.iterrows():
         ).add_to(layer_stores)
 
 layer_stores.add_to(m)
+
+# --- Custom Legend (Top Left, White Box) ---
+legend_html = """
+<div style="
+    position: fixed; 
+    top: 10px; left: 50px; width: 160px; 
+    border: 2px solid grey; z-index:9999; font-size:12px;
+    background-color:white; opacity: 0.9;
+    padding: 10px; border-radius: 5px;
+    ">
+    <b>Legend</b><br>
+    <div style="margin-top: 5px;">
+        <span style="font-size:10px">Total Population</span><br>
+        <div style="width: 100%; height: 8px; background: linear-gradient(to right, #f7fcf5, #00441b);"></div>
+    </div>
+    <div style="margin-top: 5px;">
+        <span style="font-size:10px">Acquisition Audience</span><br>
+        <div style="width: 100%; height: 8px; background: linear-gradient(to right, #f7fbff, #08306b);"></div>
+    </div>
+    <div style="margin-top: 5px;">
+        <span style="font-size:10px">Spend (CTC)</span><br>
+        <div style="width: 100%; height: 8px; background: linear-gradient(to right, #fff5f0, #67000d);"></div>
+    </div>
+</div>
+"""
+m.get_root().html.add_child(folium.Element(legend_html))
 
 # --- 5. Add Layer Control and Render ---
 # This adds the filter overlay allowing users to toggle layers on and off
