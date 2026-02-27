@@ -6,6 +6,7 @@ from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
 import requests
 import time
+import json
 
 st.set_page_config(page_title="UK Interactive Map", layout="wide")
 st.title("UK Interactive Map: Audiences, Sites, and Stores")
@@ -41,12 +42,15 @@ def get_coordinates(query):
     return None, None
 
 # --- 3. Fetch UK GeoJSON for the Choropleth maps ---
+
 @st.cache_data
 def get_uk_geojson():
-    # Using a standard UK regions NUTS1 GeoJSON
-    url = "https://raw.githubusercontent.com/martinjc/UK-GeoJSON/master/json/eurostat/ewns/nuts1.json"
-    response = requests.get(url)
-    return response.json()
+    try:
+        with open('uk_regions.geojson', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        st.error(f"Could not load 'uk_regions.geojson' from working folder: {e}")
+        return {}
 
 geojson_data = get_uk_geojson()
 
