@@ -176,7 +176,7 @@ cp1 = folium.Choropleth(
     legend_name='Total Population',
     show=False
 )
-cp1.geojson.name = '1. Total Population'
+cp1.geojson.layer_name = '1. Total Population'
 cp1.geojson.add_to(m)
 
 # ==========================================
@@ -194,7 +194,7 @@ cp2 = folium.Choropleth(
     legend_name='Acquisition Audience',
     show=False
 )
-cp2.geojson.name = '2. Acquisition Audience'
+cp2.geojson.layer_name = '2. Acquisition Audience'
 cp2.geojson.add_to(m)
 
 # ==========================================
@@ -245,7 +245,7 @@ cp4 = folium.Choropleth(
     legend_name='AV Spend (TV+VOD)',
     show=False
 )
-cp4.geojson.name = '4. AV Spend (TV+VOD)'
+cp4.geojson.layer_name = '4. AV Spend (TV+VOD)'
 cp4.geojson.add_to(m)
 
 # ==========================================
