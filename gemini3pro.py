@@ -260,7 +260,7 @@ for _, row in df_stores.iterrows():
             folium.Marker(
                 [lat, lon], 
                 popup=f"{row['Name']} - Frasers", 
-                icon=get_icon("Frasers_wb_Logo.png")
+                icon=get_icon("Frasers_Capital_Logo.png")
             ).add_to(layer_frasers)
 layer_frasers.add_to(m)
 
@@ -276,7 +276,7 @@ for _, row in df_stores.iterrows():
             folium.Marker(
                 [lat, lon], 
                 popup=f"{row['Name']} - House of Frasers", 
-                icon=get_icon("HoF_wb_Logo.png")
+                icon=get_icon("HoF_Capital_Logo.png")
             ).add_to(layer_hof)
 layer_hof.add_to(m)
 
