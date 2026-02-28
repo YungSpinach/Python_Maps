@@ -38,12 +38,95 @@ def load_data():
 df_pop, df_out, df_av_grouped, df_stores = load_data()
 
 # --- 2. Geocoding Setup (Converting Locations/Postcodes to Coordinates) ---
+# Static coordinates to ensure markers appear without relying solely on live geocoding
+outdoor_sites_coords = {
+    'Cannon Street Station': (51.5089, -0.0847),
+    'Barking Station': (51.5369, 0.0764),
+    'Camden Sattion': (51.5355, -0.1425),
+    'Camden Station': (51.5355, -0.1425),
+    'Kings Cross Station': (51.5308, -0.1187),
+    'Kings Cross St Pancras Station': (51.5308, -0.1187),
+    'Liverpool Street Station': (51.5179, -0.0818),
+    'Lverpool Street Station': (51.5179, -0.0818),
+    'Fenchurch Street Station': (51.5055, -0.0756),
+    'London Bridge Station': (51.5055, -0.0862),
+    'Waterloo Station': (51.5031, -0.1123),
+    'Victoria Station': (51.4938, -0.1447),
+    'Charing Cross Station': (51.5051, -0.1247),
+    'Blackfriars Station': (51.5076, -0.1048),
+    'Reading Station': (51.3339, -0.9733),
+    'Liverpool Lime Street Station': (53.4065, -2.9769),
+    'Manchhester Victoria Station': (53.4858, -2.2338),
+    'Manchester Picadilly Station': (53.4782, -2.2309),
+    'Manchester Victoria Station': (53.4858, -2.2338),
+    'Bedford Station': (52.1342, -0.4663),
+    'Cambridge Station': (52.1279, 0.1438),
+    'Chelmsford Station': (51.8904, 0.4749),
+    'Colchester Station': (51.8916, 0.8969),
+    'Ely Station': (52.3974, 0.2634),
+    'Hitchin Station': (51.9563, -0.2808),
+    'Ipswich Station': (52.0532, 1.1467),
+    'Milton Keynes Central Station': (52.0431, -0.7698),
+    'Northampton Station': (52.2300, -0.8832),
+    'Birkenhead Hamilton Square Station': (53.3893, -3.0212),
+    'Blackburn Station': (53.7476, -2.4919),
+    'Crewe Station': (53.0919, -2.4164),
+    'Liverpool Central Station': (53.4061, -2.9799),
+    'Liverpool Moorfields Station': (53.4041, -2.9789),
+    'Manchester Piccadilly Station': (53.4782, -2.2309),
+    'Preston Station': (53.7481, -2.7327),
+    'Southport Station': (53.6425, -3.0134),
+    'St Helens Central Station': (53.4502, -2.7173),
+    'Stalybridge Station': (53.4889, -2.0636),
+    'Stockport Station': (53.4075, -2.1577),
+    'Wigan Wallgate Station': (53.5450, -2.6295),
+    'Braintree': (51.8688, 0.5542),
+    'Cambridge': (52.2053, 0.1218),
+    'Ipswich': (52.0599, 1.1439),
+    'Norwich': (52.6289, 1.2974),
+    'Peterborough': (52.5687, -0.2426),
+    'Blackpool': (53.8142, -3.0566),
+    'Bolton': (53.5761, -2.4291),
+    'Liverpool': (53.4084, -2.9916),
+    'Macclesfield': (53.2595, -2.1426),
+    'Manchester': (53.4808, -2.2426),
+    'Newton-le-Willows': (53.4461, -2.6361),
+    'St Helens': (53.4502, -2.7173),
+    'Warrington': (53.3900, -2.5982),
+}
+
+postcode_coords = {
+    'HP20 2SP': (51.8076, -0.8107), 'BT1 4QG': (54.5973, -5.9301), 'B2 5JS': (52.5095, -1.8846),
+    'CR0 1TY': (51.3764, -0.0976), 'G1 3HL': (55.8642, -4.2588), 'NN10 6FG': (52.1279, -0.6429),
+    'G83 8QL': (56.0496, -4.5994), 'M3 2QG': (53.4839, -2.2446), 'NR2 1SH': (52.6262, 1.2974),
+    'B72 1PB': (52.5671, -1.8261), 'TF3 4BS': (52.6892, -2.4480), 'WV1 3NN': (52.5851, -2.1243),
+    'BT48 6AP': (54.9974, -7.1696), 'T12 X7HK': (51.8961, -8.4856), 'W12 H660': (53.5000, -6.7000),
+    'ME14 1QP': (51.2691, 0.5267), 'DE1 2PL': (52.9234, -1.4726), 'DD1 1UQ': (56.4576, -2.9773),
+    'PE1 1QA': (52.5696, -0.2412), 'S9 1EL': (53.3773, -1.4012), 'FY1 4HU': (53.8099, -3.0554),
+    'HP11 2DQ': (51.5747, -0.7501), 'CF10 1TT': (51.4826, -3.1798), 'GU15 3GP': (51.3299, -0.7543),
+    'B91 3AT': (52.4108, -1.8208), 'GU1 3GH': (51.2364, -0.5850), 'RG1 2AG': (51.4560, -0.9736),
+    'CA3 8HU': (54.8927, -2.9335), 'BS1 3BD': (51.4508, -2.5965), 'BA1 1DD': (51.3797, -2.3619),
+    'LN5 7EA': (53.2283, -0.5414), 'WR1 3LD': (52.1905, -2.2165), 'DA9 9SW': (51.4879, 0.2894),
+    'GL50 1HP': (51.8969, -1.8932), 'DN1 1NR': (53.5659, -0.7662), 'RM20 2ZP': (51.5080, 0.4237),
+    'NG1 3HF': (52.9535, -1.1491),
+}
+
 geolocator = Nominatim(user_agent="streamlit_uk_map_app")
 geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
 
 @st.cache_data
 def get_coordinates(query):
     """Fetches coordinates for a given string, cached to avoid repeated API calls."""
+    # Check static dictionaries first
+    if query in outdoor_sites_coords:
+        return outdoor_sites_coords[query]
+    if query in postcode_coords:
+        return postcode_coords[query]
+    # Fuzzy match for outdoor sites
+    for k, v in outdoor_sites_coords.items():
+        if k.lower() == str(query).lower():
+            return v
+            
     try:
         location = geolocator.geocode(query + ", UK", timeout=10)
         if location:
@@ -84,8 +167,7 @@ cp1 = folium.Choropleth(
     #legend_name='Total Population',
     show=False
 )
-cp1.add_to(m)
-m._children.pop(cp1.color_scale._name, None)
+cp1.geojson.add_to(m)
 
 # ==========================================
 # LAYER 2: Acquisition Audience (Blue Choropleth)
@@ -102,8 +184,7 @@ cp2 = folium.Choropleth(
     #legend_name='Acquisition Audience',
     show=False
 )
-cp2.add_to(m)
-m._children.pop(cp2.color_scale._name, None)
+cp2.geojson.add_to(m)
 
 # ==========================================
 # LAYER 3: Outdoor Sites (Symbols)
@@ -151,8 +232,7 @@ cp4 = folium.Choropleth(
     #legend_name='Spend (CTC)',
     show=False
 )
-cp4.add_to(m)
-m._children.pop(cp4.color_scale._name, None)
+cp4.geojson.add_to(m)
 
 # ==========================================
 # LAYER 5: Store Locations (Icons)
