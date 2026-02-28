@@ -167,6 +167,7 @@ cp1 = folium.Choropleth(
     #legend_name='Total Population',
     show=False
 )
+cp1.geojson.name = 'Total Population'
 cp1.geojson.add_to(m)
 
 # ==========================================
@@ -184,6 +185,7 @@ cp2 = folium.Choropleth(
     #legend_name='Acquisition Audience',
     show=False
 )
+cp2.geojson.name = 'Acquisition Audience'
 cp2.geojson.add_to(m)
 
 # ==========================================
@@ -234,6 +236,7 @@ cp4 = folium.Choropleth(
     #legend_name='Spend (CTC)',
     show=False
 )
+cp4.geojson.name = 'AV Spend'
 cp4.geojson.add_to(m)
 
 # ==========================================
@@ -319,7 +322,6 @@ st_folium(m, width=1000, height=700)
 
 st.caption("Note: Location geocoding is cached for speed, but the app may take a moment to load the first time it processes postcodes and station names.")
 
-# --- 6. Data Tables ---
 # --- 6. Data Tables ---
 st.subheader("Population Data by Region")
 
