@@ -176,7 +176,7 @@ cp1 = folium.Choropleth(
     legend_name='Total Population',
     show=False
 )
-cp1.geojson.name = 'Total Population'
+cp1.geojson.name = '1. Total Population'
 cp1.geojson.add_to(m)
 
 # ==========================================
@@ -194,7 +194,7 @@ cp2 = folium.Choropleth(
     legend_name='Acquisition Audience',
     show=False
 )
-cp2.geojson.name = 'Acquisition Audience'
+cp2.geojson.name = '2. Acquisition Audience'
 cp2.geojson.add_to(m)
 
 # ==========================================
@@ -233,7 +233,7 @@ layer_outdoor.add_to(m)
 # ==========================================
 cp4 = folium.Choropleth(
     geo_data=geojson_data,
-    name='4. AV Spend (TV & VOD)',
+    name='4. AV Spend (TV+VOD)',
     data=df_av_grouped,
     columns=['Region', 'Spend (CTC)'],
     key_on='feature.properties.rgn19nm',
@@ -242,10 +242,10 @@ cp4 = folium.Choropleth(
     line_opacity=0.2,
     nan_fill_color='lightgray',
     nan_fill_opacity=0.4,
-    legend_name='Spend (CTC)',
+    legend_name='AV Spend (TV+VOD)',
     show=False
 )
-cp4.geojson.name = 'AV Spend'
+cp4.geojson.name = '4. AV Spend (TV+VOD)'
 cp4.geojson.add_to(m)
 
 # ==========================================
@@ -316,21 +316,21 @@ legend_html = f"""
     ">
     <b>Legend</b><br>
     <div style="margin-top: 5px;">
-        <span style="font-size:10px">Total Population</span><br>
+        <span style="font-size:10px">1. Total Population</span><br>
         <div style="width: 100%; height: 8px; background: linear-gradient(to right, #f7fcf5, #00441b);"></div>
         <div style="display: flex; justify-content: space-between; font-size: 10px;">
             <span>{pop_min:,}</span><span>{pop_max:,}</span>
         </div>
     </div>
     <div style="margin-top: 5px;">
-        <span style="font-size:10px">Acquisition Audience</span><br>
+        <span style="font-size:10px">2. Acquisition Audience</span><br>
         <div style="width: 100%; height: 8px; background: linear-gradient(to right, #f7fbff, #08306b);"></div>
         <div style="display: flex; justify-content: space-between; font-size: 10px;">
             <span>{acq_min:,}</span><span>{acq_max:,}</span>
         </div>
     </div>
     <div style="margin-top: 5px;">
-        <span style="font-size:10px">Spend (CTC)</span><br>
+        <span style="font-size:10px">4. AV Spend (TV+VOD)</span><br>
         <div style="width: 100%; height: 8px; background: linear-gradient(to right, #fff5f0, #67000d);"></div>
         <div style="display: flex; justify-content: space-between; font-size: 10px;">
             <span>£{spend_min:,}</span><span>£{spend_max:,}</span>
