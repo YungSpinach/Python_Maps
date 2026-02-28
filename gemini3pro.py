@@ -229,6 +229,8 @@ cp4 = folium.Choropleth(
     fill_color='Reds',
     fill_opacity=0.7,
     line_opacity=0.2,
+    nan_fill_color='lightgray',
+    nan_fill_opacity=0.4,
     #legend_name='Spend (CTC)',
     show=False
 )
@@ -316,3 +318,15 @@ folium.LayerControl(collapsed=False).add_to(m)
 st_folium(m, width=1000, height=700)
 
 st.caption("Note: Location geocoding is cached for speed, but the app may take a moment to load the first time it processes postcodes and station names.")
+
+# --- 6. Data Tables ---
+st.subheader("Population Data by Region")
+st.dataframe(
+    df_pop, 
+    column_config={
+        "Total Population": st.column_config.NumberColumn(format="%d"),
+        "Acquisition Audience": st.column_config.NumberColumn(format="%d")
+    },
+    hide_index=True,
+    use_container_width=True
+)
