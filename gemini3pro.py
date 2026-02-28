@@ -320,12 +320,57 @@ st_folium(m, width=1000, height=700)
 st.caption("Note: Location geocoding is cached for speed, but the app may take a moment to load the first time it processes postcodes and station names.")
 
 # --- 6. Data Tables ---
+# --- 6. Data Tables ---
 st.subheader("Population Data by Region")
+
+# Prepare display dataframe with required columns and calculations
+df_table = df_pop.copy()
+
+# Ensure expected columns exist
+if 'Core Audience' not in df_table.columns:
+    df_table['Core Audience'] = 0
+if 'Acquisition Audience' not in df_table.columns:
+    df_table['Acquisition Audience'] = 0
+
+total_pop = df_table['Total Population'].sum() if df_table['Total Population'].sum() != 0 else 1
+total_core = df_table['Core Audience'].sum() if df_table['Core Audience'].sum() != 0 else 1
+total_acq = df_table['Acquisition Audience'].sum() if df_table['Acquisition Audience'].sum() != 0 else 1
+
+# Percentage shares (rounded to 0 decimal places for display)
+df_table['Total %'] = (df_table['Total Population'] / total_pop * 100).round(0)
+df_table['Core %'] = (df_table['Core Audience'] / total_core * 100).round(0)
+df_table['Audience %'] = (df_table['Acquisition Audience'] / total_acq * 100).round(0)
+
+# Indexes: (share of audience / share of population) * 100, rounded to 2 decimals
+df_table['Core Index'] = (((df_table['Core Audience'] / total_core) / (df_table['Total Population'] / total_pop)) * 100).replace([float('inf'), -float('inf')], 0).fillna(0).round(2)
+df_table['Acquisition Index'] = (((df_table['Acquisition Audience'] / total_acq) / (df_table['Total Population'] / total_pop)) * 100).replace([float('inf'), -float('inf')], 0).fillna(0).round(2)
+
+# Select and order columns as requested
+display_cols = [
+    'Region',
+    'Total Population',
+    'Total %',
+    'Core Audience',
+    'Core %',
+    'Core Index',
+    'Acquisition Audience',
+    'Audience %',
+    'Acquisition Index'
+]
+
+df_display = df_table.loc[:, display_cols]
+
 st.dataframe(
-    df_pop, 
+    df_display,
     column_config={
-        "Total Population": st.column_config.NumberColumn(format="%d"),
-        "Acquisition Audience": st.column_config.NumberColumn(format="%d")
+        'Total Population': st.column_config.NumberColumn(format="%d"),
+        'Total %': st.column_config.NumberColumn(format="%d%%"),
+        'Core Audience': st.column_config.NumberColumn(format="%d"),
+        'Core %': st.column_config.NumberColumn(format="%d%%"),
+        'Core Index': st.column_config.NumberColumn(format="%.2f"),
+        'Acquisition Audience': st.column_config.NumberColumn(format="%d"),
+        'Audience %': st.column_config.NumberColumn(format="%d%%"),
+        'Acquisition Index': st.column_config.NumberColumn(format="%.2f"),
     },
     hide_index=True,
     use_container_width=True
