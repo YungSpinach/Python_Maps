@@ -3,6 +3,7 @@ import pandas as pd
 import folium
 from streamlit_folium import st_folium
 from geopy.geocoders import Nominatim
+import base64
 from geopy.extra.rate_limiter import RateLimiter
 import requests
 import time
@@ -148,6 +149,14 @@ def get_uk_geojson():
 
 geojson_data = get_uk_geojson()
 
+def get_icon(filename):
+    try:
+        with open(filename, "rb") as f:
+            encoded = base64.b64encode(f.read()).decode()
+        return folium.CustomIcon(f"data:image/png;base64,{encoded}", icon_size=(30, 30))
+    except Exception:
+        return folium.Icon(color='gray', icon='info-sign')
+
 # --- 4. Build the Map ---
 # Initialize the map centered around the UK
 m = folium.Map(location=[54.5, -2.5], zoom_start=6, tiles="cartodbpositron")
@@ -240,35 +249,53 @@ cp4.geojson.name = 'AV Spend'
 cp4.geojson.add_to(m)
 
 # ==========================================
-# LAYER 5: Store Locations (Icons)
+# LAYER 5: Frasers Stores (Open)
 # ==========================================
-layer_stores = folium.FeatureGroup(name='5. Store Locations', show=True)
+layer_frasers = folium.FeatureGroup(name='5. Frasers Stores (Open)', show=True)
 
 for _, row in df_stores.iterrows():
-    lat, lon = get_coordinates(row['Postcode'])
-    if lat and lon:
-        store_type = row['Store Type']
-        closing_year = str(row['Closing Year'])
-        
-        # Determine Color
-        if 'Closed' in closing_year or closing_year.isdigit(): # Catching explicit 'Closed' or past years
-            color = 'lightred'
-        elif store_type == "House of Frasers":
-            color = 'lightgray'
-        elif store_type == "Frasers":
-            color = 'pink'
-        else:
-            color = 'white'
-            
-        # Add a shopping cart icon marker
-        icon = folium.Icon(color=color, icon='shopping-cart', prefix='fa')
-        folium.Marker(
-            [lat, lon], 
-            popup=f"{row['Name']} - {store_type}", 
-            icon=icon
-        ).add_to(layer_stores)
+    if row['Store Type'] == 'Frasers' and str(row['Closing Year']) == 'Open':
+        lat, lon = get_coordinates(row['Postcode'])
+        if lat and lon:
+            folium.Marker(
+                [lat, lon], 
+                popup=f"{row['Name']} - Frasers", 
+                icon=get_icon("Frasers_Logo.png")
+            ).add_to(layer_frasers)
+layer_frasers.add_to(m)
 
-layer_stores.add_to(m)
+# ==========================================
+# LAYER 6: House of Frasers (Open)
+# ==========================================
+layer_hof = folium.FeatureGroup(name='6. House of Frasers (Open)', show=True)
+
+for _, row in df_stores.iterrows():
+    if row['Store Type'] == 'House of Frasers' and str(row['Closing Year']) == 'Open':
+        lat, lon = get_coordinates(row['Postcode'])
+        if lat and lon:
+            folium.Marker(
+                [lat, lon], 
+                popup=f"{row['Name']} - House of Frasers", 
+                icon=get_icon("HoF_Logo.png")
+            ).add_to(layer_hof)
+layer_hof.add_to(m)
+
+# ==========================================
+# LAYER 7: Closed Stores
+# ==========================================
+layer_closed = folium.FeatureGroup(name='7. Closed Stores', show=True)
+
+for _, row in df_stores.iterrows():
+    closing_year = str(row['Closing Year'])
+    if 'Closed' in closing_year or closing_year.isdigit():
+        lat, lon = get_coordinates(row['Postcode'])
+        if lat and lon:
+            folium.Marker(
+                [lat, lon], 
+                popup=f"{row['Name']} - Closed ({closing_year})", 
+                icon=get_icon("Closed_Store.png")
+            ).add_to(layer_closed)
+layer_closed.add_to(m)
 
 # --- Custom Legend (Top Left, White Box) ---
 # Calculate min/max for legend labels
