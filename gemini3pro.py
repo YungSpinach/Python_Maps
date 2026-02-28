@@ -159,7 +159,7 @@ def get_icon(filename):
 
 # --- 4. Build the Map ---
 # Initialize the map centered around the UK
-m = folium.Map(location=[54.5, -2.5], zoom_start=6, tiles="cartodbpositron")
+m = folium.Map(location=[54.5, -2.5], zoom_start=6, tiles="OpenStreetMap")
 
 # ==========================================
 # LAYER 1: Total Population (Green Choropleth)
@@ -173,7 +173,7 @@ cp1 = folium.Choropleth(
     fill_color='Greens',
     fill_opacity=0.7,
     line_opacity=0.2,
-    #legend_name='Total Population',
+    legend_name='Total Population',
     show=False
 )
 cp1.geojson.name = 'Total Population'
@@ -191,7 +191,7 @@ cp2 = folium.Choropleth(
     fill_color='Blues',
     fill_opacity=0.7,
     line_opacity=0.2,
-    #legend_name='Acquisition Audience',
+    legend_name='Acquisition Audience',
     show=False
 )
 cp2.geojson.name = 'Acquisition Audience'
@@ -242,7 +242,7 @@ cp4 = folium.Choropleth(
     line_opacity=0.2,
     nan_fill_color='lightgray',
     nan_fill_opacity=0.4,
-    #legend_name='Spend (CTC)',
+    legend_name='Spend (CTC)',
     show=False
 )
 cp4.geojson.name = 'AV Spend'
