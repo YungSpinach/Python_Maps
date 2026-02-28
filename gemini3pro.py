@@ -81,7 +81,7 @@ cp1 = folium.Choropleth(
     fill_color='Greens',
     fill_opacity=0.7,
     line_opacity=0.2,
-    legend_name='Total Population',
+    #legend_name='Total Population',
     show=False
 )
 cp1.add_to(m)
@@ -99,7 +99,7 @@ cp2 = folium.Choropleth(
     fill_color='Blues',
     fill_opacity=0.7,
     line_opacity=0.2,
-    legend_name='Acquisition Audience',
+    #legend_name='Acquisition Audience',
     show=False
 )
 cp2.add_to(m)
@@ -148,7 +148,7 @@ cp4 = folium.Choropleth(
     fill_color='Reds',
     fill_opacity=0.7,
     line_opacity=0.2,
-    legend_name='Spend (CTC)',
+    #legend_name='Spend (CTC)',
     show=False
 )
 cp4.add_to(m)
@@ -186,7 +186,15 @@ for _, row in df_stores.iterrows():
 layer_stores.add_to(m)
 
 # --- Custom Legend (Top Left, White Box) ---
-legend_html = """
+# Calculate min/max for legend labels
+pop_min = int(df_pop['Total Population'].min())
+pop_max = int(df_pop['Total Population'].max())
+acq_min = int(df_pop['Acquisition Audience'].min())
+acq_max = int(df_pop['Acquisition Audience'].max())
+spend_min = int(df_av_grouped['Spend (CTC)'].min())
+spend_max = int(df_av_grouped['Spend (CTC)'].max())
+
+legend_html = f"""
 <div style="
     position: fixed; 
     top: 10px; left: 50px; width: 160px; 
@@ -198,14 +206,23 @@ legend_html = """
     <div style="margin-top: 5px;">
         <span style="font-size:10px">Total Population</span><br>
         <div style="width: 100%; height: 8px; background: linear-gradient(to right, #f7fcf5, #00441b);"></div>
+        <div style="display: flex; justify-content: space-between; font-size: 10px;">
+            <span>{pop_min:,}</span><span>{pop_max:,}</span>
+        </div>
     </div>
     <div style="margin-top: 5px;">
         <span style="font-size:10px">Acquisition Audience</span><br>
         <div style="width: 100%; height: 8px; background: linear-gradient(to right, #f7fbff, #08306b);"></div>
+        <div style="display: flex; justify-content: space-between; font-size: 10px;">
+            <span>{acq_min:,}</span><span>{acq_max:,}</span>
+        </div>
     </div>
     <div style="margin-top: 5px;">
         <span style="font-size:10px">Spend (CTC)</span><br>
         <div style="width: 100%; height: 8px; background: linear-gradient(to right, #fff5f0, #67000d);"></div>
+        <div style="display: flex; justify-content: space-between; font-size: 10px;">
+            <span>£{spend_min:,}</span><span>£{spend_max:,}</span>
+        </div>
     </div>
 </div>
 """
