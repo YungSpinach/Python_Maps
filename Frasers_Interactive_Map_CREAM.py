@@ -209,7 +209,9 @@ for _, row in df_out.iterrows():
         
         # Formatting logic based on "Format"
         if fmt == "Transvision Screen":
-            icon = folium.Icon(color='blue', icon='stop', prefix='fa')
+            # Extra styling for large blue square using HTML DivIcon
+            html = f"""<div style="background-color: blue; width: 15px; height: 15px;"></div>"""
+            icon = folium.DivIcon(html=html)
             folium.Marker([lat, lon], popup=row['Location'], icon=icon).add_to(layer_outdoor)
             
         elif fmt == "Motion Waterloo":
