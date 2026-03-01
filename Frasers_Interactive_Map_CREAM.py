@@ -210,23 +210,23 @@ for _, row in df_out.iterrows():
         # Formatting logic based on "Format"
         if fmt == "Transvision Screen":
             # Extra styling for large blue square using HTML DivIcon
-            html = f"""<div style="background-color: blue; width: 15px; height: 15px;"></div>"""
+            html = f"""<div style="background-color: black; width: 8px; height: 8px;"></div>"""
             icon = folium.DivIcon(html=html)
             folium.Marker([lat, lon], popup=row['Location'], icon=icon).add_to(layer_outdoor)
             
         elif fmt == "Motion Waterloo":
             # Extra styling for large dark blue square using HTML DivIcon
-            html = f"""<div style="background-color: darkblue; width: 15px; height: 15px;"></div>"""
+            html = f"""<div style="background-color: black; width: 8px; height: 8px;"></div>"""
             icon = folium.DivIcon(html=html)
             folium.Marker([lat, lon], popup=row['Location'], icon=icon).add_to(layer_outdoor)
             
         elif fmt == "Rail Digital 6 Sheet":
             folium.CircleMarker([lat, lon], popup=row['Location'], radius=5, 
-                                color='green', fill=True, fill_color='green').add_to(layer_outdoor)
+                                color='green', fill=True, fill_color='darkgray').add_to(layer_outdoor)
             
         elif fmt == "Road Digital 6 Sheet":
             folium.CircleMarker([lat, lon], popup=row['Location'], radius=5, 
-                                color='darkgreen', fill=True, fill_color='darkgreen').add_to(layer_outdoor)
+                                color='darkgreen', fill=True, fill_color='darkgray').add_to(layer_outdoor)
 
 layer_outdoor.add_to(m)
 
@@ -306,7 +306,7 @@ pop_min = int(df_pop['Total Population'].min())
 pop_max = int(df_pop['Total Population'].max())
 acq_min = int(df_pop['Acquisition Audience'].min())
 acq_max = int(df_pop['Acquisition Audience'].max())
-spend_min = int(df_av_grouped['Spend (CTC)'].min())
+spend_min = int(0)
 spend_max = int(df_av_grouped['Spend (CTC)'].max())
 
 legend_html = f"""
