@@ -200,7 +200,7 @@ cp2.geojson.add_to(m)
 # ==========================================
 # LAYER 3: Outdoor Sites (Symbols)
 # ==========================================
-layer_outdoor = folium.FeatureGroup(name='3. Outdoor Sites', show=True)
+layer_outdoor = folium.FeatureGroup(name='3. Outdoor Sites', show=False)
 
 for _, row in df_out.iterrows():
     lat, lon = get_coordinates(row['Location'])
@@ -254,7 +254,7 @@ cp4.geojson.add_to(m)
 # ==========================================
 # LAYER 5: Frasers Stores (Open)
 # ==========================================
-layer_frasers = folium.FeatureGroup(name='5. Frasers Stores (Open)', show=True)
+layer_frasers = folium.FeatureGroup(name='5. Frasers Stores (Open)', show=False)
 
 for _, row in df_stores.iterrows():
     if row['Store Type'] == 'Frasers' and str(row['Closing Year']) == 'Open':
@@ -270,7 +270,7 @@ layer_frasers.add_to(m)
 # ==========================================
 # LAYER 6: House of Frasers (Open)
 # ==========================================
-layer_hof = folium.FeatureGroup(name='6. House of Frasers (Open)', show=True)
+layer_hof = folium.FeatureGroup(name='6. House of Frasers (Open)', show=False)
 
 for _, row in df_stores.iterrows():
     if row['Store Type'] == 'House of Frasers' and str(row['Closing Year']) == 'Open':
@@ -286,7 +286,7 @@ layer_hof.add_to(m)
 # ==========================================
 # LAYER 7: Closed Stores
 # ==========================================
-layer_closed = folium.FeatureGroup(name='7. Closed Stores', show=True)
+layer_closed = folium.FeatureGroup(name='7. Closed Stores', show=False)
 
 for _, row in df_stores.iterrows():
     closing_year = str(row['Closing Year'])
