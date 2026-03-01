@@ -222,11 +222,11 @@ for _, row in df_out.iterrows():
             
         elif fmt == "Rail Digital 6 Sheet":
             folium.Circle([lat, lon], popup=row['Location'], radius=10, 
-                                color='lightgreen', fill_color='lightgreen', fill_opacity=0.7).add_to(layer_outdoor)
+                                color='black', fill_color='black', fill_opacity=0.95).add_to(layer_outdoor)
             
         elif fmt == "Road Digital 6 Sheet":
             folium.Circle([lat, lon], popup=row['Location'], radius=10, 
-                                color='lightgreen', fill_color='lightgreen', fill_opacity=0.7).add_to(layer_outdoor)
+                                color='black', fill_color='black', fill_opacity=0.95).add_to(layer_outdoor)
 
 layer_outdoor.add_to(m)
 
