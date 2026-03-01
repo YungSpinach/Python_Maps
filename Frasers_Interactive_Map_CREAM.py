@@ -243,6 +243,7 @@ cp4 = folium.Choropleth(
     nan_fill_color='lightgray',
     nan_fill_opacity=0.4,
     legend_name='AV Spend (TV+VOD)',
+    bins=[0, 10000, 20000, 30000, 40000, 50000, 60000],
     show=False
 )
 cp4.geojson.layer_name = '4. AV Spend (TV+VOD)'
