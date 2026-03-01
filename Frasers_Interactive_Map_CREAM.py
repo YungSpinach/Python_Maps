@@ -210,22 +210,22 @@ for _, row in df_out.iterrows():
         # Formatting logic based on "Format"
         if fmt == "Transvision Screen":
             # Extra styling for large blue square using HTML DivIcon
-            html = f"""<div style="background-color: darkgreen; width: 12px; height: 12px;"></div>"""
+            html = f"""<div style="background-color: darkgrey; width: 12px; height: 12px;"></div>"""
             icon = folium.DivIcon(html=html)
             folium.Marker([lat, lon], popup=row['Location'], icon=icon).add_to(layer_outdoor)
             
         elif fmt == "Motion Waterloo":
             # Extra styling for large dark blue square using HTML DivIcon
-            html = f"""<div style="background-color: darkgreen; width: 12px; height: 12px;"></div>"""
+            html = f"""<div style="background-color: darkgrey; width: 12px; height: 12px;"></div>"""
             icon = folium.DivIcon(html=html)
             folium.Marker([lat, lon], popup=row['Location'], icon=icon).add_to(layer_outdoor)
             
         elif fmt == "Rail Digital 6 Sheet":
-            folium.Circle([lat, lon], popup=row['Location'], radius=10, 
+            folium.Circle([lat, lon], popup=row['Location'], radius=12, 
                                 color='black', fill_color='black', fill_opacity=0.95).add_to(layer_outdoor)
             
         elif fmt == "Road Digital 6 Sheet":
-            folium.Circle([lat, lon], popup=row['Location'], radius=10, 
+            folium.Circle([lat, lon], popup=row['Location'], radius=12, 
                                 color='black', fill_color='black', fill_opacity=0.95).add_to(layer_outdoor)
 
 layer_outdoor.add_to(m)
