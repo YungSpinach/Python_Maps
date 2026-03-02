@@ -244,7 +244,7 @@ for _, row in df_out.iterrows():
 layer_outdoor.add_to(m)
 
 # ==========================================
-# LAYER 4: SW Gemini Network
+# LAYER 4: Southwester Network - TCPs (Black Lines)
 # ==========================================
 if sw_gemini_geo:
     folium.GeoJson(
