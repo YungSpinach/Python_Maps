@@ -244,11 +244,22 @@ for _, row in df_out.iterrows():
 layer_outdoor.add_to(m)
 
 # ==========================================
-# LAYER 4: AV Spend Heatmap/Choropleth (Red)
+# LAYER 4: SW Gemini Network
+# ==========================================
+if sw_gemini_geo:
+    folium.GeoJson(
+        sw_gemini_geo,
+        name='4. Southwest Network TCPs',
+        style_function=lambda x: {'color': 'black', 'weight': 2},
+        show=False
+    ).add_to(m)
+
+# ==========================================
+# LAYER 5: AV Spend Heatmap/Choropleth (Red)
 # ==========================================
 cp4 = folium.Choropleth(
     geo_data=geojson_data,
-    name='4. AV Spend (TV+VOD)',
+    name='5. AV Spend (TV+VOD)',
     data=df_av_grouped,
     columns=['Region', 'Spend (CTC)'],
     key_on='feature.properties.rgn19nm',
@@ -261,14 +272,14 @@ cp4 = folium.Choropleth(
     bins=[0, 10000, 20000, 30000, 40000, 50000, 60000],
     show=False
 )
-cp4.geojson.layer_name = '4. AV Spend (TV+VOD)'
+cp4.geojson.layer_name = '5. AV Spend (TV+VOD)'
 cp4.geojson.show = False
 cp4.geojson.add_to(m)
 
 # ==========================================
-# LAYER 5: Frasers Stores (Open)
+# LAYER 6: Frasers Stores (Open)
 # ==========================================
-layer_frasers = folium.FeatureGroup(name='5. Frasers Stores (Open)', show=False)
+layer_frasers = folium.FeatureGroup(name='6. Frasers Stores (Open)', show=False)
 
 for _, row in df_stores.iterrows():
     if row['Store Type'] == 'Frasers' and str(row['Closing Year']) == 'Open':
@@ -282,9 +293,9 @@ for _, row in df_stores.iterrows():
 layer_frasers.add_to(m)
 
 # ==========================================
-# LAYER 6: House of Frasers (Open)
+# LAYER 7: House of Frasers (Open)
 # ==========================================
-layer_hof = folium.FeatureGroup(name='6. House of Frasers (Open)', show=False)
+layer_hof = folium.FeatureGroup(name='7. House of Frasers (Open)', show=False)
 
 for _, row in df_stores.iterrows():
     if row['Store Type'] == 'House of Frasers' and str(row['Closing Year']) == 'Open':
@@ -298,9 +309,9 @@ for _, row in df_stores.iterrows():
 layer_hof.add_to(m)
 
 # ==========================================
-# LAYER 7: Closed Stores
+# LAYER 8: Closed Stores
 # ==========================================
-layer_closed = folium.FeatureGroup(name='7. Closed Stores', show=False)
+layer_closed = folium.FeatureGroup(name='8. Closed Stores', show=False)
 
 for _, row in df_stores.iterrows():
     closing_year = str(row['Closing Year'])
@@ -314,16 +325,7 @@ for _, row in df_stores.iterrows():
             ).add_to(layer_closed)
 layer_closed.add_to(m)
 
-# ==========================================
-# LAYER 8: SW Gemini Network
-# ==========================================
-if sw_gemini_geo:
-    folium.GeoJson(
-        sw_gemini_geo,
-        name='8. Southwest Network TCPs',
-        style_function=lambda x: {'color': 'black', 'weight': 2},
-        show=False
-    ).add_to(m)
+
 
 # --- Custom Legend (Top Left, White Box) ---
 # Calculate min/max for legend labels
