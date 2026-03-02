@@ -320,7 +320,7 @@ layer_closed.add_to(m)
 if sw_gemini_geo:
     folium.GeoJson(
         sw_gemini_geo,
-        name='8. SW Gemini Network',
+        name='8. Southwest Network TCPs',
         style_function=lambda x: {'color': 'black', 'weight': 2},
         show=False
     ).add_to(m)
