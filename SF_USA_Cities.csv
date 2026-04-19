@@ -1,0 +1,936 @@
+﻿Metropolitan Area,City,STATE,Metro / Micro,Customers (State Level),Gross Sales (State Level),Total households,Owner-occupied housing units with a mortgage,"VALUE!!$1,000,000 or more",% Houses >$1m,VALUE!!Median (dollars)
+"San Jose-Sunnyvale-Santa Clara, CA Metro Area",San Jose-Sunnyvale-Santa Clara,CA,Metro,18,43250,679914,253310,193482,0.763815088,1470900
+"Nantucket, MA Micro Area",Nantucket,MA,Micro,2,12595,5252,2525,1651,0.653861386,1520600
+"San Francisco-Oakland-Fremont, CA Metro Area",San Francisco-Oakland-Fremont,CA,Metro,3,4175,1744070,664996,404110,0.607687866,1166000
+"Vineyard Haven, MA Micro Area",Vineyard Haven,MA,Micro,0,0,7584,3469,2041,0.588353993,1089200
+"Santa Cruz-Watsonville, CA Metro Area",Santa Cruz-Watsonville,CA,Metro,18,43250,96898,36640,20447,0.55805131,1067700
+"Jackson, WY-ID Micro Area",Jackson,WY-ID,Micro,0,0,14507,5434,2613,0.480861244,974300
+"Kahului-Wailuku, HI Metro Area",Kahului-Wailuku,HI,Metro,3,4175,55881,22924,9021,0.393517711,913000
+"Urban Honolulu, HI Metro Area",Urban Honolulu,HI,Metro,18,43250,338868,131538,51753,0.39344524,894400
+"Heber, UT Micro Area",Heber,UT,Micro,0,0,28610,15587,6092,0.390838519,884700
+"Santa Maria-Santa Barbara, CA Metro Area",Santa Maria-Santa Barbara,CA,Metro,0,0,149608,49675,19404,0.390619024,793100
+"Edwards, CO Micro Area",Edwards,CO,Micro,2,2325,22058,9735,3721,0.38222907,806500
+"Los Angeles-Long Beach-Anaheim, CA Metro Area",Los Angeles-Long Beach-Anaheim,CA,Metro,0,0,4499409,1475586,561651,0.38062912,889300
+"San Diego-Chula Vista-Carlsbad, CA Metro Area",San Diego-Chula Vista-Carlsbad,CA,Metro,0,0,1171278,444803,156486,0.351809678,872900
+"Napa, CA Metro Area",Napa,CA,Metro,1,3300,49763,19658,6887,0.350340828,889600
+"Breckenridge, CO Micro Area",Breckenridge,CO,Micro,0,0,15565,7154,2468,0.344981828,702900
+"Kapaa, HI Micro Area",Kapaa,HI,Micro,0,0,23632,10176,3179,0.31240173,864600
+"San Luis Obispo-Paso Robles, CA Metro Area",San Luis Obispo-Paso Robles,CA,Metro,18,43250,109503,43398,13332,0.307203097,837100
+"Key West-Key Largo, FL Micro Area",Key West-Key Largo,FL,Micro,3,9021,34405,10472,3195,0.305099312,794300
+"Oxnard-Thousand Oaks-Ventura, CA Metro Area",Oxnard-Thousand Oaks-Ventura,CA,Metro,6,7600,280360,124064,36482,0.294057906,847000
+"Steamboat Springs, CO Micro Area",Steamboat Springs,CO,Micro,2,12595,16671,8010,2343,0.292509363,584900
+"Boulder, CO Metro Area",Boulder,CO,Metro,18,43250,137008,56091,16176,0.288388512,766100
+"Salinas, CA Metro Area",Salinas,CA,Metro,18,43250,132489,43288,12088,0.27924598,797900
+"Santa Rosa-Petaluma, CA Metro Area",Santa Rosa-Petaluma,CA,Metro,18,43250,190998,78812,21538,0.273283256,826500
+"Seattle-Tacoma-Bellevue, WA Metro Area",Seattle-Tacoma-Bellevue,WA,Metro,6,7600,1608596,679701,179985,0.264800258,729300
+"Rifle, CO Micro Area",Rifle,CO,Micro,3,9021,32619,14068,3442,0.244668752,601000
+"Bridgeport-Stamford-Danbury, CT Metro Area",Bridgeport-Stamford-Danbury,CT,Metro,0,0,355012,154892,33245,0.214633422,584900
+"Hailey, ID Micro Area",Hailey,ID,Micro,20,30671,12631,4887,1046,0.214037242,633600
+"Hood River, OR Micro Area",Hood River,OR,Micro,0,0,8939,3594,746,0.207568169,697300
+"Bozeman, MT Metro Area",Bozeman,MT,Metro,18,43250,51215,19529,3749,0.191970915,662600
+"Naples-Marco Island, FL Metro Area",Naples-Marco Island,FL,Metro,6,12660,165875,59476,10685,0.179652297,531600
+"Truckee-Grass Valley, CA Micro Area",Truckee-Grass Valley,CA,Micro,0,0,42865,19797,3527,0.178158307,651900
+"Boston-Cambridge-Newton, MA-NH Metro Area",Boston-Cambridge-Newton,MA-NH,Metro,18,43250,1940688,805549,140459,0.174364316,654800
+"New York-Newark-Jersey City, NY-NJ Metro Area",New York-Newark-Jersey City,NY-NJ,Metro,6,7600,7409947,2329984,390378,0.167545357,625800
+"Fredericksburg, TX Micro Area",Fredericksburg,TX,Micro,0,0,11513,3669,581,0.158353775,525700
+"Bend, OR Metro Area",Bend,OR,Metro,6,7600,104529,48739,7130,0.146289419,603900
+"Hilo-Kailua, HI Micro Area",Hilo-Kailua,HI,Micro,50,336933,74072,29803,4338,0.145555817,565400
+"Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area",Washington-Arlington-Alexandria,DC-VA-MD-WV,Metro,18,43250,2373022,1132737,163996,0.144778532,586700
+"Barnstable Town, MA Metro Area",Barnstable Town,MA,Metro,18,43250,105777,49930,7179,0.143781294,616400
+"Gardnerville Ranchos, NV-CA Micro Area",Gardnerville Ranchos,NV-CA,Micro,4,3425,21760,10107,1389,0.137429504,602500
+"Durango, CO Micro Area",Durango,CO,Micro,0,0,24378,10016,1354,0.135183706,624300
+"Sheridan, WY Micro Area",Sheridan,WY,Micro,2,1200,13845,5515,681,0.123481414,416700
+"Sandpoint, ID Micro Area",Sandpoint,ID,Micro,0,0,20283,8298,998,0.120269945,519200
+"Easton, MD Micro Area",Easton,MD,Micro,3,12150,16433,7551,894,0.118394915,430700
+"Denver-Aurora-Centennial, CO Metro Area",Denver-Aurora-Centennial,CO,Metro,2,2325,1221636,571447,66966,0.117186721,610900
+"Port Townsend, WA Micro Area",Port Townsend,WA,Micro,0,0,16340,6046,676,0.111809461,565500
+"Bremerton-Silverdale-Port Orchard, WA Metro Area",Bremerton-Silverdale-Port Orchard,WA,Metro,6,7600,108537,51709,5743,0.111063838,559400
+"Oak Harbor, WA Micro Area",Oak Harbor,WA,Micro,0,0,35972,16065,1772,0.110301899,585000
+"Hilton Head Island-Bluffton-Port Royal, SC Metro Area",Hilton Head Island-Bluffton-Port Royal,SC,Metro,3,3820,95451,41839,4605,0.110064772,442900
+"Santa Fe, NM Metro Area",Santa Fe,NM,Metro,3,2610,70767,26786,2893,0.108004181,465700
+"Kalispell, MT Micro Area",Kalispell,MT,Micro,50,336933,44233,19146,2052,0.107176434,543800
+"Sacramento-Roseville-Folsom, CA Metro Area",Sacramento-Roseville-Folsom,CA,Metro,1,425,881889,381906,38691,0.10131027,604100
+"Austin-Round Rock-San Marcos, TX Metro Area",Austin-Round Rock-San Marcos,TX,Metro,0,0,989434,383890,37255,0.097046029,476400
+"Mount Vernon-Anacortes, WA Metro Area",Mount Vernon-Anacortes,WA,Metro,6,12660,52329,22729,2144,0.094328831,557400
+"Charleston-North Charleston, SC Metro Area",Charleston-North Charleston,SC,Metro,18,43250,335865,151712,14247,0.093908194,399700
+"Bellingham, WA Metro Area",Bellingham,WA,Metro,0,0,94021,37563,3467,0.092298272,601100
+"Miami-Fort Lauderdale-West Palm Beach, FL Metro Area",Miami-Fort Lauderdale-West Palm Beach,FL,Metro,0,0,2334797,802218,73280,0.091346741,462800
+"Coeur d'Alene, ID Metro Area",Coeur d'Alene,ID,Metro,50,336933,71172,32060,2829,0.088240799,527800
+"Crestview-Fort Walton Beach-Destin, FL Metro Area",Crestview-Fort Walton Beach-Destin,FL,Metro,1,425,119773,51262,4329,0.084448519,378900
+"Reno, NV Metro Area",Reno,NV,Metro,0,0,224933,90713,7471,0.082358648,513400
+"Portland-Vancouver-Hillsboro, OR-WA Metro Area",Portland-Vancouver-Hillsboro,OR-WA,Metro,0,0,1010265,434716,34586,0.079559989,570000
+"Fort Collins-Loveland, CO Metro Area",Fort Collins-Loveland,CO,Metro,3,4175,154232,67544,5370,0.079503731,576200
+"Wenatchee-East Wenatchee, WA Metro Area",Wenatchee-East Wenatchee,WA,Metro,0,0,47443,18192,1433,0.078770888,489000
+"Nashville-Davidson--Murfreesboro--Franklin, TN Metro Area",Nashville-Davidson--Murfreesboro--Franklin,TN,Metro,6,7600,829134,360701,28392,0.078713394,422100
+"North Port-Bradenton-Sarasota, FL Metro Area",North Port-Bradenton-Sarasota,FL,Metro,0,0,388951,146117,11273,0.077150503,425900
+"Salt Lake City-Murray, UT Metro Area",Salt Lake City-Murray,UT,Metro,3,2610,450170,212636,16363,0.076953103,520000
+"Ellensburg, WA Micro Area",Ellensburg,WA,Micro,3,4175,19993,7242,555,0.076636288,497900
+"Seneca, SC Micro Area",Seneca,SC,Micro,0,0,34515,12275,936,0.076252546,269500
+"Missoula, MT Metro Area",Missoula,MT,Metro,2,1050,54829,20608,1571,0.076232531,480800
+"Stockton-Lodi, CA Metro Area",Stockton-Lodi,CA,Metro,6,7600,245250,106053,7641,0.072048881,561000
+"Boone, NC Micro Area",Boone,NC,Micro,0,0,21198,6676,479,0.071749551,388100
+"St. George, UT Metro Area",St. George,UT,Metro,2,2325,69786,30130,2158,0.071622967,507900
+"Trenton-Princeton, NJ Metro Area",Trenton-Princeton,NJ,Metro,2,2325,144114,55801,3967,0.071091916,397900
+"Kill Devil Hills, NC Micro Area",Kill Devil Hills,NC,Micro,20,30671,16836,7969,566,0.071025223,458100
+"Ukiah, CA Micro Area",Ukiah,CA,Micro,2,1200,34842,10952,770,0.070306793,528900
+"Provo-Orem-Lehi, UT Metro Area",Provo-Orem-Lehi,UT,Metro,2,2325,206880,103517,7255,0.070085107,542800
+"Phoenix-Mesa-Chandler, AZ Metro Area",Phoenix-Mesa-Chandler,AZ,Metro,1,375,1892613,834865,58201,0.069713067,457400
+"Vallejo, CA Metro Area",Vallejo,CA,Metro,0,0,157512,71552,4958,0.069292263,630100
+"Flagstaff, AZ Metro Area",Flagstaff,AZ,Metro,0,0,55118,16701,1136,0.068019879,531200
+"Boise City, ID Metro Area",Boise City,ID,Metro,18,43250,304187,148100,9570,0.064618501,470200
+"Charlottesville, VA Metro Area",Charlottesville,VA,Metro,50,336933,90452,38421,2451,0.063793238,437400
+"Hudson, NY Micro Area",Hudson,NY,Micro,3,12150,26627,10808,684,0.063286454,348600
+"Riverside-San Bernardino-Ontario, CA Metro Area",Riverside-San Bernardino-Ontario,CA,Metro,2,2325,1450250,655413,40700,0.06209825,566700
+"Brenham, TX Micro Area",Brenham,TX,Micro,3,9021,15481,4668,278,0.059554413,294900
+"Torrington, CT Micro Area",Torrington,CT,Micro,0,0,47845,22516,1327,0.058935868,342300
+"Murrells Inlet, SC Micro Area",Murrells Inlet,SC,Micro,1,375,27129,11105,652,0.058712292,323700
+"Eureka-Arcata, CA Micro Area",Eureka-Arcata,CA,Micro,3,12150,54922,16505,965,0.058467131,457300
+"Spirit Lake, IA Micro Area",Spirit Lake,IA,Micro,0,0,8845,3696,215,0.058170996,248100
+"Seaford, DE Micro Area",Seaford,DE,Micro,50,336933,106441,48815,2785,0.057052136,393900
+"Sulphur Springs, TX Micro Area",Sulphur Springs,TX,Micro,6,12660,14002,4085,232,0.056793146,242800
+"Ocean Pines, MD Micro Area",Ocean Pines,MD,Micro,0,0,24136,10946,615,0.056184908,391000
+"Asheville, NC Metro Area",Asheville,NC,Metro,1,375,161264,61262,3441,0.056168587,393700
+"Atlantic City-Hammonton, NJ Metro Area",Atlantic City-Hammonton,NJ,Metro,2,2325,154441,66405,3701,0.055733755,342300
+"Medford, OR Metro Area",Medford,OR,Metro,6,12660,92035,37106,2065,0.055651377,444500
+"Charlotte-Concord-Gastonia, NC-SC Metro Area",Charlotte-Concord-Gastonia,NC-SC,Metro,3,2610,1076260,481803,26212,0.054403978,378700
+"Portland-South Portland, ME Metro Area",Portland-South Portland,ME,Metro,6,12660,240027,111220,6019,0.054117964,425700
+"Sebastian-Vero Beach-West Vero Corridor, FL Metro Area",Sebastian-Vero Beach-West Vero Corridor,FL,Metro,1,4600,70816,26642,1437,0.053937392,345900
+"Oxford, MS Micro Area",Oxford,MS,Micro,2,2300,24040,8030,432,0.053798257,292900
+"Clearlake, CA Micro Area",Clearlake,CA,Micro,3,2610,26940,10262,549,0.053498343,366300
+"Brunswick-St. Simons, GA Metro Area",Brunswick-St. Simons,GA,Metro,0,0,47209,17165,892,0.05196621,286300
+"Traverse City, MI Metro Area",Traverse City,MI,Metro,6,7600,65429,31860,1612,0.050596359,324600
+"Durham-Chapel Hill, NC Metro Area",Durham-Chapel Hill,NC,Metro,2,2325,248256,99286,4939,0.049745181,407200
+"Prescott Valley-Prescott, AZ Metro Area",Prescott Valley-Prescott,AZ,Metro,3,12150,111157,45476,2232,0.049080834,436000
+"Gainesville, TX Micro Area",Gainesville,TX,Micro,2,2300,16528,5508,265,0.048111837,256100
+"Dallas-Fort Worth-Arlington, TX Metro Area",Dallas-Fort Worth-Arlington,TX,Metro,6,12660,2891725,1093299,52299,0.047835953,382700
+"Astoria, OR Micro Area",Astoria,OR,Micro,1,375,17984,6913,330,0.047736149,474000
+"Morehead City, NC Micro Area",Morehead City,NC,Micro,0,0,31977,13245,632,0.047716119,365400
+"Cape Coral-Fort Myers, FL Metro Area",Cape Coral-Fort Myers,FL,Metro,1,3300,327803,126473,5997,0.047417235,374200
+"Petoskey, MI Micro Area",Petoskey,MI,Micro,2,12595,15190,6444,305,0.04733085,305900
+"Ogden, UT Metro Area",Ogden,UT,Metro,2,2325,213829,115347,5280,0.045774923,475500
+"Greeley, CO Metro Area",Greeley,CO,Metro,1,375,124287,69874,3156,0.045167015,480300
+"Raleigh-Cary, NC Metro Area",Raleigh-Cary,NC,Metro,0,0,574295,277026,12453,0.044952459,431200
+"Los Alamos, NM Micro Area",Los Alamos,NM,Micro,0,0,8247,4073,182,0.044684508,519700
+"Taos, NM Micro Area",Taos,NM,Micro,1,3200,15549,4457,199,0.044648867,432200
+"Baltimore-Columbia-Towson, MD Metro Area",Baltimore-Columbia-Towson,MD,Metro,18,43250,1120269,525455,23370,0.04447574,403000
+"Laconia, NH Micro Area",Laconia,NH,Micro,2,1200,26337,12440,550,0.044212219,381200
+"Jacksonville, FL Metro Area",Jacksonville,FL,Metro,0,0,663101,283648,12506,0.044089858,357200
+"Bennington, VT Micro Area",Bennington,VT,Micro,2,58825,14987,6280,275,0.043789809,278400
+"Grand Junction, CO Metro Area",Grand Junction,CO,Metro,1,3300,65830,31375,1366,0.043537849,380800
+"Tampa-St. Petersburg-Clearwater, FL Metro Area",Tampa-St. Petersburg-Clearwater,FL,Metro,5,9500,1330303,522463,22712,0.043471021,375300
+"Corvallis, OR Metro Area",Corvallis,OR,Metro,0,0,38537,12513,542,0.043314952,528700
+"Atlanta-Sandy Springs-Roswell, GA Metro Area",Atlanta-Sandy Springs-Roswell,GA,Metro,18,43250,2313055,1070947,46251,0.043187011,377900
+"Colorado Springs, CO Metro Area",Colorado Springs,CO,Metro,1,3300,302050,144034,6208,0.043100935,465500
+"Las Vegas-Henderson-North Las Vegas, NV Metro Area",Las Vegas-Henderson-North Las Vegas,NV,Metro,2,11835,862518,338053,14533,0.0429903,438600
+"Eugene-Springfield, OR Metro Area",Eugene-Springfield,OR,Metro,18,43250,160445,58887,2523,0.04284477,447100
+"Port St. Lucie, FL Metro Area",Port St. Lucie,FL,Metro,2,11835,205254,86499,3695,0.042717257,384800
+"Alexander City, AL Micro Area",Alexander City,AL,Micro,0,0,17076,6061,257,0.042402244,166700
+"Lebanon-Claremont, NH-VT Micro Area",Lebanon-Claremont,NH-VT,Micro,0,0,91760,36580,1547,0.042290869,311700
+"Port Angeles, WA Micro Area",Port Angeles,WA,Micro,0,0,35046,12861,529,0.041132105,438600
+"Juneau, AK Micro Area",Juneau,AK,Micro,0,0,13167,4984,205,0.041131621,453700
+"Houston-Pasadena-The Woodlands, TX Metro Area",Houston-Pasadena-The Woodlands,TX,Metro,3,2610,2661739,953677,39168,0.041070509,325900
+"Logan, UT-ID Metro Area",Logan,UT-ID,Metro,1,3200,49371,20483,839,0.040960797,446400
+"Gainesville, GA Metro Area",Gainesville,GA,Metro,20,30671,73551,30121,1231,0.040868497,369900
+"Payson, AZ Micro Area",Payson,AZ,Micro,0,0,23645,7775,316,0.040643087,336400
+"Wilmington, NC Metro Area",Wilmington,NC,Metro,18,43250,199271,89209,3620,0.040578865,370400
+"Longview-Kelso, WA Metro Area",Longview-Kelso,WA,Metro,50,336933,43943,19319,782,0.040478286,408800
+"Chico, CA Metro Area",Chico,CA,Metro,3,3820,83312,27798,1101,0.039607166,445900
+"Olympia-Lacey-Tumwater, WA Metro Area",Olympia-Lacey-Tumwater,WA,Metro,1,375,118899,53511,2105,0.039337706,490000
+"Chicago-Naperville-Elgin, IL-IN Metro Area",Chicago-Naperville-Elgin,IL-IN,Metro,18,43250,3643783,1534952,60126,0.039171257,335100
+"Pittsfield, MA Metro Area",Pittsfield,MA,Metro,1,375,57585,23880,935,0.039154104,311800
+"Athens, TX Micro Area",Athens,TX,Micro,0,0,33575,11329,443,0.039103187,241800
+"Kerrville, TX Micro Area",Kerrville,TX,Micro,0,0,22615,6445,252,0.039100078,330500
+"Ann Arbor, MI Metro Area",Ann Arbor,MI,Metro,0,0,150550,59236,2305,0.038912148,383200
+"Centralia, WA Micro Area",Centralia,WA,Micro,0,0,32916,14828,575,0.038777988,408100
+"Brookings, OR Micro Area",Brookings,OR,Micro,0,0,11159,3751,145,0.038656358,425300
+"Sonora, CA Micro Area",Sonora,CA,Micro,50,336933,22690,9785,378,0.038630557,446800
+"Modesto, CA Metro Area",Modesto,CA,Metro,50,336933,177874,71500,2757,0.038559441,460200
+"Brevard, NC Micro Area",Brevard,NC,Micro,6,12660,14584,5161,199,0.038558419,381200
+"Newport, OR Micro Area",Newport,OR,Micro,0,0,23115,8857,335,0.037823191,420300
+"Providence-Warwick, RI-MA Metro Area",Providence-Warwick,RI-MA,Metro,2,1050,675395,282988,10607,0.037482155,429300
+"Spearfish, SD Micro Area",Spearfish,SD,Micro,1,425,12054,4052,151,0.037265548,359100
+"Detroit Lakes, MN Micro Area",Detroit Lakes,MN,Micro,1,375,14410,6237,229,0.03671637,295800
+"Stephenville, TX Micro Area",Stephenville,TX,Micro,2,58825,16816,5097,184,0.036099666,306000
+"Zapata, TX Micro Area",Zapata,TX,Micro,50,336933,4565,894,32,0.035794183,167100
+"Spokane-Spokane Valley, WA Metro Area",Spokane-Spokane Valley,WA,Metro,0,0,237769,98907,3503,0.035417109,417700
+"Pinehurst-Southern Pines, NC Metro Area",Pinehurst-Southern Pines,NC,Metro,5,9500,44013,19192,677,0.035275115,367500
+"Evanston, WY-UT Micro Area",Evanston,WY-UT,Micro,2,58825,8639,3434,121,0.035235877,299600
+"Elk City, OK Micro Area",Elk City,OK,Micro,6,12660,8188,2381,83,0.034859303,143000
+"Athens-Clarke County, GA Metro Area",Athens-Clarke County,GA,Metro,1,425,86101,28485,990,0.034755134,331500
+"Bonham, TX Micro Area",Bonham,TX,Micro,3,12150,12767,4636,159,0.034296808,251100
+"Fresno, CA Metro Area",Fresno,CA,Metro,0,0,370081,137875,4707,0.034139619,403100
+"Merced, CA Metro Area",Merced,CA,Metro,0,0,86055,29848,1009,0.03380461,400100
+"Montrose, CO Micro Area",Montrose,CO,Micro,50,336933,18069,7131,241,0.033796102,397600
+"Crescent City, CA Micro Area",Crescent City,CA,Micro,0,0,9522,3350,113,0.033731343,383100
+"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD Metro Area",Philadelphia-Camden-Wilmington,PA-NJ-DE-MD,Metro,6,12660,2467761,1060639,35719,0.033676868,366500
+"Helena, MT Metro Area",Helena,MT,Metro,0,0,39033,17320,579,0.033429561,422400
+"Orlando-Kissimmee-Sanford, FL Metro Area",Orlando-Kissimmee-Sanford,FL,Metro,18,43250,1022315,419238,13932,0.03323172,387300
+"Daphne-Fairhope-Foley, AL Metro Area",Daphne-Fairhope-Foley,AL,Metro,4,3425,98574,45248,1495,0.033040134,328000
+"Sterling, CO Micro Area",Sterling,CO,Micro,0,0,8203,2856,94,0.032913165,264100
+"Fayetteville-Springdale-Rogers, AR Metro Area",Fayetteville-Springdale-Rogers,AR,Metro,2,12595,215566,84515,2774,0.032822576,324100
+"Carson City, NV Metro Area",Carson City,NV,Metro,0,0,23692,8485,278,0.032763701,456900
+"Rexburg, ID Micro Area",Rexburg,ID,Micro,2,58825,17980,5257,172,0.03271828,381500
+"Shelton, WA Micro Area",Shelton,WA,Micro,0,0,26029,13516,439,0.032480024,422800
+"Grants Pass, OR Metro Area",Grants Pass,OR,Metro,2,11835,36715,15051,477,0.031692246,423200
+"Wildwood-The Villages, FL Metro Area",Wildwood-The Villages,FL,Metro,50,336933,70318,25828,814,0.031516184,392800
+"New Orleans-Metairie, LA Metro Area",New Orleans-Metairie,LA,Metro,50,336933,398564,131221,4135,0.031511724,285600
+"Worcester, MA Metro Area",Worcester,MA,Metro,1,425,335826,151217,4764,0.031504394,430100
+"Minneapolis-St. Paul-Bloomington, MN-WI Metro Area",Minneapolis-St. Paul-Bloomington,MN-WI,Metro,0,0,1477259,719564,21714,0.030176607,380100
+"Savannah, GA Metro Area",Savannah,GA,Metro,6,12660,161273,66529,1990,0.029911768,317000
+"Greenville-Anderson-Greer, SC Metro Area",Greenville-Anderson-Greer,SC,Metro,2,12595,383842,157627,4705,0.029848947,288400
+"Palm Bay-Melbourne-Titusville, FL Metro Area",Palm Bay-Melbourne-Titusville,FL,Metro,1,3300,257695,111321,3306,0.029697901,353300
+"Richmond, VA Metro Area",Richmond,VA,Metro,6,7600,533430,249826,7405,0.02964063,360400
+"Cody, WY Micro Area",Cody,WY,Micro,2,1200,13330,5477,161,0.029395655,401500
+"Angola, IN Micro Area",Angola,IN,Micro,0,0,14058,6441,188,0.029188014,217700
+"Knoxville, TN Metro Area",Knoxville,TN,Metro,0,0,378234,152173,4409,0.028973602,314600
+"Celina, OH Micro Area",Celina,OH,Micro,3,4175,16408,6871,198,0.028816766,217700
+"Salem, OR Metro Area",Salem,OR,Metro,0,0,159856,65682,1887,0.028729332,434900
+"New Haven, CT Metro Area",New Haven,CT,Metro,0,0,230673,90701,2605,0.028720742,355800
+"Albany, OR Metro Area",Albany,OR,Metro,2,1050,50729,21802,623,0.02857536,385300
+"Burlington-South Burlington, VT Metro Area",Burlington-South Burlington,VT,Metro,0,0,94559,42486,1181,0.027797392,406800
+"Kiryas Joel-Poughkeepsie-Newburgh, NY Metro Area",Kiryas Joel-Poughkeepsie-Newburgh,NY,Metro,6,12660,254883,112667,3125,0.027736604,408300
+"Kingston, NY Metro Area",Kingston,NY,Metro,0,0,74278,29200,809,0.027705479,371400
+"Granbury, TX Micro Area",Granbury,TX,Micro,3,9021,25523,11544,318,0.027546778,327600
+"Laurinburg, NC Micro Area",Laurinburg,NC,Micro,0,0,12580,3599,99,0.027507641,151700
+"Alexandria, MN Micro Area",Alexandria,MN,Micro,6,12660,17519,8174,222,0.027159286,324600
+"Barre, VT Micro Area",Barre,VT,Micro,2,58825,25855,11497,311,0.027050535,328200
+"Shelbyville, TN Micro Area",Shelbyville,TN,Micro,1,3200,19505,8651,231,0.026702115,287400
+"Jefferson, GA Micro Area",Jefferson,GA,Micro,20,30671,28402,15060,399,0.026494024,360100
+"Marion, NC Micro Area",Marion,NC,Micro,6,7600,18638,6800,180,0.026470588,217600
+"Lexington-Fayette, KY Metro Area",Lexington-Fayette,KY,Metro,6,7600,216273,85026,2249,0.026450733,286600
+"La Grande, OR Micro Area",La Grande,OR,Micro,0,0,10900,3756,99,0.026357827,298900
+"Lexington Park, MD Metro Area",Lexington Park,MD,Metro,6,12660,75901,44876,1181,0.026316962,440800
+"Brainerd, MN Micro Area",Brainerd,MN,Micro,4,3425,42276,19259,504,0.026169583,296300
+"Tucson, AZ Metro Area",Tucson,AZ,Metro,1,425,437827,169160,4407,0.026052258,334300
+"Niles, MI Metro Area",Niles,MI,Metro,4,3425,63999,26120,675,0.025842266,231800
+"Punta Gorda, FL Metro Area",Punta Gorda,FL,Metro,6,7600,90542,34572,885,0.02559875,341600
+"Ontario, OR-ID Micro Area",Ontario,OR-ID,Micro,3,2610,19984,8020,205,0.025561097,334700
+"College Station-Bryan, TX Metro Area",College Station-Bryan,TX,Metro,1,4600,105688,28443,727,0.025559892,308900
+"Corsicana, TX Micro Area",Corsicana,TX,Micro,0,0,19044,5999,153,0.025504251,197200
+"Lewiston, ID-WA Metro Area",Lewiston,ID-WA,Metro,1,425,26760,10814,275,0.025429998,334700
+"Yuba City, CA Metro Area",Yuba City,CA,Metro,6,12660,61927,25661,652,0.025408207,439700
+"Rapid City, SD Metro Area",Rapid City,SD,Metro,0,0,62789,25733,649,0.025220534,329900
+"Redding, CA Metro Area",Redding,CA,Metro,0,0,71232,29263,727,0.024843659,381800
+"Forest City, NC Micro Area",Forest City,NC,Micro,0,0,26642,9388,233,0.024818918,230300
+"Coos Bay-North Bend, OR Micro Area",Coos Bay-North Bend,OR,Micro,0,0,28731,11534,286,0.024796255,358100
+"The Dalles, OR Micro Area",The Dalles,OR,Micro,2,2325,10563,3795,94,0.024769433,384100
+"Virginia Beach-Chesapeake-Norfolk, VA-NC Metro Area",Virginia Beach-Chesapeake-Norfolk,VA-NC,Metro,2,2325,707408,321358,7941,0.024710759,346600
+"Pullman, WA Micro Area",Pullman,WA,Micro,0,0,18721,5187,128,0.024677077,389700
+"Harrisonburg, VA Metro Area",Harrisonburg,VA,Metro,0,0,50046,18268,450,0.024633238,319800
+"Sherman-Denison, TX Metro Area",Sherman-Denison,TX,Metro,50,336933,55248,19036,465,0.024427401,282700
+"Cambridge, MD Micro Area",Cambridge,MD,Micro,0,0,13546,4873,119,0.024420275,268500
+"Brigham City, UT-ID Micro Area",Brigham City,UT-ID,Micro,0,0,21478,10711,260,0.024274111,400100
+"Madison, WI Metro Area",Madison,WI,Metro,0,0,301580,121148,2851,0.023533199,379600
+"Cookeville, TN Micro Area",Cookeville,TN,Micro,2,4925,58693,19442,456,0.023454377,258700
+"Jacksonville, TX Micro Area",Jacksonville,TX,Micro,2,4925,18185,5041,117,0.023209681,222600
+"Ruidoso, NM Micro Area",Ruidoso,NM,Micro,0,0,10000,2862,66,0.023060797,266700
+"Whitewater-Elkhorn, WI Micro Area",Whitewater-Elkhorn,WI,Micro,50,336933,43087,19043,439,0.02305309,300600
+"Roseburg, OR Micro Area",Roseburg,OR,Micro,2,58825,47519,18057,416,0.023038157,328300
+"Manchester-Nashua, NH Metro Area",Manchester-Nashua,NH,Metro,4,3425,168740,76131,1748,0.022960423,428500
+"Huntsville, TX Micro Area",Huntsville,TX,Micro,3,12150,26017,6985,159,0.022763064,241800
+"Lancaster, PA Metro Area",Lancaster,PA,Metro,2,11835,212748,89533,2024,0.02260619,307800
+"Milwaukee-Waukesha, WI Metro Area",Milwaukee-Waukesha,WI,Metro,0,0,656436,257496,5807,0.022551807,314400
+"Glens Falls, NY Metro Area",Glens Falls,NY,Metro,2,2325,54602,23076,517,0.02240423,241000
+"Deltona-Daytona Beach-Ormond Beach, FL Metro Area",Deltona-Daytona Beach-Ormond Beach,FL,Metro,18,43250,294463,124404,2772,0.022282242,335800
+"Birmingham, AL Metro Area",Birmingham,AL,Metro,2,2325,465003,194432,4326,0.022249424,269300
+"Fayetteville, TN Micro Area",Fayetteville,TN,Micro,20,30671,14849,5433,120,0.022087245,256900
+"Kennewick-Richland, WA Metro Area",Kennewick-Richland,WA,Metro,0,0,107936,46985,1035,0.022028307,416100
+"San Antonio-New Braunfels, TX Metro Area",San Antonio-New Braunfels,TX,Metro,3,4175,967488,363920,8015,0.022024071,305000
+"Bakersfield-Delano, CA Metro Area",Bakersfield-Delano,CA,Metro,50,336933,284931,113015,2479,0.021935141,358000
+"Fergus Falls, MN Micro Area",Fergus Falls,MN,Micro,50,336933,25157,10638,232,0.021808611,280200
+"Midland, TX Metro Area",Midland,TX,Metro,50,336933,69624,25821,563,0.021803958,351100
+"Baker City, OR Micro Area",Baker City,OR,Micro,2,12595,7355,2571,56,0.021781408,281600
+"Bogalusa, LA Micro Area",Bogalusa,LA,Micro,2,1200,17716,4501,98,0.021772939,199500
+"Lewisburg, PA Micro Area",Lewisburg,PA,Micro,50,336933,14546,5575,121,0.021704036,256800
+"Chattanooga, TN-GA Metro Area",Chattanooga,TN-GA,Metro,2,12595,231335,89977,1948,0.021649977,291000
+"Milledgeville, GA Micro Area",Milledgeville,GA,Micro,0,0,16582,4533,97,0.021398632,198200
+"Kansas City, MO-KS Metro Area",Kansas City,MO-KS,Metro,2,2325,895368,380974,8130,0.021340039,306100
+"Amherst Town-Northampton, MA Metro Area",Amherst Town-Northampton,MA,Metro,1,425,62114,25310,540,0.021335441,401100
+"Roanoke, VA Metro Area",Roanoke,VA,Metro,18,43250,131510,52504,1116,0.021255523,263200
+"State College, PA Metro Area",State College,PA,Metro,18,43250,59013,21426,452,0.021095865,345600
+"Lake Havasu City-Kingman, AZ Metro Area",Lake Havasu City-Kingman,AZ,Metro,0,0,101973,38891,806,0.020724589,325900
+"Carroll, IA Micro Area",Carroll,IA,Micro,0,0,8801,3476,72,0.020713464,176400
+"Anchorage, AK Metro Area",Anchorage,AK,Metro,1,425,148466,68432,1407,0.020560556,386100
+"Moscow, ID Micro Area",Moscow,ID,Micro,0,0,16270,5034,103,0.020460866,374500
+"Holland, MI Micro Area",Holland,MI,Micro,3,12150,45522,22607,459,0.020303446,273500
+"Billings, MT Metro Area",Billings,MT,Metro,0,0,78371,32099,644,0.02006293,373400
+"El Centro, CA Metro Area",El Centro,CA,Metro,0,0,49644,16718,335,0.020038282,338800
+"Nacogdoches, TX Micro Area",Nacogdoches,TX,Micro,0,0,25302,5996,119,0.019846564,201500
+"Dublin, GA Micro Area",Dublin,GA,Micro,2,12595,21809,5501,109,0.019814579,201800
+"Lexington, NE Micro Area",Lexington,NE,Micro,0,0,9981,3099,61,0.019683769,199200
+"Pensacola-Ferry Pass-Brent, FL Metro Area",Pensacola-Ferry Pass-Brent,FL,Metro,0,0,201632,85809,1688,0.019671596,307400
+"St. Louis, MO-IL Metro Area",St. Louis,MO-IL,Metro,50,336933,1160386,519417,10201,0.019639326,261000
+"Winona, MN Micro Area",Winona,MN,Micro,0,0,20253,8389,164,0.01954941,243600
+"Sioux Falls, SD-MN Metro Area",Sioux Falls,SD-MN,Metro,50,336933,122517,51837,993,0.019156201,309600
+"Panama City-Panama City Beach, FL Metro Area",Panama City-Panama City Beach,FL,Metro,2,2325,88065,32576,624,0.019155206,317600
+"Walla Walla, WA Metro Area",Walla Walla,WA,Metro,0,0,23447,8989,172,0.019134498,427300
+"Myrtle Beach-Conway-North Myrtle Beach, SC Metro Area",Myrtle Beach-Conway-North Myrtle Beach,SC,Metro,0,0,158779,67739,1296,0.019132258,307300
+"Columbus, OH Metro Area",Columbus,OH,Metro,0,0,864663,361559,6907,0.019103383,315100
+"Rockingham, NC Micro Area",Rockingham,NC,Micro,0,0,17026,5557,106,0.01907504,154900
+"Tallahassee, FL Metro Area",Tallahassee,FL,Metro,4,3425,157965,53449,1016,0.019008775,295100
+"Henderson, NC Micro Area",Henderson,NC,Micro,2,11835,16147,4437,84,0.018931711,182400
+"LaGrange, GA-AL Micro Area",LaGrange,GA-AL,Micro,0,0,40338,14256,269,0.018869248,210400
+"Elizabethtown, KY Metro Area",Elizabethtown,KY,Metro,50,336933,50618,19945,376,0.018851843,239200
+"Grand Rapids-Wyoming-Kentwood, MI Metro Area",Grand Rapids-Wyoming-Kentwood,MI,Metro,18,43250,440316,202330,3787,0.018716948,294100
+"Elko, NV Micro Area",Elko,NV,Micro,0,0,20249,7712,144,0.018672199,339300
+"Brattleboro, VT Micro Area",Brattleboro,VT,Micro,0,0,19784,8639,159,0.018404908,272200
+"Red Bluff, CA Micro Area",Red Bluff,CA,Micro,1,4600,24788,9619,177,0.018401081,359300
+"Winchester, TN Micro Area",Winchester,TN,Micro,1,375,17445,6972,128,0.018359151,244300
+"Laramie, WY Micro Area",Laramie,WY,Micro,2,4925,17083,4914,90,0.018315018,347400
+"Elizabeth City, NC Micro Area",Elizabeth City,NC,Micro,2,58825,15785,6463,118,0.018257775,255500
+"Rochester, MN Metro Area",Rochester,MN,Metro,18,43250,92880,41983,766,0.01824548,314800
+"Cullman, AL Micro Area",Cullman,AL,Micro,3,3820,35347,13203,240,0.018177687,227000
+"McMinnville, TN Micro Area",McMinnville,TN,Micro,6,12660,16203,5632,102,0.018110795,214600
+"Waynesville, NC Micro Area",Waynesville,NC,Micro,0,0,27123,10220,185,0.018101761,302700
+"Fort Morgan, CO Micro Area",Fort Morgan,CO,Micro,2,2300,11069,4557,82,0.017994294,349500
+"Memphis, TN-MS-AR Metro Area",Memphis,TN-MS-AR,Metro,6,7600,522879,198511,3560,0.017933515,268400
+"Detroit-Warren-Dearborn, MI Metro Area",Detroit-Warren-Dearborn,MI,Metro,18,43250,1768816,741784,13301,0.017931096,279000
+"Othello, WA Micro Area",Othello,WA,Micro,50,336933,6288,2105,37,0.017577197,293000
+"Hickory-Lenoir-Morganton, NC Metro Area",Hickory-Lenoir-Morganton,NC,Metro,0,0,149578,59744,1048,0.01754151,238300
+"Visalia, CA Metro Area",Visalia,CA,Metro,0,0,143195,54524,947,0.017368498,346600
+"Columbia, SC Metro Area",Columbia,SC,Metro,6,12660,339601,147163,2548,0.017314135,250600
+"Oklahoma City, OK Metro Area",Oklahoma City,OK,Metro,0,0,571211,216379,3732,0.017247515,243200
+"Lake of the Woods, VA Micro Area",Lake of the Woods,VA,Micro,0,0,14856,8107,139,0.017145677,360300
+"Indianapolis-Carmel-Greenwood, IN Metro Area",Indianapolis-Carmel-Greenwood,IN,Metro,6,7600,842765,388537,6656,0.01713093,280000
+"Mankato, MN Metro Area",Mankato,MN,Metro,0,0,40608,16023,273,0.017038008,272600
+"Auburn-Opelika, AL Metro Area",Auburn-Opelika,AL,Metro,1,4600,76673,29875,508,0.017004184,275000
+"Hanford-Corcoran, CA Metro Area",Hanford-Corcoran,CA,Metro,3,2610,44052,15763,268,0.01700184,340700
+"Athens, TN Micro Area",Athens,TN,Micro,2,58825,26453,10129,172,0.016980946,220700
+"Salisbury, MD Metro Area",Salisbury,MD,Metro,2,2325,48818,19784,335,0.016932875,253200
+"Sevierville, TN Micro Area",Sevierville,TN,Micro,0,0,40344,14774,248,0.016786246,327400
+"Fargo, ND-MN Metro Area",Fargo,ND-MN,Metro,1,425,110387,39997,671,0.016776258,294700
+"Twin Falls, ID Metro Area",Twin Falls,ID,Metro,6,12660,43031,19440,326,0.016769547,332200
+"Mineral Wells, TX Micro Area",Mineral Wells,TX,Micro,20,30671,11234,3114,52,0.01669878,241000
+"Huntsville, AL Metro Area",Huntsville,AL,Metro,3,9021,205984,90486,1510,0.016687664,306000
+"Palestine, TX Micro Area",Palestine,TX,Micro,20,30671,17579,5250,87,0.016571429,200500
+"Albany-Schenectady-Troy, NY Metro Area",Albany-Schenectady-Troy,NY,Metro,3,4175,383063,150167,2473,0.016468332,294200
+"Tyler, TX Metro Area",Tyler,TX,Metro,0,0,83134,30534,501,0.016407939,255400
+"Casper, WY Metro Area",Casper,WY,Metro,4,3425,33886,15117,248,0.016405371,283200
+"Lawrence, KS Metro Area",Lawrence,KS,Metro,1,375,50406,16478,270,0.016385484,322300
+"Winston-Salem, NC Metro Area",Winston-Salem,NC,Metro,6,12660,281596,114100,1868,0.016371604,250200
+"Iowa City, IA Metro Area",Iowa City,IA,Metro,1,3200,72313,27904,454,0.016270069,311100
+"Le Mars, IA Micro Area",Le Mars,IA,Micro,4,3425,10313,3939,64,0.016247779,233800
+"Slidell-Mandeville-Covington, LA Metro Area",Slidell-Mandeville-Covington,LA,Metro,0,0,105082,53577,869,0.016219646,294700
+"Lebanon, PA Metro Area",Lebanon,PA,Metro,0,0,56712,23372,378,0.016173199,251500
+"Watertown-Fort Atkinson, WI Micro Area",Watertown-Fort Atkinson,WI,Micro,0,0,34873,15803,255,0.016136177,284000
+"Hartford-West Hartford-East Hartford, CT Metro Area",Hartford-West Hartford-East Hartford,CT,Metro,3,12150,465181,201443,3250,0.016133596,338200
+"Cincinnati, OH-KY-IN Metro Area",Cincinnati,OH-KY-IN,Metro,2,4925,906675,406524,6538,0.016082691,273700
+"Ocala, FL Metro Area",Ocala,FL,Metro,1,425,164881,62157,999,0.016072204,263700
+"Mountain Home, ID Micro Area",Mountain Home,ID,Micro,3,9021,11067,4430,71,0.016027088,330600
+"Kirksville, MO Micro Area",Kirksville,MO,Micro,0,0,10433,3309,53,0.016016924,164000
+"Idaho Falls, ID Metro Area",Idaho Falls,ID,Metro,3,3820,55456,26434,423,0.016002118,391300
+"Monticello, NY Micro Area",Monticello,NY,Micro,0,0,31434,9695,154,0.015884477,291700
+"Riverton, WY Micro Area",Riverton,WY,Micro,3,3820,15037,5048,80,0.015847861,298900
+"Tulsa, OK Metro Area",Tulsa,OK,Metro,1,425,406447,154017,2436,0.015816436,238600
+"Macomb, IL Micro Area",Macomb,IL,Micro,0,0,11856,3737,59,0.015788065,113700
+"Lake Charles, LA Metro Area",Lake Charles,LA,Metro,0,0,92043,33667,530,0.015742418,235600
+"Columbia, MO Metro Area",Columbia,MO,Metro,20,30671,86393,31915,502,0.015729281,268000
+"Newport, TN Micro Area",Newport,TN,Micro,0,0,15509,4725,74,0.015661376,178800
+"Rocky Mount, NC Metro Area",Rocky Mount,NC,Metro,20,30671,58449,19004,297,0.015628289,192800
+"Cortland, NY Micro Area",Cortland,NY,Micro,2,11835,18999,6735,105,0.0155902,170500
+"Huron, SD Micro Area",Huron,SD,Micro,1,375,7536,2635,41,0.015559772,186900
+"Somerset, KY Micro Area",Somerset,KY,Micro,0,0,26210,9481,147,0.015504694,185800
+"Bloomington, IN Metro Area",Bloomington,IN,Metro,50,336933,67854,23684,366,0.015453471,275400
+"Lafayette, LA Metro Area",Lafayette,LA,Metro,0,0,164378,57414,883,0.015379524,246100
+"Arkadelphia, AR Micro Area",Arkadelphia,AR,Micro,0,0,8121,2472,38,0.015372168,197700
+"Mountain Home, AR Micro Area",Mountain Home,AR,Micro,0,0,19348,6966,107,0.015360322,188600
+"Tuscaloosa, AL Metro Area",Tuscaloosa,AL,Metro,0,0,105683,38295,586,0.015302259,255200
+"Grand Rapids, MN Micro Area",Grand Rapids,MN,Micro,0,0,18541,8247,126,0.015278283,229900
+"Norwich-New London-Willimantic, CT Metro Area",Norwich-New London-Willimantic,CT,Metro,0,0,115768,45696,689,0.015077906,328100
+"Eau Claire, WI Metro Area",Eau Claire,WI,Metro,3,12150,71865,27729,418,0.015074471,267200
+"Winchester, VA-WV Metro Area",Winchester,VA-WV,Metro,4,3425,55520,25024,377,0.015065537,373100
+"Pittsburgh, PA Metro Area",Pittsburgh,PA,Metro,0,0,1061705,416037,6263,0.01505395,234100
+"Mount Vernon, OH Micro Area",Mount Vernon,OH,Micro,0,0,23491,10845,163,0.015029968,247700
+"Charleston, WV Metro Area",Charleston,WV,Metro,0,0,87358,28665,430,0.015000872,163000
+"Monroe, LA Metro Area",Monroe,LA,Metro,1,425,87006,26930,403,0.014964723,211600
+"Willmar, MN Micro Area",Willmar,MN,Micro,0,0,17603,7546,112,0.014842301,242600
+"Branson, MO Micro Area",Branson,MO,Micro,0,0,22788,8302,123,0.014815707,235200
+"Lake City, FL Micro Area",Lake City,FL,Micro,0,0,27430,9591,142,0.014805547,250300
+"Great Falls, MT Metro Area",Great Falls,MT,Metro,2,1050,35615,14288,211,0.014767637,277200
+"Sayre, PA Micro Area",Sayre,PA,Micro,4,3425,24610,8197,121,0.014761498,206400
+"Cleveland, TN Metro Area",Cleveland,TN,Metro,0,0,50020,18077,265,0.014659512,272900
+"Albuquerque, NM Metro Area",Albuquerque,NM,Metro,2,11835,376025,158997,2328,0.014641786,299500
+"St. Cloud, MN Metro Area",St. Cloud,MN,Metro,2,12595,78122,31585,460,0.014563875,275800
+"Johnson City, TN Metro Area",Johnson City,TN,Metro,6,12660,88979,30101,437,0.01451779,240700
+"Eufaula, AL-GA Micro Area",Eufaula,AL-GA,Micro,2,1200,10195,2761,40,0.014487505,165100
+"Rutland, VT Micro Area",Rutland,VT,Micro,0,0,25321,10424,151,0.014485802,234400
+"Augusta-Richmond County, GA-SC Metro Area",Augusta-Richmond County,GA-SC,Metro,0,0,231857,91535,1322,0.014442563,252000
+"Lincoln, NE Metro Area",Lincoln,NE,Metro,50,336933,140914,53143,765,0.014395123,276700
+"Winnemucca, NV Micro Area",Winnemucca,NV,Micro,2,1200,6911,3067,44,0.014346267,301600
+"Ithaca, NY Metro Area",Ithaca,NY,Metro,50,336933,43263,12281,176,0.014331081,302600
+"Bismarck, ND Metro Area",Bismarck,ND,Metro,0,0,55940,22829,326,0.014280082,330600
+"Kalamazoo-Portage, MI Metro Area",Kalamazoo-Portage,MI,Metro,18,43250,107110,42205,602,0.014263713,252700
+"Gainesville, FL Metro Area",Gainesville,FL,Metro,0,0,142499,46248,656,0.014184397,292100
+"Cedar City, UT Micro Area",Cedar City,UT,Micro,0,0,20157,8888,126,0.014176418,382800
+"Waco, TX Metro Area",Waco,TX,Metro,18,43250,111178,35483,503,0.014175802,259300
+"Crossville, TN Micro Area",Crossville,TN,Micro,4,3425,28195,11085,157,0.014163284,257800
+"Concord, NH Micro Area",Concord,NH,Micro,20,30671,60901,28030,396,0.01412772,387600
+"Snyder, TX Micro Area",Snyder,TX,Micro,0,0,5876,1919,27,0.014069828,155800
+"Chambersburg, PA Metro Area",Chambersburg,PA,Metro,0,0,63510,28661,400,0.013956247,259400
+"Bellefontaine, OH Micro Area",Bellefontaine,OH,Micro,2,58825,19560,9181,128,0.013941836,203400
+"Killeen-Temple, TX Metro Area",Killeen-Temple,TX,Metro,1,425,177681,62740,872,0.013898629,251100
+"Mitchell, SD Micro Area",Mitchell,SD,Micro,2,58825,10977,3686,51,0.013836137,219200
+"Omaha, NE-IA Metro Area",Omaha,NE-IA,Metro,1,425,389812,170616,2351,0.013779481,279600
+"Staunton-Stuarts Draft, VA Metro Area",Staunton-Stuarts Draft,VA,Metro,0,0,52233,22829,314,0.013754435,290800
+"Corpus Christi, TX Metro Area",Corpus Christi,TX,Metro,2,2325,168972,52421,721,0.01375403,242300
+"Buffalo-Cheektowaga, NY Metro Area",Buffalo-Cheektowaga,NY,Metro,1,3200,501549,188427,2589,0.013740069,239100
+"Beaver Dam, WI Micro Area",Beaver Dam,WI,Micro,0,0,35910,15514,213,0.013729535,234400
+"Liberal, KS Micro Area",Liberal,KS,Micro,4,3425,7257,1899,26,0.013691417,159800
+"Mason City, IA Micro Area",Mason City,IA,Micro,0,0,22716,9147,125,0.013665683,168000
+"Columbus, NE Micro Area",Columbus,NE,Micro,1,375,17365,5794,79,0.013634795,233900
+"Morgan City, LA Micro Area",Morgan City,LA,Micro,0,0,18463,4487,61,0.01359483,172100
+"Kenosha, WI Metro Area",Kenosha,WI,Metro,50,336933,68904,29721,404,0.013593082,273700
+"Amsterdam, NY Micro Area",Amsterdam,NY,Micro,0,0,19603,7140,97,0.013585434,178700
+"Little Rock-North Little Rock-Conway, AR Metro Area",Little Rock-North Little Rock-Conway,AR,Metro,2,1050,311547,120476,1621,0.013454962,228000
+"Macon-Bibb County, GA Metro Area",Macon-Bibb County,GA,Metro,0,0,88590,30215,406,0.013437035,217900
+"Jackson, MS Metro Area",Jackson,MS,Metro,0,0,237841,88389,1185,0.013406646,232200
+"Grand Island, NE Metro Area",Grand Island,NE,Metro,3,12150,30296,10753,144,0.013391612,228400
+"Paris, TX Micro Area",Paris,TX,Micro,0,0,24997,6648,89,0.013387485,233400
+"Hermiston-Pendleton, OR Micro Area",Hermiston-Pendleton,OR,Micro,2,4925,33033,12733,170,0.013351135,299500
+"Keene, NH Micro Area",Keene,NH,Micro,0,0,30620,13229,176,0.013304105,287200
+"Washington Court House, OH Micro Area",Washington Court House,OH,Micro,20,30671,11582,4682,62,0.013242204,177000
+"Fremont, NE Micro Area",Fremont,NE,Micro,2,2300,15168,5596,74,0.013223731,225900
+"Valdosta, GA Metro Area",Valdosta,GA,Metro,50,336933,56786,20110,265,0.013177524,223400
+"Pocatello, ID Metro Area",Pocatello,ID,Metro,0,0,33590,13704,180,0.013134851,321600
+"Marquette, MI Micro Area",Marquette,MI,Micro,1,375,28255,10853,142,0.01308394,226600
+"McAlester, OK Micro Area",McAlester,OK,Micro,0,0,17851,5832,76,0.01303155,168100
+"Hot Springs, AR Metro Area",Hot Springs,AR,Metro,0,0,43667,14831,193,0.013013283,220100
+"Las Vegas, NM Micro Area",Las Vegas,NM,Micro,0,0,13899,2781,36,0.012944984,200800
+"Moses Lake, WA Micro Area",Moses Lake,WA,Micro,20,30671,35398,13342,172,0.01289162,329000
+"Las Cruces, NM Metro Area",Las Cruces,NM,Metro,1,425,84889,28440,366,0.012869198,247800
+"Yankton, SD Micro Area",Yankton,SD,Micro,2,58825,9695,3893,50,0.012843565,244100
+"Hammond, LA Metro Area",Hammond,LA,Metro,0,0,51999,19966,256,0.012821797,237900
+"Flint, MI Metro Area",Flint,MI,Metro,50,336933,167334,67015,859,0.012818026,209300
+"Natchitoches, LA Micro Area",Natchitoches,LA,Micro,0,0,14508,3908,50,0.012794268,222500
+"Massena-Ogdensburg, NY Micro Area",Massena-Ogdensburg,NY,Micro,50,336933,41666,14361,182,0.012673212,145000
+"New Bern, NC Micro Area",New Bern,NC,Micro,0,0,52452,20463,257,0.012559253,232900
+"Oshkosh-Neenah, WI Metro Area",Oshkosh-Neenah,WI,Metro,2,58825,72667,28855,362,0.012545486,223900
+"Starkville, MS Micro Area",Starkville,MS,Micro,0,0,25913,6702,84,0.012533572,240200
+"San Angelo, TX Metro Area",San Angelo,TX,Metro,0,0,47344,14960,186,0.012433155,217100
+"Cornelia, GA Micro Area",Cornelia,GA,Micro,4,3425,16753,6274,78,0.01243226,250300
+"Louisville/Jefferson County, KY-IN Metro Area",Louisville/Jefferson County,KY-IN,Metro,20,30671,558306,246934,3066,0.012416273,258100
+"Maryville, MO Micro Area",Maryville,MO,Micro,3,12150,8460,2507,31,0.012365377,204100
+"Clarksville, TN-KY Metro Area",Clarksville,TN-KY,Metro,6,12660,124867,49798,615,0.012349894,272400
+"Union City, TN Micro Area",Union City,TN,Micro,0,0,12527,4051,50,0.012342631,150300
+"Florence-Muscle Shoals, AL Metro Area",Florence-Muscle Shoals,AL,Metro,0,0,63559,21986,270,0.012280542,202600
+"Greensboro-High Point, NC Metro Area",Greensboro-High Point,NC,Metro,3,12150,317045,123514,1514,0.01225772,247200
+"Longview, TX Metro Area",Longview,TX,Metro,2,2325,108174,35029,426,0.012161352,222500
+"Greenfield, MA Micro Area",Greenfield,MA,Micro,0,0,31570,13077,159,0.012158752,332500
+"McComb, MS Micro Area",McComb,MS,Micro,2,4925,20297,5356,65,0.012135922,165100
+"Meridian, MS Micro Area",Meridian,MS,Micro,0,0,34652,10550,128,0.012132701,177700
+"Olean, NY Micro Area",Olean,NY,Micro,0,0,31895,10371,124,0.011956417,140600
+"Springfield, MO Metro Area",Springfield,MO,Metro,50,336933,198884,78870,943,0.011956384,239300
+"Paris, TN Micro Area",Paris,TN,Micro,1,375,13452,4204,50,0.011893435,177400
+"Baton Rouge, LA Metro Area",Baton Rouge,LA,Metro,18,43250,332585,133907,1589,0.011866445,263400
+"Shelby-Kings Mountain, NC Micro Area",Shelby-Kings Mountain,NC,Micro,0,0,38850,13957,165,0.011822025,222600
+"Des Moines-West Des Moines, IA Metro Area",Des Moines-West Des Moines,IA,Metro,0,0,294814,139981,1646,0.011758739,277700
+"Greeneville, TN Micro Area",Greeneville,TN,Micro,2,4925,28400,10900,128,0.011743119,216500
+"Butte-Silver Bow, MT Micro Area",Butte-Silver Bow,MT,Micro,0,0,15419,6048,71,0.011739418,280800
+"Bay City, TX Micro Area",Bay City,TX,Micro,2,58825,15439,3923,46,0.01172572,217000
+"Arcadia, FL Micro Area",Arcadia,FL,Micro,4,3425,12824,3596,42,0.011679644,225800
+"Grand Forks, ND-MN Metro Area",Grand Forks,ND-MN,Metro,50,336933,43655,14577,169,0.011593606,261500
+"Freeport, IL Micro Area",Freeport,IL,Micro,50,336933,19358,6841,79,0.011548019,138400
+"Blackfoot, ID Micro Area",Blackfoot,ID,Micro,0,0,16132,7511,86,0.011449874,332700
+"Canton, IL Micro Area",Canton,IL,Micro,0,0,13795,4993,57,0.011415982,112500
+"Spartanburg, SC Metro Area",Spartanburg,SC,Metro,1,425,143283,60392,688,0.011392237,244800
+"Allentown-Bethlehem-Easton, PA-NJ Metro Area",Allentown-Bethlehem-Easton,PA-NJ,Metro,3,9021,339656,146478,1668,0.011387376,314700
+"Coldwater, MI Micro Area",Coldwater,MI,Micro,1,375,16906,7213,82,0.011368363,165000
+"Durant, OK Micro Area",Durant,OK,Micro,0,0,18397,5500,62,0.011272727,208500
+"Lynchburg, VA Metro Area",Lynchburg,VA,Metro,2,58825,103401,42407,478,0.011271724,253700
+"Rolla, MO Micro Area",Rolla,MO,Micro,0,0,17329,5608,63,0.011233951,214300
+"Hemlock Farms, PA Micro Area",Hemlock Farms,PA,Micro,0,0,24262,13308,149,0.011196273,275400
+"Albertville, AL Micro Area",Albertville,AL,Micro,1,375,36459,14599,163,0.011165148,225600
+"Augusta-Waterville, ME Micro Area",Augusta-Waterville,ME,Micro,2,12595,54312,23563,263,0.011161567,245900
+"Montgomery, AL Metro Area",Montgomery,AL,Metro,0,0,151438,59583,665,0.011160902,211600
+"Michigan City-La Porte, IN Metro Area",Michigan City-La Porte,IN,Metro,4,3425,43633,19342,215,0.011115707,197300
+"Carlsbad-Artesia, NM Micro Area",Carlsbad-Artesia,NM,Micro,2,1200,23620,8374,93,0.011105804,240000
+"Atchison, KS Micro Area",Atchison,KS,Micro,2,2325,5735,1984,22,0.01108871,158900
+"Bartlesville, OK Micro Area",Bartlesville,OK,Micro,0,0,20957,8027,89,0.011087579,191500
+"Greenwood, MS Micro Area",Greenwood,MS,Micro,0,0,14461,3526,39,0.011060692,139300
+"La Crosse-Onalaska, WI-MN Metro Area",La Crosse-Onalaska,WI-MN,Metro,0,0,72055,27770,307,0.011055095,264900
+"Del Rio, TX Micro Area",Del Rio,TX,Micro,0,0,16810,5436,60,0.011037528,214600
+"Okeechobee, FL Micro Area",Okeechobee,FL,Micro,2,4925,15113,4808,53,0.011023295,243800
+"Frankfort, KY Micro Area",Frankfort,KY,Micro,0,0,32371,13271,146,0.011001432,227000
+"Klamath Falls, OR Micro Area",Klamath Falls,OR,Micro,2,12595,28999,11117,122,0.010974184,307800
+"Dubuque, IA Metro Area",Dubuque,IA,Metro,3,4175,40989,18502,203,0.010971787,238200
+"Sunbury, PA Micro Area",Sunbury,PA,Micro,0,0,45748,17199,187,0.010872725,199500
+"Wichita Falls, TX Metro Area",Wichita Falls,TX,Metro,1,3200,56774,17461,188,0.010766852,183100
+"Somerset, PA Micro Area",Somerset,PA,Micro,20,30671,29344,10614,114,0.010740531,160800
+"Homosassa Springs, FL Metro Area",Homosassa Springs,FL,Metro,2,58825,71291,27281,293,0.010740076,268400
+"Tullahoma-Manchester, TN Micro Area",Tullahoma-Manchester,TN,Micro,0,0,25836,9685,104,0.010738255,275100
+"Lubbock, TX Metro Area",Lubbock,TX,Metro,2,11835,140553,42867,457,0.010660881,232200
+"Green Bay, WI Metro Area",Green Bay,WI,Metro,1,375,136101,58223,619,0.010631537,266400
+"Scottsboro, AL Micro Area",Scottsboro,AL,Micro,0,0,21795,6679,71,0.010630334,191000
+"Harrisburg-Carlisle, PA Metro Area",Harrisburg-Carlisle,PA,Metro,0,0,246084,102582,1088,0.010606149,261000
+"Jasper, IN Micro Area",Jasper,IN,Micro,0,0,17574,7644,81,0.010596546,239800
+"Sedalia, MO Micro Area",Sedalia,MO,Micro,20,30671,16996,6234,66,0.010587103,168800
+"San Juan-Bayamón-Caguas, PR Metro Area",San Juan-Bayamón-Caguas,PR,Metro,3,2610,829535,235350,2483,0.010550244,160600
+"Springfield, MA Metro Area",Springfield,MA,Metro,2,12595,184471,73667,773,0.010493165,304800
+"Houma-Bayou Cane-Thibodaux, LA Metro Area",Houma-Bayou Cane-Thibodaux,LA,Metro,0,0,79889,29052,304,0.010463996,223000
+"Red Wing, MN Micro Area",Red Wing,MN,Micro,0,0,19727,9653,101,0.010463068,289800
+"Lakeland-Winter Haven, FL Metro Area",Lakeland-Winter Haven,FL,Metro,18,43250,289425,113908,1189,0.010438248,300000
+"Bradford, PA Micro Area",Bradford,PA,Micro,0,0,16369,5848,61,0.010430917,118800
+"Blacksburg-Christiansburg-Radford, VA Metro Area",Blacksburg-Christiansburg-Radford,VA,Metro,50,336933,70282,22632,236,0.010427713,263400
+"Oneonta, NY Micro Area",Oneonta,NY,Micro,0,0,23189,8458,88,0.010404351,192400
+"Cañon City, CO Micro Area",Cañon City,CO,Micro,6,7600,17976,6927,72,0.01039411,340100
+"Hobbs, NM Micro Area",Hobbs,NM,Micro,0,0,24670,6848,71,0.010367991,239100
+"Statesboro, GA Micro Area",Statesboro,GA,Micro,0,0,34933,10031,104,0.01036786,245000
+"Burley, ID Micro Area",Burley,ID,Micro,3,12150,16602,6464,67,0.010365099,278400
+"Baraboo, WI Micro Area",Baraboo,WI,Micro,2,4925,27987,12449,129,0.010362278,270800
+"Parkersburg-Vienna, WV Metro Area",Parkersburg-Vienna,WV,Metro,4,3425,37877,14054,145,0.010317347,170600
+"Bemidji, MN Micro Area",Bemidji,MN,Micro,2,58825,18172,6595,68,0.010310842,257200
+"Yakima, WA Metro Area",Yakima,WA,Metro,0,0,87708,30884,318,0.010296594,342600
+"Elkhart-Goshen, IN Metro Area",Elkhart-Goshen,IN,Metro,6,12660,72309,32754,337,0.01028882,215700
+"Corinth, MS Micro Area",Corinth,MS,Micro,0,0,14456,4393,45,0.010243569,173000
+"Cleveland, MS Micro Area",Cleveland,MS,Micro,2,12595,11915,3521,36,0.010224368,156000
+"Wooster, OH Micro Area",Wooster,OH,Micro,2,12595,44365,19355,197,0.010178249,231400
+"Cleveland, OH Metro Area",Cleveland,OH,Metro,0,0,931377,373586,3802,0.010177041,228800
+"Talladega-Sylacauga, AL Micro Area",Talladega-Sylacauga,AL,Micro,0,0,38062,12729,129,0.010134339,172700
+"Port Lavaca, TX Micro Area",Port Lavaca,TX,Micro,0,0,8670,3160,32,0.010126582,201100
+"Hermitage, PA Micro Area",Hermitage,PA,Micro,2,4925,46524,16109,163,0.010118567,173600
+"Morristown, TN Metro Area",Morristown,TN,Metro,0,0,47963,16905,171,0.01011535,228100
+"Seneca Falls, NY Micro Area",Seneca Falls,NY,Micro,2,4925,13606,5159,52,0.010079473,162100
+"Lufkin, TX Micro Area",Lufkin,TX,Micro,0,0,32271,9530,96,0.010073452,195000
+"Muskegon-Norton Shores, MI Metro Area",Muskegon-Norton Shores,MI,Metro,0,0,67732,29912,301,0.010062851,211500
+"Farmington, MO Micro Area",Farmington,MO,Micro,0,0,24816,10374,104,0.010025063,184300
+"Amarillo, TX Metro Area",Amarillo,TX,Metro,6,12660,103062,35134,351,0.009990323,227900
+"Stillwater, OK Micro Area",Stillwater,OK,Micro,2,4925,32609,9239,92,0.009957788,246700
+"Platteville, WI Micro Area",Platteville,WI,Micro,2,2300,19960,7336,73,0.009950927,210700
+"Wichita, KS Metro Area",Wichita,KS,Metro,2,2325,254776,99515,983,0.009877908,215400
+"Jackson, TN Metro Area",Jackson,TN,Metro,1,375,72451,25627,253,0.0098724,205100
+"Burlington, NC Metro Area",Burlington,NC,Metro,2,4925,70062,27818,273,0.00981379,267000
+"Big Rapids, MI Micro Area",Big Rapids,MI,Micro,0,0,16708,6435,63,0.00979021,197000
+"South Bend-Mishawaka, IN-MI Metro Area",South Bend-Mishawaka,IN-MI,Metro,0,0,128459,54328,530,0.009755559,207100
+"Gulfport-Biloxi, MS Metro Area",Gulfport-Biloxi,MS,Metro,6,12660,167947,63370,618,0.009752249,222600
+"Decatur, IN Micro Area",Decatur,IN,Micro,20,30671,12401,6372,62,0.009730069,189000
+"Show Low, AZ Micro Area",Show Low,AZ,Micro,0,0,40063,9898,95,0.009597899,288000
+"Manhattan, KS Metro Area",Manhattan,KS,Metro,0,0,51234,15410,147,0.00953926,245700
+"Decatur, AL Metro Area",Decatur,AL,Metro,0,0,62667,23557,224,0.009508851,224000
+"Searcy, AR Micro Area",Searcy,AR,Micro,50,336933,29629,10208,97,0.009502351,183500
+"Pahrump, NV Micro Area",Pahrump,NV,Micro,0,0,22175,9267,87,0.009388152,319000
+"Cedar Rapids, IA Metro Area",Cedar Rapids,IA,Metro,0,0,114000,54095,506,0.009353914,217200
+"Springfield, OH Metro Area",Springfield,OH,Metro,2,12595,55975,23276,217,0.009322908,177900
+"Selinsgrove, PA Micro Area",Selinsgrove,PA,Micro,2,58825,14600,5499,51,0.009274414,222200
+"Putnam, CT Micro Area",Putnam,CT,Micro,0,0,39412,20936,194,0.009266335,304800
+"Sebring, FL Metro Area",Sebring,FL,Metro,1,4600,46879,14107,130,0.009215283,244900
+"Warsaw, IN Micro Area",Warsaw,IN,Micro,0,0,31934,15272,140,0.009167103,227600
+"Galesburg, IL Micro Area",Galesburg,IL,Micro,2,58825,20972,7201,66,0.009165394,118900
+"Mount Pleasant, TX Micro Area",Mount Pleasant,TX,Micro,50,336933,20868,5908,54,0.009140149,210900
+"Kingsport-Bristol, TN-VA Metro Area",Kingsport-Bristol,TN-VA,Metro,0,0,130939,46412,424,0.009135568,218200
+"Pottsville, PA Micro Area",Pottsville,PA,Micro,2,4925,57988,21010,191,0.009090909,172500
+"Mount Sterling, KY Micro Area",Mount Sterling,KY,Micro,0,0,18181,7054,64,0.009072866,165300
+"Syracuse, NY Metro Area",Syracuse,NY,Metro,18,43250,271251,108955,986,0.009049608,196000
+"Auburn, NY Micro Area",Auburn,NY,Micro,2,11835,31524,11951,108,0.009036901,183700
+"Warner Robins, GA Metro Area",Warner Robins,GA,Metro,3,12150,74449,32660,295,0.009032456,242500
+"Morgantown, WV Metro Area",Morgantown,WV,Metro,0,0,57438,19215,173,0.009003383,261600
+"Ruston, LA Micro Area",Ruston,LA,Micro,1,375,18487,4228,38,0.008987701,257300
+"Columbus, GA-AL Metro Area",Columbus,GA-AL,Metro,0,0,127512,43619,392,0.008986909,231800
+"Mobile, AL Metro Area",Mobile,AL,Metro,0,0,161665,61404,550,0.008957071,212600
+"Waterbury-Shelton, CT Metro Area",Waterbury-Shelton,CT,Metro,0,0,180116,79910,715,0.008947566,325200
+"Richmond-Berea, KY Micro Area",Richmond-Berea,KY,Micro,2,4925,49560,17786,159,0.008939615,224500
+"Bowling Green, KY Metro Area",Bowling Green,KY,Metro,3,12150,73344,25650,228,0.008888889,243800
+"Nogales, AZ Micro Area",Nogales,AZ,Micro,2,4925,16966,7441,66,0.008869776,236100
+"Waterloo-Cedar Falls, IA Metro Area",Waterloo-Cedar Falls,IA,Metro,0,0,69396,29600,262,0.008851351,198000
+"Sheboygan, WI Metro Area",Sheboygan,WI,Metro,6,7600,49725,21081,186,0.008823111,236600
+"Magnolia, AR Micro Area",Magnolia,AR,Micro,0,0,8409,2730,24,0.008791209,191600
+"Columbus, IN Metro Area",Columbus,IN,Metro,0,0,33359,15088,132,0.008748674,244200
+"Dover, DE Metro Area",Dover,DE,Metro,2,12595,71424,34440,301,0.008739837,330900
+"Lawton, OK Metro Area",Lawton,OK,Metro,2,2325,46938,15148,132,0.008714022,177800
+"Owatonna, MN Micro Area",Owatonna,MN,Micro,2,4925,15138,7359,64,0.008696834,255900
+"Glasgow, KY Micro Area",Glasgow,KY,Micro,3,9021,22117,7611,66,0.008671659,182400
+"Cheyenne, WY Metro Area",Cheyenne,WY,Metro,0,0,43279,19750,170,0.008607595,361300
+"Americus, GA Micro Area",Americus,GA,Micro,0,0,12625,4072,35,0.008595285,155100
+"Jefferson City, MO Metro Area",Jefferson City,MO,Metro,18,43250,58587,23676,203,0.008574083,221600
+"Appleton, WI Metro Area",Appleton,WI,Metro,1,375,99754,44511,379,0.008514749,279700
+"Marshall, MO Micro Area",Marshall,MO,Micro,2,58825,8053,2944,25,0.008491848,156000
+"Kearney, NE Micro Area",Kearney,NE,Micro,4,3425,22798,8630,73,0.008458864,260200
+"Cordele, GA Micro Area",Cordele,GA,Micro,0,0,7908,2143,18,0.00839944,170200
+"Watertown-Fort Drum, NY Metro Area",Watertown-Fort Drum,NY,Metro,0,0,47606,14774,124,0.008393123,205800
+"Duluth, MN-WI Metro Area",Duluth,MN-WI,Metro,1,3200,120365,50356,422,0.008380332,236800
+"Johnstown, PA Metro Area",Johnstown,PA,Metro,0,0,55973,19145,160,0.008357273,147300
+"Lock Haven, PA Micro Area",Lock Haven,PA,Micro,1,375,15424,5808,48,0.008264463,193300
+"Enterprise, AL Micro Area",Enterprise,AL,Micro,0,0,20984,8475,70,0.008259587,212300
+"Calhoun, GA Micro Area",Calhoun,GA,Micro,2,58825,21348,9081,75,0.008259002,226500
+"Hagerstown-Martinsburg, MD-WV Metro Area",Hagerstown-Martinsburg,MD-WV,Metro,0,0,118181,55363,457,0.00825461,289000
+"Greenwood, SC Micro Area",Greenwood,SC,Micro,0,0,37646,12479,103,0.008253866,207900
+"Greencastle, IN Micro Area",Greencastle,IN,Micro,2,2300,14142,7035,58,0.008244492,230800
+"Faribault-Northfield, MN Micro Area",Faribault-Northfield,MN,Micro,0,0,23493,10843,89,0.00820806,328800
+"Ketchikan, AK Micro Area",Ketchikan,AK,Micro,2,12595,5732,2442,20,0.008190008,416300
+"Canton-Massillon, OH Metro Area",Canton-Massillon,OH,Metro,0,0,167161,69513,561,0.008070433,197300
+"McPherson, KS Micro Area",McPherson,KS,Micro,4,3425,12162,5263,42,0.007980239,218500
+"Binghamton, NY Metro Area",Binghamton,NY,Metro,18,43250,102352,35021,278,0.007938094,164000
+"Effingham, IL Micro Area",Effingham,IL,Micro,0,0,18128,7338,58,0.007904061,180300
+"Newberry, SC Micro Area",Newberry,SC,Micro,50,336933,15325,4935,39,0.007902736,213500
+"Jacksonville, NC Metro Area",Jacksonville,NC,Metro,3,12150,75265,33940,268,0.007896288,246900
+"Paducah, KY-IL Metro Area",Paducah,KY-IL,Metro,2,1050,41735,14915,117,0.007844452,183100
+"Rochester, NY Metro Area",Rochester,NY,Metro,3,12150,445836,180771,1401,0.007750137,210300
+"Reading, PA Metro Area",Reading,PA,Metro,0,0,163236,71060,550,0.007739938,266800
+"Sanford, NC Micro Area",Sanford,NC,Micro,1,375,25145,10103,78,0.007720479,263600
+"Odessa, TX Metro Area",Odessa,TX,Metro,3,2610,64563,19746,152,0.007697762,240200
+"Vermillion, SD Micro Area",Vermillion,SD,Micro,0,0,5547,1691,13,0.007687759,248700
+"Joplin, MO-KS Metro Area",Joplin,MO-KS,Metro,50,336933,79505,30677,235,0.007660462,175200
+"Dalton, GA Metro Area",Dalton,GA,Metro,0,0,52080,17088,130,0.007607678,224200
+"Lawrenceburg, TN Micro Area",Lawrenceburg,TN,Micro,2,2300,16991,6720,51,0.007589286,228700
+"Wausau, WI Metro Area",Wausau,WI,Metro,50,336933,57866,24920,189,0.00758427,229800
+"Kokomo, IN Metro Area",Kokomo,IN,Metro,20,30671,35593,16011,121,0.007557304,170700
+"Wilmington, OH Micro Area",Wilmington,OH,Micro,0,0,16761,7291,55,0.007543547,218800
+"Fairmont, MN Micro Area",Fairmont,MN,Micro,0,0,8839,3053,23,0.007533574,166600
+"Fort Wayne, IN Metro Area",Fort Wayne,IN,Metro,50,336933,182145,81388,613,0.007531823,222100
+"Ames, IA Metro Area",Ames,IA,Metro,0,0,49840,18112,136,0.007508834,256500
+"Racine-Mount Pleasant, WI Metro Area",Racine-Mount Pleasant,WI,Metro,0,0,80406,37852,283,0.007476487,264600
+"Sandusky, OH Metro Area",Sandusky,OH,Metro,0,0,50986,21222,158,0.007445104,209500
+"Plymouth, IN Micro Area",Plymouth,IN,Micro,0,0,17758,7802,58,0.007433991,202500
+"East Stroudsburg, PA Micro Area",East Stroudsburg,PA,Micro,0,0,61212,30712,228,0.007423808,274800
+"Hinesville, GA Metro Area",Hinesville,GA,Metro,1,375,30160,10376,77,0.007420971,219800
+"Brownwood, TX Micro Area",Brownwood,TX,Micro,0,0,14972,4458,33,0.007402423,171100
+"Ozark, AL Micro Area",Ozark,AL,Micro,20,30671,19727,5815,43,0.007394669,167400
+"Troy, AL Micro Area",Troy,AL,Micro,0,0,12484,3936,29,0.007367886,189300
+"Orangeburg, SC Micro Area",Orangeburg,SC,Micro,2,58825,33077,7879,58,0.00736134,169700
+"Hutchinson, MN Micro Area",Hutchinson,MN,Micro,2,4925,15215,6969,51,0.007318123,244800
+"Camden, AR Micro Area",Camden,AR,Micro,2,2300,10314,3024,22,0.007275132,116900
+"Gillette, WY Micro Area",Gillette,WY,Micro,0,0,17988,8502,61,0.007174782,283900
+"Fort Madison, IA Micro Area",Fort Madison,IA,Micro,50,336933,14323,5617,40,0.007121239,150000
+"Sturgis, MI Micro Area",Sturgis,MI,Micro,2,4925,23620,10117,72,0.007116734,187400
+"Mexico, MO Micro Area",Mexico,MO,Micro,20,30671,9219,3273,23,0.007027192,152700
+"Aberdeen, WA Micro Area",Aberdeen,WA,Micro,0,0,30628,12013,84,0.006992425,338900
+"Tupelo, MS Micro Area",Tupelo,MS,Micro,0,0,51805,20513,143,0.006971189,188900
+"Española, NM Micro Area",Española,NM,Micro,2,4925,15647,4169,29,0.006956105,285600
+"Worthington, MN Micro Area",Worthington,MN,Micro,0,0,7674,2607,18,0.006904488,203400
+"Chillicothe, OH Micro Area",Chillicothe,OH,Micro,0,0,29808,11368,78,0.006861365,184700
+"Dickinson, ND Micro Area",Dickinson,ND,Micro,0,0,15515,5978,41,0.006858481,286600
+"Jackson, MI Metro Area",Jackson,MI,Metro,1,375,62540,26515,181,0.006826325,204600
+"Texarkana, TX-AR Metro Area",Texarkana,TX-AR,Metro,3,9021,56252,16866,115,0.006818451,191200
+"Utica-Rome, NY Metro Area",Utica-Rome,NY,Metro,2,58825,120961,42618,286,0.006710779,191200
+"Evansville, IN Metro Area",Evansville,IN,Metro,0,0,113966,49800,333,0.006686747,209300
+"Weirton-Steubenville, WV-OH Metro Area",Weirton-Steubenville,WV-OH,Metro,3,3820,49642,16614,111,0.006681112,150100
+"Hays, KS Micro Area",Hays,KS,Micro,2,58825,12251,4381,29,0.006619493,222800
+"Elmira, NY Metro Area",Elmira,NY,Metro,0,0,35262,13163,87,0.006609436,152400
+"Burlington, IA-IL Micro Area",Burlington,IA-IL,Micro,0,0,19882,7421,49,0.006602884,145600
+"Roanoke Rapids, NC Micro Area",Roanoke Rapids,NC,Micro,4,3425,28240,8534,56,0.006561987,134300
+"Anniston-Oxford, AL Metro Area",Anniston-Oxford,AL,Metro,6,12660,45015,15577,102,0.006548116,180300
+"Pueblo, CO Metro Area",Pueblo,CO,Metro,3,2610,68523,30087,197,0.006547678,307000
+"Beatrice, NE Micro Area",Beatrice,NE,Micro,2,12595,9327,3365,22,0.00653789,192300
+"Washington, NC Micro Area",Washington,NC,Micro,6,7600,19385,6285,41,0.006523469,219000
+"Lewisburg, TN Micro Area",Lewisburg,TN,Micro,20,30671,13622,6136,40,0.006518905,281300
+"Dayton-Kettering-Beavercreek, OH Metro Area",Dayton-Kettering-Beavercreek,OH,Metro,2,1200,344391,138810,904,0.006512499,213300
+"Scranton--Wilkes-Barre, PA Metro Area",Scranton--Wilkes-Barre,PA,Metro,3,2610,234230,83518,542,0.006489619,200100
+"Enid, OK Metro Area",Enid,OK,Metro,20,30671,23893,8120,52,0.006403941,167800
+"Owosso, MI Micro Area",Owosso,MI,Micro,50,336933,28126,12686,81,0.006384991,178400
+"Saginaw, MI Metro Area",Saginaw,MI,Metro,0,0,77958,29133,186,0.006384512,166600
+"Fayetteville, NC Metro Area",Fayetteville,NC,Metro,0,0,149016,55984,357,0.006376822,226400
+"Brookings, SD Micro Area",Brookings,SD,Micro,2,11835,13798,4392,28,0.006375228,270400
+"Toledo, OH Metro Area",Toledo,OH,Metro,2,2300,254486,96112,612,0.006367571,195700
+"Salem, OH Micro Area",Salem,OH,Micro,0,0,41459,15247,97,0.006361907,162600
+"Bangor, ME Metro Area",Bangor,ME,Metro,3,9021,65221,24708,157,0.006354217,237200
+"Auburn, IN Micro Area",Auburn,IN,Micro,2,12595,17096,9028,57,0.006313691,194800
+"Van Wert, OH Micro Area",Van Wert,OH,Micro,0,0,11549,5079,32,0.006300453,150800
+"Rochelle, IL Micro Area",Rochelle,IL,Micro,2,12595,20821,9060,57,0.006291391,195500
+"Lafayette-West Lafayette, IN Metro Area",Lafayette-West Lafayette,IN,Metro,2,1200,90706,33107,208,0.006282659,234400
+"Batavia, NY Micro Area",Batavia,NY,Micro,0,0,24873,10995,69,0.00627558,177300
+"Davenport-Moline-Rock Island, IA-IL Metro Area",Davenport-Moline-Rock Island,IA-IL,Metro,3,12150,161702,69997,438,0.006257411,185900
+"Eagle Pass, TX Metro Area",Eagle Pass,TX,Metro,0,0,18080,5114,32,0.006257333,198500
+"Norfolk, NE Micro Area",Norfolk,NE,Micro,0,0,19617,6771,42,0.006202924,208300
+"Warren, PA Micro Area",Warren,PA,Micro,2,2300,16123,5339,33,0.006180933,144700
+"Cumberland, MD-WV Micro Area",Cumberland,MD-WV,Micro,50,336933,38502,14263,88,0.00616981,171000
+"Ardmore, OK Micro Area",Ardmore,OK,Micro,2,12595,19046,6164,38,0.006164828,210200
+"Erie, PA Metro Area",Erie,PA,Metro,20,30671,110587,40164,247,0.006149786,187800
+"El Campo, TX Micro Area",El Campo,TX,Micro,2,12595,15890,4720,29,0.006144068,238200
+"Wapakoneta, OH Micro Area",Wapakoneta,OH,Micro,2,4925,18940,8147,50,0.006137228,192900
+"St. Joseph, MO-KS Metro Area",St. Joseph,MO-KS,Metro,0,0,46883,17518,107,0.006108003,184900
+"Sierra Vista-Douglas, AZ Metro Area",Sierra Vista-Douglas,AZ,Metro,0,0,50982,17726,108,0.006092745,240000
+"Clinton, IA Micro Area",Clinton,IA,Micro,0,0,19506,8406,51,0.006067095,166100
+"Akron, OH Metro Area",Akron,OH,Metro,0,0,296516,126727,766,0.006044489,224600
+"Marion, OH Micro Area",Marion,OH,Micro,4,3425,24683,9768,59,0.006040131,168300
+"Farmington, NM Metro Area",Farmington,NM,Metro,3,9021,41732,12945,78,0.006025492,229800
+"Norwalk, OH Micro Area",Norwalk,OH,Micro,0,0,23490,9967,60,0.006019866,167900
+"Shreveport-Bossier City, LA Metro Area",Shreveport-Bossier City,LA,Metro,0,0,157101,55056,331,0.00601206,221000
+"Austin, MN Micro Area",Austin,MN,Micro,20,30671,15719,7325,44,0.006006826,187400
+"Williamsport, PA Metro Area",Williamsport,PA,Metro,0,0,46861,18485,111,0.006004869,208100
+"Kingsland, GA Micro Area",Kingsland,GA,Micro,6,12660,21693,9383,56,0.00596824,275200
+"Stevens Point-Plover, WI Micro Area",Stevens Point-Plover,WI,Micro,0,0,29679,11415,68,0.005957074,259400
+"Marshalltown, IA Micro Area",Marshalltown,IA,Micro,0,0,15496,6382,38,0.005954246,161000
+"Russellville, AR Micro Area",Russellville,AR,Micro,0,0,32671,11943,71,0.005944905,179100
+"Gettysburg, PA Metro Area",Gettysburg,PA,Metro,0,0,40841,20053,119,0.005934274,278600
+"Madison, IN Micro Area",Madison,IN,Micro,2,12595,12790,5436,32,0.005886681,215800
+"Springfield, IL Metro Area",Springfield,IL,Metro,0,0,89990,38458,226,0.005876541,190500
+"Cape Girardeau, MO-IL Metro Area",Cape Girardeau,MO-IL,Metro,3,3820,38299,15481,90,0.005813578,225300
+"Ludington, MI Micro Area",Ludington,MI,Micro,2,4925,12801,4993,29,0.005808131,229300
+"Albany, GA Metro Area",Albany,GA,Metro,0,0,57689,17955,104,0.005792258,200200
+"Wheeling, WV-OH Metro Area",Wheeling,WV-OH,Metro,0,0,58024,18954,109,0.005750765,167000
+"El Paso, TX Metro Area",El Paso,TX,Metro,2,58825,300479,101504,583,0.005743616,207000
+"Florence, SC Metro Area",Florence,SC,Metro,2,4925,78417,26042,149,0.005721527,206500
+"Albemarle, NC Micro Area",Albemarle,NC,Micro,2,2300,25240,10140,58,0.005719921,273800
+"Sterling, IL Micro Area",Sterling,IL,Micro,0,0,23120,9742,55,0.005645658,137800
+"Fort Payne, AL Micro Area",Fort Payne,AL,Micro,0,0,26181,8167,46,0.005632423,177000
+"Rice Lake, WI Micro Area",Rice Lake,WI,Micro,0,0,19955,8182,46,0.005622097,228700
+"Columbus, MS Micro Area",Columbus,MS,Micro,1,375,26952,8731,49,0.005612186,175100
+"Richmond, IN Micro Area",Richmond,IN,Micro,0,0,26975,11839,66,0.005574795,150500
+"Topeka, KS Metro Area",Topeka,KS,Metro,0,0,96999,38853,215,0.005533678,195200
+"Plattsburgh, NY Micro Area",Plattsburgh,NY,Micro,2,4925,33556,11962,66,0.005517472,199100
+"Dothan, AL Metro Area",Dothan,AL,Metro,3,9021,61011,22441,123,0.005481039,197300
+"Huntingdon, PA Micro Area",Huntingdon,PA,Micro,2,1200,16341,6230,34,0.005457464,201200
+"Cambridge, OH Micro Area",Cambridge,OH,Micro,3,9021,16318,6232,34,0.005455712,166900
+"Marion-Herrin, IL Micro Area",Marion-Herrin,IL,Micro,2,11835,28983,11576,63,0.005442294,173600
+"Hutchinson, KS Micro Area",Hutchinson,KS,Micro,0,0,25592,9756,53,0.005432554,151200
+"Andrews, TX Micro Area",Andrews,TX,Micro,6,12660,6844,2397,13,0.005423446,234300
+"Zanesville, OH Micro Area",Zanesville,OH,Micro,2,2300,34357,13908,74,0.005320679,197400
+"Jamestown-Dunkirk, NY Micro Area",Jamestown-Dunkirk,NY,Micro,2,1200,53393,18145,96,0.005290714,139000
+"Hastings, NE Micro Area",Hastings,NE,Micro,0,0,17059,6067,32,0.005274435,194600
+"Fort Smith, AR-OK Metro Area",Fort Smith,AR-OK,Metro,0,0,90992,31121,164,0.005269754,190600
+"Greenville, OH Micro Area",Greenville,OH,Micro,0,0,21297,8197,43,0.005245822,182000
+"Corbin, KY Micro Area",Corbin,KY,Micro,50,336933,56536,16969,89,0.005244858,172000
+"Menomonie, WI Micro Area",Menomonie,WI,Micro,0,0,17440,7280,38,0.00521978,247200
+"Silver City, NM Micro Area",Silver City,NM,Micro,0,0,11295,3273,17,0.005194012,171800
+"York-Hanover, PA Metro Area",York-Hanover,PA,Metro,2,1200,181583,88052,457,0.005190115,256900
+"Sparta, WI Micro Area",Sparta,WI,Micro,18,43250,18301,7345,38,0.005173587,219600
+"Waycross, GA Micro Area",Waycross,GA,Micro,2,2300,20562,6574,34,0.005171889,168300
+"Mount Pleasant, MI Micro Area",Mount Pleasant,MI,Micro,2,4925,24914,8573,44,0.005132392,172400
+"Alamosa, CO Micro Area",Alamosa,CO,Micro,0,0,11463,3533,18,0.00509482,252200
+"Corning, NY Micro Area",Corning,NY,Micro,50,336933,39219,13939,71,0.005093622,159100
+"Abilene, TX Metro Area",Abilene,TX,Metro,6,12660,66088,22198,111,0.00500045,212700
+"Safford, AZ Micro Area",Safford,AZ,Micro,2,2300,12746,5007,25,0.00499301,257600
+"Franklin, KY Micro Area",Franklin,KY,Micro,50,336933,8025,3245,16,0.004930663,235600
+"Houghton, MI Micro Area",Houghton,MI,Micro,2,12595,15440,5521,27,0.004890418,170500
+"Goldsboro, NC Metro Area",Goldsboro,NC,Metro,0,0,47507,16431,80,0.004868845,210600
+"Adrian, MI Micro Area",Adrian,MI,Micro,2,12595,38871,18707,91,0.004864489,208100
+"Mount Airy, NC Micro Area",Mount Airy,NC,Micro,0,0,29869,10693,52,0.004862994,211000
+"Pine Bluff, AR Micro Area",Pine Bluff,AR,Micro,1,3200,26948,7651,37,0.004835969,144900
+"Ottawa, IL Micro Area",Ottawa,IL,Micro,0,0,61866,24944,120,0.004810776,163600
+"Beaumont-Port Arthur, TX Metro Area",Beaumont-Port Arthur,TX,Metro,2,58825,149466,45347,218,0.004807374,220400
+"Alpena, MI Micro Area",Alpena,MI,Micro,2,58825,13019,5001,24,0.00479904,158400
+"Midland, MI Metro Area",Midland,MI,Metro,3,12150,34993,15167,72,0.004747148,206800
+"Ashland, OH Micro Area",Ashland,OH,Micro,0,0,20720,9140,43,0.004704595,186400
+"Sioux City, IA-NE-SD Metro Area",Sioux City,IA-NE-SD,Metro,0,0,55468,21510,101,0.00469549,209500
+"Thomasville, GA Micro Area",Thomasville,GA,Micro,0,0,28792,10146,47,0.004632367,213400
+"Watertown, SD Micro Area",Watertown,SD,Micro,2,4925,12526,4967,23,0.004630562,255800
+"Gloversville, NY Micro Area",Gloversville,NY,Micro,0,0,22866,8461,39,0.004609384,178500
+"Palatka, FL Micro Area",Palatka,FL,Micro,2,58825,31360,9342,43,0.004602869,188800
+"Janesville-Beloit, WI Metro Area",Janesville-Beloit,WI,Metro,0,0,67201,29904,137,0.004581327,236500
+"Shawano, WI Micro Area",Shawano,WI,Micro,0,0,18651,7858,36,0.004581318,197700
+"Ada, OK Micro Area",Ada,OK,Micro,0,0,15134,5031,23,0.004571656,195300
+"Battle Creek, MI Metro Area",Battle Creek,MI,Metro,3,12150,53333,23010,105,0.004563233,169500
+"Findlay, OH Micro Area",Findlay,OH,Micro,0,0,31615,13246,60,0.004529669,220600
+"Dixon, IL Micro Area",Dixon,IL,Micro,0,0,13337,5328,24,0.004504505,159600
+"Scottsbluff, NE Micro Area",Scottsbluff,NE,Micro,0,0,15383,5790,26,0.004490501,181300
+"Beckley, WV Metro Area",Beckley,WV,Metro,0,0,44952,14728,66,0.00448126,161700
+"Williston, ND Micro Area",Williston,ND,Micro,1,375,15154,4030,18,0.004466501,321000
+"Ottumwa, IA Micro Area",Ottumwa,IA,Micro,0,0,13997,4935,22,0.004457953,135400
+"Mayagüez, PR Metro Area",Mayagüez,PR,Metro,0,0,84172,15483,69,0.004456501,137900
+"Lima, OH Metro Area",Lima,OH,Metro,0,0,41295,15948,71,0.004451969,172200
+"West Plains, MO Micro Area",West Plains,MO,Micro,0,0,15965,5181,23,0.004439297,186500
+"Opelousas, LA Micro Area",Opelousas,LA,Micro,2,4925,32183,8826,39,0.004418763,185900
+"Yuma, AZ Metro Area",Yuma,AZ,Metro,0,0,79341,30500,134,0.004393443,255100
+"Bedford, IN Micro Area",Bedford,IN,Micro,0,0,19135,8958,39,0.00435365,198700
+"Clewiston, FL Micro Area",Clewiston,FL,Micro,2,1200,18630,5754,25,0.004344804,233800
+"Champaign-Urbana, IL Metro Area",Champaign-Urbana,IL,Metro,1,4600,98224,33149,142,0.004283689,210900
+"Lebanon, MO Micro Area",Lebanon,MO,Micro,2,4925,14558,5377,23,0.004277478,174900
+"Roswell, NM Micro Area",Roswell,NM,Micro,2,2300,23712,7279,31,0.004258827,190300
+"Wabash, IN Micro Area",Wabash,IN,Micro,2,58825,12674,6379,27,0.004232638,163600
+"McAllen-Edinburg-Mission, TX Metro Area",McAllen-Edinburg-Mission,TX,Metro,20,30671,270210,71799,302,0.004206187,188800
+"Anderson Creek, NC Micro Area",Anderson Creek,NC,Micro,5,9500,49845,23135,97,0.004192781,273600
+"Bluefield, WV-VA Micro Area",Bluefield,WV-VA,Micro,0,0,40514,10978,46,0.004190199,158600
+"Susanville, CA Micro Area",Susanville,CA,Micro,0,0,9247,3582,15,0.004187605,277700
+"Kankakee, IL Metro Area",Kankakee,IL,Metro,0,0,40996,16481,69,0.004186639,212400
+"Youngstown-Warren, OH Metro Area",Youngstown-Warren,OH,Metro,2,12595,184615,68228,283,0.004147857,161200
+"Mayfield, KY Micro Area",Mayfield,KY,Micro,0,0,14139,5558,23,0.004138179,169000
+"Borger, TX Micro Area",Borger,TX,Micro,2,2300,7000,2422,10,0.004128819,154700
+"Decatur, IL Metro Area",Decatur,IL,Metro,6,12660,43468,16001,66,0.004124742,136400
+"Laredo, TX Metro Area",Laredo,TX,Metro,1,3300,81373,27654,114,0.004122369,219000
+"Monroe, MI Metro Area",Monroe,MI,Metro,50,336933,63029,31138,127,0.004078618,241300
+"Lansing-East Lansing, MI Metro Area",Lansing-East Lansing,MI,Metro,3,12150,194163,80931,326,0.004028123,224800
+"Washington, IN Micro Area",Washington,IN,Micro,2,58825,11814,4519,18,0.003983182,211600
+"Danville, VA Micro Area",Danville,VA,Micro,2,2300,44086,12861,51,0.003965477,165100
+"Vincennes, IN Micro Area",Vincennes,IN,Micro,0,0,15169,5807,23,0.003960737,168500
+"Oil City, PA Micro Area",Oil City,PA,Micro,2,12595,21397,7091,28,0.003948667,144900
+"Hattiesburg, MS Metro Area",Hattiesburg,MS,Metro,0,0,60155,20559,81,0.00393988,214600
+"Greensburg, IN Micro Area",Greensburg,IN,Micro,0,0,10712,4909,19,0.003870442,201300
+"Athens, OH Micro Area",Athens,OH,Micro,4,3425,23014,6486,25,0.003854456,204600
+"Greenville, NC Metro Area",Greenville,NC,Metro,50,336933,74533,23879,92,0.003852758,229900
+"Lewistown, PA Micro Area",Lewistown,PA,Micro,0,0,18510,6505,25,0.003843198,155800
+"Arkansas City-Winfield, KS Micro Area",Arkansas City-Winfield,KS,Micro,0,0,13387,4715,18,0.003817603,135700
+"Owensboro, KY Metro Area",Owensboro,KY,Metro,2,58825,45280,18103,68,0.003756283,206200
+"Vicksburg, MS Micro Area",Vicksburg,MS,Micro,0,0,16772,5602,21,0.003748661,200500
+"Manitowoc, WI Micro Area",Manitowoc,WI,Micro,0,0,35188,14760,55,0.003726287,188900
+"Fairbanks-College, AK Metro Area",Fairbanks-College,AK,Metro,2,4925,36359,12763,47,0.00368252,324900
+"Pella, IA Micro Area",Pella,IA,Micro,0,0,13316,6081,22,0.003617826,244300
+"Huntington-Ashland, WV-KY-OH Metro Area",Huntington-Ashland,WV-KY-OH,Metro,50,336933,152165,52592,190,0.003612717,174000
+"Gadsden, AL Metro Area",Gadsden,AL,Metro,0,0,39411,13102,47,0.003587239,188400
+"New Philadelphia-Dover, OH Micro Area",New Philadelphia-Dover,OH,Micro,2,12595,38492,14539,52,0.003576587,197500
+"Miami, OK Micro Area",Miami,OK,Micro,0,0,11921,3811,13,0.003411178,138300
+"Sikeston, MO Micro Area",Sikeston,MO,Micro,2,12595,19809,7358,25,0.003397662,153900
+"Sidney, OH Micro Area",Sidney,OH,Micro,0,0,18906,8046,27,0.003355705,209500
+"Jacksonville, IL Micro Area",Jacksonville,IL,Micro,4,3425,15122,6015,20,0.003325021,129700
+"DuBois, PA Micro Area",DuBois,PA,Micro,2,58825,32518,11557,38,0.003288051,154200
+"Vineland, NJ Metro Area",Vineland,NJ,Metro,0,0,53781,21077,69,0.003273711,233900
+"Terre Haute, IN Metro Area",Terre Haute,IN,Metro,1,3200,67374,27289,89,0.003261387,156200
+"Fairmont, WV Micro Area",Fairmont,WV,Micro,0,0,23339,8910,29,0.00325477,189200
+"Malvern, AR Micro Area",Malvern,AR,Micro,0,0,12310,4305,14,0.003252033,185100
+"Peoria, IL Metro Area",Peoria,IL,Metro,50,336933,153870,64334,207,0.003217583,166600
+"Indiana, PA Micro Area",Indiana,PA,Micro,2,1200,32487,10930,35,0.003202196,157500
+"Carbondale, IL Micro Area",Carbondale,IL,Micro,50,336933,22955,5317,17,0.003197292,155200
+"Marshall, MN Micro Area",Marshall,MN,Micro,0,0,10108,3754,12,0.00319659,217900
+"Alma, MI Micro Area",Alma,MI,Micro,3,9021,14775,6270,20,0.003189793,154200
+"Guymon, OK Micro Area",Guymon,OK,Micro,0,0,6824,1885,6,0.003183024,185300
+"Vidalia, GA Micro Area",Vidalia,GA,Micro,0,0,13552,4091,13,0.003177707,164900
+"Fond du Lac, WI Metro Area",Fond du Lac,WI,Metro,20,30671,43243,17365,55,0.003167291,227200
+"Kendallville, IN Micro Area",Kendallville,IN,Micro,2,2300,18179,8854,28,0.003162412,206600
+"Harrison, AR Micro Area",Harrison,AR,Micro,0,0,18542,6384,20,0.003132832,195200
+"Natchez, MS-LA Micro Area",Natchez,MS-LA,Micro,0,0,20736,4799,15,0.003125651,144200
+"Albert Lea, MN Micro Area",Albert Lea,MN,Micro,1,4600,12846,5447,17,0.003120984,171600
+"Cadillac, MI Micro Area",Cadillac,MI,Micro,2,12595,19605,8683,27,0.003109524,182500
+"Shawnee, OK Micro Area",Shawnee,OK,Micro,0,0,26927,9383,29,0.003090696,183900
+"Hillsdale, MI Micro Area",Hillsdale,MI,Micro,0,0,17860,8438,26,0.003081299,180600
+"Wilson, NC Micro Area",Wilson,NC,Micro,0,0,33068,11432,35,0.003061582,216400
+"Toccoa, GA Micro Area",Toccoa,GA,Micro,50,336933,10524,3595,11,0.003059805,207200
+"Bloomsburg-Berwick, PA Micro Area",Bloomsburg-Berwick,PA,Micro,2,4925,26350,8886,27,0.003038488,214800
+"Murray, KY Micro Area",Murray,KY,Micro,1,3300,15239,4666,14,0.003000429,193300
+"Muskogee, OK Micro Area",Muskogee,OK,Micro,0,0,25739,8669,26,0.002999193,170900
+"Hannibal, MO Micro Area",Hannibal,MO,Micro,0,0,15293,4726,14,0.002962336,176700
+"Victoria, TX Metro Area",Victoria,TX,Metro,0,0,37666,10815,32,0.002958853,223100
+"Madisonville, KY Micro Area",Madisonville,KY,Micro,4,3425,18397,6454,19,0.002943911,162200
+"New Iberia, LA Micro Area",New Iberia,LA,Micro,2,4925,26816,8188,24,0.002931119,191500
+"Blytheville, AR Micro Area",Blytheville,AR,Micro,0,0,15452,4448,13,0.002922662,154200
+"Garden City, KS Micro Area",Garden City,KS,Micro,4,3425,13229,4540,13,0.002863436,228200
+"Bloomington, IL Metro Area",Bloomington,IL,Metro,0,0,70220,28762,81,0.002816216,219300
+"Paragould, AR Micro Area",Paragould,AR,Micro,1,375,17994,6403,18,0.002811182,184600
+"Danville, KY Micro Area",Danville,KY,Micro,2,58825,21750,8225,23,0.002796353,202300
+"Fallon, NV Micro Area",Fallon,NV,Micro,1,375,9516,3589,10,0.002786291,360900
+"Bay City, MI Metro Area",Bay City,MI,Metro,1,375,45103,17949,50,0.002785671,158800
+"Huntington, IN Micro Area",Huntington,IN,Micro,2,2300,15403,7951,22,0.002766948,167100
+"North Wilkesboro, NC Micro Area",North Wilkesboro,NC,Micro,0,0,27107,9039,25,0.002765793,208000
+"Kinston, NC Micro Area",Kinston,NC,Micro,0,0,23351,6154,17,0.002762431,158300
+"Brownsville-Harlingen, TX Metro Area",Brownsville-Harlingen,TX,Metro,0,0,138433,35533,96,0.002701714,184700
+"Fremont, OH Micro Area",Fremont,OH,Micro,0,0,24686,10091,27,0.002675652,164600
+"Vernal, UT Micro Area",Vernal,UT,Micro,0,0,12145,5250,14,0.002666667,306100
+"Batesville, AR Micro Area",Batesville,AR,Micro,2,4925,14638,5360,14,0.00261194,162000
+"Minot, ND Metro Area",Minot,ND,Metro,3,9021,31781,10796,28,0.002593553,276200
+"Douglas, GA Micro Area",Douglas,GA,Micro,50,336933,18571,4296,11,0.002560521,158400
+"Mansfield, OH Metro Area",Mansfield,OH,Metro,0,0,50111,18418,47,0.002551851,171600
+"Henderson, KY Micro Area",Henderson,KY,Micro,1,3200,23445,8121,20,0.002462751,183000
+"Jesup, GA Micro Area",Jesup,GA,Micro,0,0,11061,3684,9,0.002442997,218200
+"Muscatine, IA Micro Area",Muscatine,IA,Micro,1,375,17345,7531,18,0.002390121,198100
+"Meadville, PA Micro Area",Meadville,PA,Micro,0,0,33838,12238,29,0.002369668,160400
+"Gaffney, SC Micro Area",Gaffney,SC,Micro,0,0,22063,7179,17,0.002368018,174900
+"Rockford, IL Metro Area",Rockford,IL,Metro,20,30671,135474,54200,128,0.002361624,179700
+"Muncie, IN Metro Area",Muncie,IN,Metro,0,0,46256,17050,39,0.00228739,154800
+"New Castle, IN Micro Area",New Castle,IN,Micro,2,2300,18642,8336,19,0.002279271,166000
+"Marinette, WI-MI Micro Area",Marinette,WI-MI,Micro,0,0,29412,11904,27,0.002268145,167000
+"Pierre, SD Micro Area",Pierre,SD,Micro,2,1200,8543,3578,8,0.002235886,249300
+"Portsmouth, OH Micro Area",Portsmouth,OH,Micro,4,3425,28864,8585,19,0.002213162,159300
+"Uvalde, TX Micro Area",Uvalde,TX,Micro,0,0,8417,1809,4,0.002211166,244300
+"Martinsville, VA Micro Area",Martinsville,VA,Micro,0,0,26754,9175,20,0.002179837,155700
+"Clovis, NM Micro Area",Clovis,NM,Micro,0,0,26036,8737,19,0.002174659,192100
+"Fort Dodge, IA Micro Area",Fort Dodge,IA,Micro,2,4925,15375,5615,12,0.002137133,156700
+"Campbellsville, KY Micro Area",Campbellsville,KY,Micro,2,4925,14681,5157,11,0.002133023,172400
+"Clarksburg, WV Micro Area",Clarksburg,WV,Micro,0,0,35511,12191,26,0.002132721,191000
+"Charleston-Mattoon, IL Micro Area",Charleston-Mattoon,IL,Micro,2,1200,20824,6146,13,0.002115197,139300
+"Jamestown, ND Micro Area",Jamestown,ND,Micro,0,0,9437,2902,6,0.00206754,224300
+"Warrensburg, MO Micro Area",Warrensburg,MO,Micro,0,0,21087,8437,17,0.002014934,245200
+"Tifton, GA Micro Area",Tifton,GA,Micro,2,12595,18935,6089,12,0.001970767,170300
+"New Ulm, MN Micro Area",New Ulm,MN,Micro,0,0,11027,4603,9,0.001955247,192000
+"Jonesboro, AR Metro Area",Jonesboro,AR,Metro,4,3425,53229,18056,34,0.001883031,212700
+"Aberdeen, SD Micro Area",Aberdeen,SD,Micro,1,375,17915,7038,13,0.001847116,224400
+"Coshocton, OH Micro Area",Coshocton,OH,Micro,0,0,14786,5466,10,0.001829491,162900
+"Defiance, OH Micro Area",Defiance,OH,Micro,2,1200,15327,6790,12,0.001767305,168500
+"Lumberton, NC Micro Area",Lumberton,NC,Micro,0,0,43134,10234,18,0.001758843,132400
+"Moberly, MO Micro Area",Moberly,MO,Micro,0,0,9247,3422,6,0.001753361,168500
+"Monticello, IN Micro Area",Monticello,IN,Micro,0,0,10254,5153,9,0.001746555,182300
+"Lewiston-Auburn, ME Metro Area",Lewiston-Auburn,ME,Metro,0,0,46953,20519,35,0.001705736,264400
+"Escanaba, MI Micro Area",Escanaba,MI,Micro,2,4925,15971,6504,11,0.001691267,162600
+"Great Bend, KS Micro Area",Great Bend,KS,Micro,0,0,10380,2958,5,0.001690331,133100
+"Sumter, SC Metro Area",Sumter,SC,Metro,0,0,41083,14396,24,0.00166713,191100
+"Emporia, KS Micro Area",Emporia,KS,Micro,0,0,14628,4233,7,0.001653674,153300
+"Poplar Bluff, MO Micro Area",Poplar Bluff,MO,Micro,0,0,16594,5476,9,0.001643535,144700
+"Ponca City, OK Micro Area",Ponca City,OK,Micro,0,0,16776,4922,8,0.001625356,145600
+"Logansport, IN Micro Area",Logansport,IN,Micro,0,0,15037,6202,10,0.001612383,153200
+"Alamogordo, NM Micro Area",Alamogordo,NM,Micro,0,0,24480,7473,12,0.001605781,189200
+"Urbana, OH Micro Area",Urbana,OH,Micro,50,336933,15646,6860,11,0.001603499,211600
+"Woodward, OK Micro Area",Woodward,OK,Micro,2,12595,7925,2651,4,0.001508865,178100
+"Frankfort, IN Micro Area",Frankfort,IN,Micro,2,58825,12496,5370,8,0.001489758,175600
+"North Platte, NE Micro Area",North Platte,NE,Micro,2,2300,15189,5391,8,0.001483955,193600
+"Quincy, IL-MO Micro Area",Quincy,IL-MO,Micro,1,3300,31100,12233,18,0.00147143,166600
+"Picayune, MS Micro Area",Picayune,MS,Micro,0,0,21880,7676,11,0.001433038,198100
+"Seymour, IN Micro Area",Seymour,IN,Micro,0,0,18138,7705,11,0.001427644,190000
+"Hereford, TX Micro Area",Hereford,TX,Micro,50,336933,6051,1404,2,0.001424501,187300
+"Sault Ste. Marie, MI Micro Area",Sault Ste. Marie,MI,Micro,2,2300,14080,5649,8,0.00141618,164600
+"Altoona, PA Metro Area",Altoona,PA,Metro,50,336933,50558,19487,27,0.001385539,170500
+"Centralia, IL Micro Area",Centralia,IL,Micro,4,3425,15512,5894,8,0.001357313,121700
+"Price, UT Micro Area",Price,UT,Micro,0,0,8123,3018,4,0.001325381,238700
+"El Dorado, AR Micro Area",El Dorado,AR,Micro,2,2300,15002,4804,6,0.001248959,140700
+"Aguadilla, PR Metro Area",Aguadilla,PR,Metro,1,425,94130,16773,18,0.001073153,158900
+"Big Spring, TX Micro Area",Big Spring,TX,Micro,0,0,12191,3749,4,0.001066951,178300
+"Pontiac, IL Micro Area",Pontiac,IL,Micro,0,0,14615,5645,6,0.001062888,158100
+"Rome, GA Metro Area",Rome,GA,Metro,0,0,36856,12253,13,0.001060965,230900
+"Iron Mountain, MI-WI Micro Area",Iron Mountain,MI-WI,Micro,18,43250,14102,5736,6,0.001046025,167500
+"Danville, IL Micro Area",Danville,IL,Micro,0,0,30084,8744,9,0.001029277,120200
+"Ponce, PR Metro Area",Ponce,PR,Metro,2,4925,106387,21476,22,0.001024399,136000
+"Duncan, OK Micro Area",Duncan,OK,Micro,0,0,17567,5949,6,0.001008573,161600
+"Bishop, CA Micro Area",Bishop,CA,Micro,0,0,8040,2080,2,0.000961538,451500
+"Wahpeton, ND-MN Micro Area",Wahpeton,ND-MN,Micro,0,0,9504,3293,3,0.000911023,195300
+"Arecibo, PR Metro Area",Arecibo,PR,Metro,0,0,67958,14571,13,0.000892183,132600
+"Tahlequah, OK Micro Area",Tahlequah,OK,Micro,0,0,18698,5642,5,0.000886211,183200
+"Rock Springs, WY Micro Area",Rock Springs,WY,Micro,0,0,17502,6900,6,0.000869565,293200
+"Weatherford, OK Micro Area",Weatherford,OK,Micro,3,9021,15175,4625,4,0.000864865,182800
+"Wisconsin Rapids-Marshfield, WI Micro Area",Wisconsin Rapids-Marshfield,WI,Micro,1,375,32253,12750,11,0.000862745,185200
+"Alexandria, LA Metro Area",Alexandria,LA,Metro,4,3425,56394,18612,15,0.000805932,212900
+"Oskaloosa, IA Micro Area",Oskaloosa,IA,Micro,2,4925,8743,3063,2,0.000652955,167700
+"Marietta, OH Micro Area",Marietta,OH,Micro,0,0,24779,9543,6,0.000628733,192500
+"Crawfordsville, IN Micro Area",Crawfordsville,IN,Micro,0,0,15602,8074,5,0.000619272,179200
+"Laurel, MS Micro Area",Laurel,MS,Micro,3,12150,31604,8835,5,0.000565931,175300
+"Martin, TN Micro Area",Martin,TN,Micro,0,0,13384,4514,2,0.000443066,164400
+"Salina, KS Micro Area",Salina,KS,Micro,3,9021,24931,9229,4,0.000433416,180800
+"DeRidder, LA Micro Area",DeRidder,LA,Micro,0,0,13747,4798,1,0.00020842,198700
+"Guayama, PR Metro Area",Guayama,PR,Metro,3,2610,28965,6605,0,0,144800
+"Bucyrus, OH Micro Area",Bucyrus,OH,Micro,2,4925,18059,7218,0,0,193800
+"Dodge City, KS Micro Area",Dodge City,KS,Micro,0,0,11796,3214,0,0,209100
+"Fort Leonard Wood, MO Micro Area",Fort Leonard Wood,MO,Micro,2,1200,16851,6094,0,0,155700
+"Deming, NM Micro Area",Deming,NM,Micro,0,0,9223,2657,0,0,141000
+"Beeville, TX Micro Area",Beeville,TX,Micro,50,336933,8807,2070,0,0,178400
+"Brookhaven, MS Micro Area",Brookhaven,MS,Micro,0,0,13158,3386,0,0,168400
+"Gallup, NM Micro Area",Gallup,NM,Micro,0,0,21353,2902,0,0,143000
+"Marion, IN Micro Area",Marion,IN,Micro,0,0,26773,11202,0,0,124500
+"Lares, PR Micro Area",Lares,PR,Micro,0,0,10770,1585,0,0,203100
+"Thomaston, GA Micro Area",Thomaston,GA,Micro,4,3425,10595,3071,0,0,189700
+"Alice, TX Micro Area",Alice,TX,Micro,50,336933,16256,3835,0,0,169700
+"Plainview, TX Micro Area",Plainview,TX,Micro,50,336933,12976,2630,0,0,139700
+"Utuado, PR Micro Area",Utuado,PR,Micro,0,0,11311,1667,0,0,133400
+"Clarksdale, MS Micro Area",Clarksdale,MS,Micro,0,0,8404,1618,0,0,203800
+"Altus, OK Micro Area",Altus,OK,Micro,0,0,9775,2895,0,0,128000
+"Coamo, PR Micro Area",Coamo,PR,Micro,0,0,21324,5502,0,0,120200
+"Taylorville, IL Micro Area",Taylorville,IL,Micro,2,2300,13586,5350,0,0,141100
+"Mount Vernon, IL Micro Area",Mount Vernon,IL,Micro,2,2300,14820,5142,0,0,142900
+"Fitzgerald, GA Micro Area",Fitzgerald,GA,Micro,4,3425,7082,1826,0,0,127300
+"Coco, PR Micro Area",Coco,PR,Micro,0,0,10761,2166,0,0,120500
+"Greenville, MS Micro Area",Greenville,MS,Micro,0,0,17113,4137,0,0,150800
+"Grenada, MS Micro Area",Grenada,MS,Micro,0,0,12601,4301,0,0,114600
+"Selma, AL Micro Area",Selma,AL,Micro,0,0,15947,3052,0,0,165500
+"Storm Lake, IA Micro Area",Storm Lake,IA,Micro,1,375,7546,2883,0,0,172200
+"Spencer, IA Micro Area",Spencer,IA,Micro,1,375,7282,2847,0,0,162200
+"Tiffin, OH Micro Area",Tiffin,OH,Micro,2,4925,22279,8509,0,0,163800
+"Rio Grande City-Roma, TX Micro Area",Rio Grande City-Roma,TX,Micro,50,336933,19157,2293,0,0,163100
+"Middlesborough, KY Micro Area",Middlesborough,KY,Micro,0,0,9939,1879,0,0,152100
+"Vernon, TX Micro Area",Vernon,TX,Micro,50,336933,4778,1396,0,0,170300
+"Dyersburg, TN Micro Area",Dyersburg,TN,Micro,3,12150,14769,4669,0,0,174400
+"Gallipolis, OH Micro Area",Gallipolis,OH,Micro,2,4925,11614,3422,0,0,127600
+"Lincoln, IL Micro Area",Lincoln,IL,Micro,2,2300,11266,4539,0,0,155100
+"Pittsburg, KS Micro Area",Pittsburg,KS,Micro,0,0,15838,5046,0,0,142600
+"Peru, IN Micro Area",Peru,IN,Micro,0,0,13318,5372,0,0,184100
+"Town of Pecos, TX Micro Area",Town of Pecos,TX,Micro,50,336933,4224,622,0,0,217300
+"Ottawa, KS Micro Area",Ottawa,KS,Micro,0,0,10409,4475,0,0,160400
+"Raymondville, TX Micro Area",Raymondville,TX,Micro,50,336933,5691,1232,0,0,165700
+"Bainbridge, GA Micro Area",Bainbridge,GA,Micro,4,3425,10621,3014,0,0,182000
+"Summerville, GA Micro Area",Summerville,GA,Micro,4,3425,9154,1856,0,0,104600
+"Forrest City, AR Micro Area",Forrest City,AR,Micro,0,0,7783,2068,0,0,113800
+"Moultrie, GA Micro Area",Moultrie,GA,Micro,4,3425,16803,4296,0,0,157400
+"Russellville, AL Micro Area",Russellville,AL,Micro,0,0,11954,3223,0,0,162300
+"Elkins, WV Micro Area",Elkins,WV,Micro,0,0,10678,3016,0,0,158500
+"Cedartown, GA Micro Area",Cedartown,GA,Micro,4,3425,15901,4951,0,0,216400
+"Dumas, TX Micro Area",Dumas,TX,Micro,50,336933,7157,2048,0,0,174100
+"St. Marys, PA Micro Area",St. Marys,PA,Micro,2,58825,13325,4292,0,0,136100
+"Pampa, TX Micro Area",Pampa,TX,Micro,50,336933,8314,2478,0,0,144700
+"Connersville, IN Micro Area",Connersville,IN,Micro,0,0,9422,3928,0,0,140200
+"Kingsville, TX Micro Area",Kingsville,TX,Micro,50,336933,11853,2788,0,0,210100
+"Sweetwater, TX Micro Area",Sweetwater,TX,Micro,50,336933,5886,1166,0,0,123500
+"Pikeville, KY Micro Area",Pikeville,KY,Micro,0,0,38984,10433,0,0,156600
+"Minden, LA Micro Area",Minden,LA,Micro,3,9021,14334,3517,0,0,148000
+"Kennett, MO Micro Area",Kennett,MO,Micro,2,1200,11257,3125,0,0,108200
